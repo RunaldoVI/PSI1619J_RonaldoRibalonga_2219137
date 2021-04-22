@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="Tugagenda" id="Project_fcc" database="SqlServer" >
+	<schema name="Tugagenda" >
+		<table name="Animes" prior="Tbl" >
+			<column name="IDAnimes" type="int" jt="4" mandatory="y" />
+			<column name="Nome" type="varchar" length="45" jt="12" />
+			<column name="Descricao" type="varchar" length="255" jt="12" />
+			<column name="Temporadas" type="int" jt="4" />
+			<column name="Episodios" type="int" jt="4" />
+			<index name="Pk_Animes_IDAnimes" unique="PRIMARY_KEY" >
+				<column name="IDAnimes" />
+			</index>
+		</table>
+		<table name="Cliente" prior="Tbl" >
+			<column name="IDCliente" type="int" jt="4" mandatory="y" />
+			<column name="ClienteNome" type="varchar" length="45" jt="12" />
+			<column name="ClienteSeries" type="varchar" length="45" jt="12" />
+			<column name="ClientesFilmes" type="varchar" length="45" jt="12" />
+			<column name="ClientesAnimes" type="varchar" length="45" jt="12" />
+			<index name="Pk_Cliente_IDCliente" unique="PRIMARY_KEY" >
+				<column name="IDCliente" />
+			</index>
+			<fk name="Fk_Cliente_Series" to_schema="Tugagenda" to_table="Series" >
+				<fk_column name="ClienteSeries" pk="IDSerie" />
+			</fk>
+			<fk name="Fk_Cliente_Filmes" to_schema="Tugagenda" to_table="Filmes" >
+				<fk_column name="ClientesFilmes" pk="IDFilmes" />
+			</fk>
+			<fk name="Fk_Cliente_Animes" to_schema="Tugagenda" to_table="Animes" >
+				<fk_column name="ClientesAnimes" pk="IDAnimes" />
+			</fk>
+		</table>
+		<table name="Filmes" prior="Tbl" >
+			<column name="IDFilmes" type="int" jt="4" mandatory="y" />
+			<column name="Nome" type="varchar" length="45" jt="12" />
+			<column name="Descricao" type="varchar" length="255" jt="12" />
+			<index name="Pk_Filmes_IDFilmes" unique="PRIMARY_KEY" >
+				<column name="IDFilmes" />
+			</index>
+		</table>
+		<table name="Login" prior="Tbl" >
+			<column name="IDLogin" type="int" jt="4" mandatory="y" />
+			<column name="Usuario" type="varchar" length="45" jt="12" />
+			<column name="Password" type="varchar" length="45" jt="12" />
+			<column name="Email" type="varchar" length="100" jt="12" />
+			<index name="Pk_Login_IDLogin" unique="PRIMARY_KEY" >
+				<column name="IDLogin" />
+			</index>
+			<fk name="Fk_Login_Cliente" to_schema="Tugagenda" to_table="Cliente" >
+				<fk_column name="IDLogin" pk="IDCliente" />
+			</fk>
+		</table>
+		<table name="Series" prior="Tbl" >
+			<column name="IDSerie" type="int" jt="4" mandatory="y" />
+			<column name="Nome" type="varchar" length="45" jt="12" />
+			<column name="Descricao" type="varchar" length="255" jt="12" />
+			<column name="Temporadas" type="int" jt="4" />
+			<column name="Episodios" type="int" jt="4" />
+			<index name="Pk_Series_IDSerie" unique="PRIMARY_KEY" >
+				<column name="IDSerie" />
+			</index>
+		</table>
+	</schema>
+	<layout name="Default Layout" id="Layout_13e4" show_relation="columns" >
+		<entity schema="Tugagenda" name="Animes" color="C1D8EE" x="96" y="48" />
+		<entity schema="Tugagenda" name="Cliente" color="C1D8EE" x="320" y="352" />
+		<entity schema="Tugagenda" name="Filmes" color="C1D8EE" x="448" y="64" />
+		<entity schema="Tugagenda" name="Login" color="C1D8EE" x="656" y="368" />
+		<entity schema="Tugagenda" name="Series" color="C1D8EE" x="48" y="336" />
+	</layout>
+</project>
