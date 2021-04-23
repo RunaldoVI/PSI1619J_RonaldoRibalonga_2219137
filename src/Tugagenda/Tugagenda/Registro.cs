@@ -26,6 +26,8 @@ namespace Tugagenda
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Close();
+            /*
             string connString = ConfigurationManager.ConnectionStrings["tugagenda"].ConnectionString;
             SqlConnection db = new SqlConnection(connString);
 
@@ -53,11 +55,17 @@ namespace Tugagenda
                 MessageBox.Show("Erro:" + ex.Message, "Não foi possível adicionar ");
             }
             Close();
+            */
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

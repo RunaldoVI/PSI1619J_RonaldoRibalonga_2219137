@@ -32,6 +32,8 @@ namespace Tugagenda
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Close();
+            /*
             string connString = ConfigurationManager.ConnectionStrings["tugagenda"].ConnectionString;
             SqlConnection db = new SqlConnection(connString);
 
@@ -60,7 +62,8 @@ namespace Tugagenda
             {
                 MessageBox.Show("Erro:" + ex.Message, "Não foi possível fazer o login");
             }
-            Close();
+           
+            */
         }
     }
 }

@@ -44,7 +44,7 @@ namespace Tugagenda
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(110, 9);
+            this.label1.Location = new System.Drawing.Point(49, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(202, 62);
             this.label1.TabIndex = 0;
@@ -52,33 +52,35 @@ namespace Tugagenda
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(121, 112);
+            this.textBox1.Location = new System.Drawing.Point(79, 106);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(260, 20);
+            this.textBox1.Size = new System.Drawing.Size(172, 20);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(121, 178);
+            this.textBox2.Location = new System.Drawing.Point(76, 168);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(260, 20);
+            this.textBox2.Size = new System.Drawing.Size(175, 20);
             this.textBox2.TabIndex = 2;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(80, 241);
+            this.textBox3.Location = new System.Drawing.Point(76, 234);
+            this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(301, 20);
+            this.textBox3.Size = new System.Drawing.Size(175, 20);
             this.textBox3.TabIndex = 3;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(3, 106);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 25);
+            this.label2.Size = new System.Drawing.Size(70, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Username:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -86,26 +88,26 @@ namespace Tugagenda
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F);
             this.label3.Location = new System.Drawing.Point(3, 172);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 25);
+            this.label3.Size = new System.Drawing.Size(67, 16);
             this.label3.TabIndex = 5;
             this.label3.Text = "Password:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 236);
+            this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F);
+            this.label4.Location = new System.Drawing.Point(3, 234);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 25);
+            this.label4.Size = new System.Drawing.Size(42, 16);
             this.label4.TabIndex = 6;
             this.label4.Text = "Email:";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(134, 288);
+            this.button1.Location = new System.Drawing.Point(70, 316);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(164, 33);
             this.button1.TabIndex = 7;
@@ -115,7 +117,7 @@ namespace Tugagenda
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(146, 338);
+            this.button2.Location = new System.Drawing.Point(79, 384);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(141, 32);
             this.button2.TabIndex = 8;
@@ -127,7 +129,7 @@ namespace Tugagenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(430, 382);
+            this.ClientSize = new System.Drawing.Size(305, 454);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);

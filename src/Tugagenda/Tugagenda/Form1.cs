@@ -15,13 +15,12 @@ namespace Tugagenda
     {
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent();     
         }
 
         private void registroToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Registro registro = new Registro();
-            registro.Show();        
+                 
         }
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
@@ -36,8 +35,12 @@ namespace Tugagenda
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
-            login.Show();
+            
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
         }
     }
 }
