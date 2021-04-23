@@ -37,6 +37,7 @@ namespace Tugagenda
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -51,9 +52,9 @@ namespace Tugagenda
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(101, 112);
+            this.textBox1.Location = new System.Drawing.Point(121, 112);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(280, 20);
+            this.textBox1.Size = new System.Drawing.Size(260, 20);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
@@ -77,9 +78,9 @@ namespace Tugagenda
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(3, 106);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 25);
+            this.label2.Size = new System.Drawing.Size(116, 25);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Usuário:";
+            this.label2.Text = "Username:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
@@ -104,7 +105,7 @@ namespace Tugagenda
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(121, 317);
+            this.button1.Location = new System.Drawing.Point(134, 288);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(164, 33);
             this.button1.TabIndex = 7;
@@ -112,11 +113,22 @@ namespace Tugagenda
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(146, 338);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(141, 32);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Voltar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(430, 382);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -143,5 +155,6 @@ namespace Tugagenda
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

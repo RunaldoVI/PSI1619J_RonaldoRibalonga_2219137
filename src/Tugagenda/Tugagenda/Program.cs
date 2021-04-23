@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Tugagenda
 {
@@ -18,5 +19,9 @@ namespace Tugagenda
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
+            private static string _connectionString = @"Server=UED1310\SQLEXPRESS;Database=tugagenda;Uid=sa;Password=Pa$$w0rd;";
+            private static SqlConnection db = new SqlConnection (_connectionString);
+           
+       
     }
 }
