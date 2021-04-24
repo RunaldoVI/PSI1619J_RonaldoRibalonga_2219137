@@ -60,7 +60,7 @@ namespace Tugagenda
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
