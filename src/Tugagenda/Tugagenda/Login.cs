@@ -26,8 +26,10 @@ namespace Tugagenda
         }
 
         private void button3_Click(object sender, EventArgs e)
-        {           
-            
+        {
+            Close();
+            Registro registro = new Registro();
+            registro.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -64,6 +66,16 @@ namespace Tugagenda
             }
            
             */
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
