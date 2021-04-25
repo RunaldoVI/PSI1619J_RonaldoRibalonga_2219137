@@ -17,9 +17,8 @@ namespace Tugagenda
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Registro());
-            Application.Run(new Login());
-            Application.Run(new Form1());
+            Application.Run(new Registro());        
+            
         }
             private static string _connectionString = @"Server=UED1310\SQLEXPRESS;Database=tugagenda;Uid=sa;Password=Pa$$w0rd;";
             private static SqlConnection db = new SqlConnection (_connectionString);

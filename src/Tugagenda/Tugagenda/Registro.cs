@@ -26,7 +26,10 @@ namespace Tugagenda
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Close();
+
+            Login login = new Login();
+            login.Show();
+
             /*
             string connString = ConfigurationManager.ConnectionStrings["tugagenda"].ConnectionString;
             SqlConnection db = new SqlConnection(connString);
