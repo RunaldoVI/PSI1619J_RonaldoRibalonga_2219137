@@ -61,12 +61,19 @@ namespace Tugagenda
             */
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            Application.Exit();
+
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Close();
+            comeco bemvindo = new comeco();
+            bemvindo.Show();
+        }
+
+        private void Registro_Load(object sender, EventArgs e)
         {
 
         }

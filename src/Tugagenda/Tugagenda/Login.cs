@@ -28,8 +28,8 @@ namespace Tugagenda
         private void button3_Click(object sender, EventArgs e)
         {
             Close();
-            Registro registro = new Registro();
-            registro.Show();
+            comeco bemvindo = new comeco();
+            bemvindo.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
