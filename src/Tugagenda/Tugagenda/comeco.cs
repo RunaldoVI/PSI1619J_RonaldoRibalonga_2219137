@@ -40,5 +40,10 @@ namespace Tugagenda
         {
 
         }
+
+        private void comeco_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

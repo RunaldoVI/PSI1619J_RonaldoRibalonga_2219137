@@ -61,7 +61,7 @@ namespace Tugagenda
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("MV Boli", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
-            this.button1.Location = new System.Drawing.Point(780, 66);
+            this.button1.Location = new System.Drawing.Point(771, 66);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(341, 102);
             this.button1.TabIndex = 6;
@@ -78,7 +78,7 @@ namespace Tugagenda
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("MV Boli", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
-            this.button2.Location = new System.Drawing.Point(780, 232);
+            this.button2.Location = new System.Drawing.Point(771, 230);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(341, 102);
             this.button2.TabIndex = 7;
@@ -95,7 +95,7 @@ namespace Tugagenda
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("MV Boli", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
-            this.button3.Location = new System.Drawing.Point(780, 400);
+            this.button3.Location = new System.Drawing.Point(771, 398);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(341, 102);
             this.button3.TabIndex = 8;
@@ -124,7 +124,7 @@ namespace Tugagenda
             this.panel1.Controls.Add(this.button4);
             this.panel1.Location = new System.Drawing.Point(-3, -3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(705, 564);
+            this.panel1.Size = new System.Drawing.Size(673, 564);
             this.panel1.TabIndex = 11;
             // 
             // button4
@@ -145,7 +145,7 @@ namespace Tugagenda
             this.label4.AutoSize = true;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Sitka Text", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(46, 275);
+            this.label4.Location = new System.Drawing.Point(15, 281);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(618, 117);
             this.label4.TabIndex = 12;
@@ -167,6 +167,7 @@ namespace Tugagenda
             this.Name = "comeco";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bem-Vindo";
+            this.Load += new System.EventHandler(this.comeco_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
