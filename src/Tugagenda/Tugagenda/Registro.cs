@@ -30,8 +30,8 @@ namespace Tugagenda
             Login login = new Login();
             login.Show();
 
-            /*
-            string connString = ConfigurationManager.ConnectionStrings["tugagenda"].ConnectionString;
+            
+            string connString = ConfigurationManager.ConnectionStrings["PSIM1619J_RonaldoRibalonga_2219137"].ConnectionString;
             SqlConnection db = new SqlConnection(connString);
 
             try
@@ -40,7 +40,7 @@ namespace Tugagenda
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = db;
 
-                cmd.CommandText = "insert into registro (Username, Password, Email) values (@Username, @Password, @Email)";
+                cmd.CommandText = "insert into registo (Username, Password, Email) values (@Username, @Password, @Email)";
                 cmd.Parameters.AddWithValue("@Username", textBox1.Text);
                 cmd.Parameters.AddWithValue("@Password", textBox2.Text);
                 cmd.Parameters.AddWithValue("@Email", textBox3.Text);
@@ -58,7 +58,7 @@ namespace Tugagenda
                 MessageBox.Show("Erro:" + ex.Message, "Não foi possível adicionar ");
             }
             Close();
-            */
+            
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)

@@ -204,6 +204,7 @@ namespace Tugagenda
             this.Name = "ResetarPass";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ResetarPass";
+            this.Load += new System.EventHandler(this.ResetarPass_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

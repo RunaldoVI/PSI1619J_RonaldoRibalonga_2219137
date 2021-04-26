@@ -35,8 +35,8 @@ namespace Tugagenda
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
-            /*
-            string connString = ConfigurationManager.ConnectionStrings["tugagenda"].ConnectionString;
+            
+            string connString = ConfigurationManager.ConnectionStrings["PSIM1619J_RonaldoRibalonga_2219137"].ConnectionString;
             SqlConnection db = new SqlConnection(connString);
 
             try
@@ -45,7 +45,7 @@ namespace Tugagenda
                 SqlCommand cmdUpdate = new SqlCommand();
                 cmdUpdate.Connection = db;
 
-                cmdUpdate.CommandText = "select * from registro where Username=@Username and Password=@Password ";
+                cmdUpdate.CommandText = "select * from registo where Username=@Username and Password=@Password ";
                 cmdUpdate.Parameters.AddWithValue("@Username", textBox1.Text);
                 cmdUpdate.Parameters.AddWithValue("@Password", textBox2.Text);
                 //parametros
@@ -65,7 +65,7 @@ namespace Tugagenda
                 MessageBox.Show("Erro:" + ex.Message, "Não foi possível fazer o login");
             }
            
-            */
+            
         }
 
         private void button4_Click(object sender, EventArgs e)

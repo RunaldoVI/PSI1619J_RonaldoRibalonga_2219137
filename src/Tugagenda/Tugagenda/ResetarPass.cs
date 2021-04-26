@@ -26,7 +26,7 @@ namespace Tugagenda
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string connString = ConfigurationManager.ConnectionStrings["tugagenda"].ConnectionString;
+            string connString = ConfigurationManager.ConnectionStrings["PSIM1619J_RonaldoRibalonga_2219137"].ConnectionString;
             SqlConnection db = new SqlConnection(connString);
 
             try
@@ -35,7 +35,7 @@ namespace Tugagenda
                 SqlCommand cmdUpdate = new SqlCommand();
                 cmdUpdate.Connection = db;
 
-                cmdUpdate.CommandText = "update registro set Password = @Password where Username = @Username";
+                cmdUpdate.CommandText = "update Registo set Password = @Password where Username = @Username";
                 cmdUpdate.Parameters.AddWithValue("@Username", textBox1.Text);
                 cmdUpdate.Parameters.AddWithValue("@Password", textBox2.Text);
 
@@ -54,6 +54,11 @@ namespace Tugagenda
             {
                 MessageBox.Show("Erro:" + ex.Message, "Não foi possível editar");
             }
+        }
+
+        private void ResetarPass_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
