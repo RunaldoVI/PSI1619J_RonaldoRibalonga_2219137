@@ -26,12 +26,8 @@ namespace Tugagenda
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Login login = new Login();
-            login.Show();
-
-            
-            string connString = ConfigurationManager.ConnectionStrings["PSIM1619J_RonaldoRibalonga_2219137"].ConnectionString;
+              
+            string connString = ConfigurationManager.ConnectionStrings["tugagenda"].ConnectionString;
             SqlConnection db = new SqlConnection(connString);
 
             try
@@ -51,6 +47,9 @@ namespace Tugagenda
                 {
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Adicionado com sucesso");
+                    this.Hide();
+                    Login login = new Login();
+                    login.Show();
                 }
             }
             catch (Exception ex)

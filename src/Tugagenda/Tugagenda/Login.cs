@@ -36,7 +36,7 @@ namespace Tugagenda
         {
             Close();
             
-            string connString = ConfigurationManager.ConnectionStrings["PSIM1619J_RonaldoRibalonga_2219137"].ConnectionString;
+            string connString = ConfigurationManager.ConnectionStrings["tugagenda"].ConnectionString;
             SqlConnection db = new SqlConnection(connString);
 
             try
