@@ -40,7 +40,7 @@ namespace Tugagenda
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = db;
 
-                cmd.CommandText = "insert into registo (Username, Password, Email) values (@Username, @Password, @Email)";
+                cmd.CommandText = "insert into Registo (Username, Password, Email) values (@Username, @Password, @Email)";
                 cmd.Parameters.AddWithValue("@Username", textBox1.Text);
                 cmd.Parameters.AddWithValue("@Password", textBox2.Text);
                 cmd.Parameters.AddWithValue("@Email", textBox3.Text);

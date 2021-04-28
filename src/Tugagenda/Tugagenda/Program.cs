@@ -20,7 +20,7 @@ namespace Tugagenda
             Application.Run(new comeco());        
             
         }
-            private static string _connectionString = @"Server=devlabpm.westeurope.cloudapp.azure.com;Database=PSIM1619J_RonaldoRibalonga_2219137;Uid=PSIM1619J_RonaldoRibalonga_2219137;Password=4bBC7C8A;";
+            private static string _connectionString = "Server=devlabpm.westeurope.cloudapp.azure.com;Database=PSIM1619J_RonaldoRibalonga_2219137;Uid=PSIM1619J_RonaldoRibalonga_2219137;Password=4bBC7C8A;";
             private static SqlConnection db = new SqlConnection (_connectionString);
            
        

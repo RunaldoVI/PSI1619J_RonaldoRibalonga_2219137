@@ -45,7 +45,7 @@ namespace Tugagenda
                 SqlCommand cmdUpdate = new SqlCommand();
                 cmdUpdate.Connection = db;
 
-                cmdUpdate.CommandText = "select * from registo where Username=@Username and Password=@Password ";
+                cmdUpdate.CommandText = "select * from Registo where Username=@Username and Password=@Password ";
                 cmdUpdate.Parameters.AddWithValue("@Username", textBox1.Text);
                 cmdUpdate.Parameters.AddWithValue("@Password", textBox2.Text);
                 //parametros
