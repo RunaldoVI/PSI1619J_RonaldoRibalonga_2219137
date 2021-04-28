@@ -26,7 +26,7 @@ namespace Tugagenda
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string connString = ConfigurationManager.ConnectionStrings["PSIM1619J_RonaldoRibalonga_2219137"].ConnectionString;
+            string connString = ConfigurationManager.ConnectionStrings["tugagenda"].ConnectionString;
             SqlConnection db = new SqlConnection(connString);
 
             try
@@ -39,15 +39,21 @@ namespace Tugagenda
                 cmdUpdate.Parameters.AddWithValue("@Username", textBox1.Text);
                 cmdUpdate.Parameters.AddWithValue("@Password", textBox2.Text);
 
-                
-                //parametros
-
-                DialogResult verificar = MessageBox.Show("Pretende editar?", "Editar?", MessageBoxButtons.OKCancel);
-
-                if (verificar == DialogResult.OK)
+    
+                if (textBox2.Text == textBox3.Text)
                 {
-                    cmdUpdate.ExecuteNonQuery();
-                    MessageBox.Show("editado com sucesso");
+                    DialogResult verificar = MessageBox.Show("Pretende editar a password?", "Editar?", MessageBoxButtons.OKCancel);
+
+                    if (verificar == DialogResult.OK)
+                    {
+                        cmdUpdate.ExecuteNonQuery();
+                        MessageBox.Show("editado com sucesso");
+                        Application.Restart();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Erro Password nao coincide");
                 }
             }
             catch (Exception ex)

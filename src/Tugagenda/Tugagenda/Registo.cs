@@ -12,9 +12,9 @@ using System.Data.SqlClient;
 
 namespace Tugagenda
 {
-    public partial class Registro : Form
+    public partial class Registo : Form
     {
-        public Registro()
+        public Registo()
         {
             InitializeComponent();
         }
@@ -41,20 +41,16 @@ namespace Tugagenda
                 cmd.Parameters.AddWithValue("@Password", textBox2.Text);
                 cmd.Parameters.AddWithValue("@Email", textBox3.Text);
 
-                DialogResult verificar = MessageBox.Show("Pretende se Registrar?", "Registrar?", MessageBoxButtons.OKCancel);
-
-                if (verificar == DialogResult.OK)
-                {
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Adicionado com sucesso");
+                    MessageBox.Show("Registado com sucesso");
                     this.Hide();
                     Login login = new Login();
                     login.Show();
-                }
+                
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro:" + ex.Message, "Não foi possível adicionar ");
+                MessageBox.Show("Erro:" + ex.Message, "Não foi possível registar ");
             }
             Close();
             
@@ -75,6 +71,11 @@ namespace Tugagenda
         private void Registro_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

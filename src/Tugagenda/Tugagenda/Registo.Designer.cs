@@ -1,7 +1,7 @@
 ﻿
 namespace Tugagenda
 {
-    partial class Registro
+    partial class Registo
     {
         /// <summary>
         /// Required designer variable.
@@ -42,6 +42,7 @@ namespace Tugagenda
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -91,7 +92,7 @@ namespace Tugagenda
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("MV Boli", 15.75F);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
-            this.button1.Location = new System.Drawing.Point(94, 376);
+            this.button1.Location = new System.Drawing.Point(96, 350);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(200, 39);
             this.button1.TabIndex = 7;
@@ -165,7 +166,7 @@ namespace Tugagenda
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("MV Boli", 15.75F);
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
-            this.button2.Location = new System.Drawing.Point(96, 448);
+            this.button2.Location = new System.Drawing.Point(96, 412);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(200, 39);
             this.button2.TabIndex = 15;
@@ -197,12 +198,27 @@ namespace Tugagenda
             this.flowLayoutPanel3.Size = new System.Drawing.Size(213, 1);
             this.flowLayoutPanel3.TabIndex = 18;
             // 
-            // Registro
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("MV Boli", 15.75F);
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.button3.Location = new System.Drawing.Point(133, 476);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(129, 39);
+            this.button3.TabIndex = 19;
+            this.button3.Text = "Sair";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // Registo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(429, 541);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -217,9 +233,9 @@ namespace Tugagenda
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Registro";
+            this.Name = "Registo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Registro";
+            this.Text = "Registo";
             this.Load += new System.EventHandler(this.Registro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -240,5 +256,6 @@ namespace Tugagenda
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.Button button3;
     }
 }

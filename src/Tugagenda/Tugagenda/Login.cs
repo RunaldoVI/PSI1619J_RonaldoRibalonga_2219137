@@ -34,31 +34,36 @@ namespace Tugagenda
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Close();
+            
             
             string connString = ConfigurationManager.ConnectionStrings["tugagenda"].ConnectionString;
             SqlConnection db = new SqlConnection(connString);
+            SqlDataReader reader;
 
             try
             {
                 db.Open();
-                SqlCommand cmdUpdate = new SqlCommand();
-                cmdUpdate.Connection = db;
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = db;
+               
 
-                cmdUpdate.CommandText = "select * from Registo where Username=@Username and Password=@Password ";
-                cmdUpdate.Parameters.AddWithValue("@Username", textBox1.Text);
-                cmdUpdate.Parameters.AddWithValue("@Password", textBox2.Text);
-                //parametros
+                cmd.CommandText = "select * from Registo where Username=@Username and Password=@Password ";
+                cmd.Parameters.AddWithValue("@Username", textBox1.Text);
+                cmd.Parameters.AddWithValue("@Password", textBox2.Text);
 
-                DialogResult verificar = MessageBox.Show("Pretende fazer o login?", "Login", MessageBoxButtons.OKCancel);
-
-                if (verificar == DialogResult.OK)
-                {
-                    cmdUpdate.ExecuteNonQuery();
-                    MessageBox.Show("Login Com Sucesso");
-                    Anime anime = new Anime();
-                    anime.Show();
-                }
+                    reader = cmd.ExecuteReader();
+                    if (reader.HasRows)
+                    {        
+                        MessageBox.Show("Login Com Sucesso");
+                        Close();
+                        Anime anime = new Anime();
+                        anime.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Erro: Não Foi encontrado Username Ou Password no login"); 
+                    }
+                
             }
             catch (Exception ex)
             {
@@ -74,6 +79,16 @@ namespace Tugagenda
         }
 
         private void Login_Load(object sender, EventArgs e)
+        {
+                      
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

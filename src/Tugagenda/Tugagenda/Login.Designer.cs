@@ -61,12 +61,12 @@ namespace Tugagenda
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox1.Location = new System.Drawing.Point(126, 251);
+            this.textBox1.Location = new System.Drawing.Point(126, 186);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
             this.textBox1.Size = new System.Drawing.Size(200, 24);
             this.textBox1.TabIndex = 3;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -74,11 +74,13 @@ namespace Tugagenda
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox2.Location = new System.Drawing.Point(126, 186);
+            this.textBox2.Location = new System.Drawing.Point(126, 252);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(202, 24);
             this.textBox2.TabIndex = 4;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // button1
             // 
@@ -106,7 +108,7 @@ namespace Tugagenda
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("MV Boli", 15.75F);
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
-            this.button2.Location = new System.Drawing.Point(92, 326);
+            this.button2.Location = new System.Drawing.Point(89, 322);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(216, 40);
@@ -137,7 +139,7 @@ namespace Tugagenda
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
-            this.button3.Location = new System.Drawing.Point(57, 463);
+            this.button3.Location = new System.Drawing.Point(64, 458);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(123, 47);
             this.button3.TabIndex = 8;
@@ -154,7 +156,7 @@ namespace Tugagenda
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("MV Boli", 15.75F);
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
-            this.button4.Location = new System.Drawing.Point(219, 463);
+            this.button4.Location = new System.Drawing.Point(209, 458);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(123, 47);
             this.button4.TabIndex = 9;

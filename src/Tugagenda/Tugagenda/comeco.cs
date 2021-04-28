@@ -20,7 +20,7 @@ namespace Tugagenda
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Registro registro = new Registro();
+            Registo registro = new Registo();
             registro.Show();
         }
 
