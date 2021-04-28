@@ -112,23 +112,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Anime.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Anime.Designer.cs">
-      <DependentUpon>Anime.cs</DependentUpon>
-    </Compile>
     <Compile Include="comeco.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="comeco.Designer.cs">
       <DependentUpon>comeco.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Fas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Fas.Designer.cs">
+      <DependentUpon>Fas.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -150,14 +144,17 @@
     <Compile Include="ResetarPass.Designer.cs">
       <DependentUpon>ResetarPass.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Anime.resx">
-      <DependentUpon>Anime.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series.Designer.cs">
+      <DependentUpon>Series.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="comeco.resx">
       <DependentUpon>comeco.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Fas.resx">
+      <DependentUpon>Fas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -177,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ResetarPass.resx">
       <DependentUpon>ResetarPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series.resx">
+      <DependentUpon>Series.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />

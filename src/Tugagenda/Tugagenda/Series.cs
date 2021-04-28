@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Tugagenda
 {
-    public partial class Anime : Form
+    public partial class Series : Form
     {
-        public Anime()
+        public Series()
         {
             InitializeComponent();
         }

@@ -1,7 +1,7 @@
 ﻿
 namespace Tugagenda
 {
-    partial class Anime
+    partial class Series
     {
         /// <summary>
         /// Required designer variable.
@@ -31,13 +31,13 @@ namespace Tugagenda
         {
             this.SuspendLayout();
             // 
-            // Anime
+            // Series
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(866, 450);
-            this.Name = "Anime";
-            this.Text = "Anime";
+            this.ClientSize = new System.Drawing.Size(817, 451);
+            this.Name = "Series";
+            this.Text = "Series";
             this.ResumeLayout(false);
 
         }

@@ -35,24 +35,30 @@ namespace Tugagenda
                 db.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = db;
-
-                cmd.CommandText = "insert into Registo (Username, Password, Email) values (@Username, @Password, @Email)";
-                cmd.Parameters.AddWithValue("@Username", textBox1.Text);
-                cmd.Parameters.AddWithValue("@Password", textBox2.Text);
-                cmd.Parameters.AddWithValue("@Email", textBox3.Text);
+                if (textBox2.Text == textBox4.Text)
+                {
+                    cmd.CommandText = "insert into Registo (Username, Password, Email) values (@Username, @Password, @Email)";
+                    cmd.Parameters.AddWithValue("@Username", textBox1.Text);
+                    cmd.Parameters.AddWithValue("@Password", textBox2.Text);
+                    cmd.Parameters.AddWithValue("@Email", textBox3.Text);
 
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Registado com sucesso");
-                    this.Hide();
+                    Close();
                     Login login = new Login();
                     login.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Erro Password não coincide!");
+                }
                 
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro:" + ex.Message, "Não foi possível registar ");
             }
-            Close();
+            
             
         }
 

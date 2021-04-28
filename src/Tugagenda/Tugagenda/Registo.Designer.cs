@@ -43,6 +43,9 @@ namespace Tugagenda
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.button3 = new System.Windows.Forms.Button();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -65,11 +68,11 @@ namespace Tugagenda
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox2.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.textBox2.Location = new System.Drawing.Point(114, 221);
+            this.textBox2.Location = new System.Drawing.Point(114, 222);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(206, 24);
+            this.textBox2.Size = new System.Drawing.Size(313, 24);
             this.textBox2.TabIndex = 2;
             // 
             // textBox3
@@ -79,7 +82,7 @@ namespace Tugagenda
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox3.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.textBox3.Location = new System.Drawing.Point(77, 287);
+            this.textBox3.Location = new System.Drawing.Point(77, 336);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(243, 24);
@@ -92,7 +95,7 @@ namespace Tugagenda
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("MV Boli", 15.75F);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
-            this.button1.Location = new System.Drawing.Point(96, 350);
+            this.button1.Location = new System.Drawing.Point(70, 427);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(200, 39);
             this.button1.TabIndex = 7;
@@ -154,7 +157,7 @@ namespace Tugagenda
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
-            this.label4.Location = new System.Drawing.Point(12, 287);
+            this.label4.Location = new System.Drawing.Point(12, 336);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 25);
             this.label4.TabIndex = 14;
@@ -166,7 +169,7 @@ namespace Tugagenda
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("MV Boli", 15.75F);
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
-            this.button2.Location = new System.Drawing.Point(96, 412);
+            this.button2.Location = new System.Drawing.Point(70, 489);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(200, 39);
             this.button2.TabIndex = 15;
@@ -177,7 +180,7 @@ namespace Tugagenda
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(70, 310);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(70, 359);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(250, 1);
             this.flowLayoutPanel1.TabIndex = 16;
@@ -204,7 +207,7 @@ namespace Tugagenda
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("MV Boli", 15.75F);
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
-            this.button3.Location = new System.Drawing.Point(133, 476);
+            this.button3.Location = new System.Drawing.Point(107, 553);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(129, 39);
             this.button3.TabIndex = 19;
@@ -212,12 +215,49 @@ namespace Tugagenda
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(107, 304);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(216, 1);
+            this.flowLayoutPanel4.TabIndex = 22;
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.textBox4.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.textBox4.Location = new System.Drawing.Point(183, 282);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.PasswordChar = '*';
+            this.textBox4.Size = new System.Drawing.Size(140, 24);
+            this.textBox4.TabIndex = 20;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("MV Boli", 11.25F, System.Drawing.FontStyle.Underline);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.label6.Location = new System.Drawing.Point(12, 286);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(165, 20);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Confirmação Password:";
+            // 
             // Registo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.ClientSize = new System.Drawing.Size(429, 541);
+            this.ClientSize = new System.Drawing.Size(381, 629);
+            this.Controls.Add(this.flowLayoutPanel4);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.flowLayoutPanel2);
@@ -257,5 +297,8 @@ namespace Tugagenda
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label6;
     }
 }

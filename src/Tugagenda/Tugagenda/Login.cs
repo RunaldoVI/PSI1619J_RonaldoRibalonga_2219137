@@ -56,8 +56,8 @@ namespace Tugagenda
                     {        
                         MessageBox.Show("Login Com Sucesso");
                         Close();
-                        Anime anime = new Anime();
-                        anime.Show();
+                        Fas fas = new Fas();
+                        fas.Show();
                     }
                     else
                     {
