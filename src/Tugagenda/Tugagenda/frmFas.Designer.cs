@@ -29,18 +29,7 @@ namespace Tugagenda
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(315, 71);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // frmFas
             // 
@@ -48,8 +37,7 @@ namespace Tugagenda
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(1260, 640);
-            this.Controls.Add(this.button1);
-            this.ForeColor = System.Drawing.Color.Transparent;
+            this.ForeColor = System.Drawing.Color.Bisque;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IsMdiContainer = true;
             this.Name = "frmFas";
@@ -62,7 +50,6 @@ namespace Tugagenda
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
     }
 }
 
