@@ -11,35 +11,29 @@ using System.Data.SqlClient;
 
 namespace Tugagenda
 {
-    public partial class Fas : Form
+    public partial class frmFas : Form
     {
-        public Fas()
+        public frmFas()
         {
             InitializeComponent();     
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            Application.Exit();
+            frmSeries series = new frmSeries();
+            series.MdiParent = this;
+            series.Show();
         }
-
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Series serie = new Series();
-            serie.MdiParent = this;
-            serie.Show();
-
-        }
- 
     }
 }

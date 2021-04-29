@@ -12,27 +12,27 @@ using System.Data.SqlClient;
 
 namespace Tugagenda
 {
-    public partial class Login : Form
+    public partial class frmLogin : Form
     {
-        public Login()
+        public frmLogin()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnReset_Click(object sender, EventArgs e)
         {
-            ResetarPass reset = new ResetarPass();
+            frmResetarPass reset = new frmResetarPass();
             reset.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnVoltar_Click(object sender, EventArgs e)
         {
             Close();
-            comeco bemvindo = new comeco();
+            frmcomeco bemvindo = new frmcomeco();
             bemvindo.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
             
             
@@ -48,15 +48,15 @@ namespace Tugagenda
                
 
                 cmd.CommandText = "select * from Registo where Username=@Username and Password=@Password ";
-                cmd.Parameters.AddWithValue("@Username", textBox1.Text);
-                cmd.Parameters.AddWithValue("@Password", textBox2.Text);
+                cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
+                cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
 
                     reader = cmd.ExecuteReader();
                     if (reader.HasRows)
                     {        
                         MessageBox.Show("Login Com Sucesso");
                         Close();
-                        Fas fas = new Fas();
+                        frmFas fas = new frmFas();
                         fas.Show();
                     }
                     else
@@ -73,7 +73,7 @@ namespace Tugagenda
             
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnSair_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

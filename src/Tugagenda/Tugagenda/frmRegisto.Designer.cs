@@ -1,0 +1,305 @@
+﻿
+namespace Tugagenda
+{
+    partial class frmRegisto
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.btnRegistar = new System.Windows.Forms.Button();
+            this.lblRegisto = new System.Windows.Forms.Label();
+            this.lblTugagenda = new System.Windows.Forms.Label();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.btnVoltar = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnSair = new System.Windows.Forms.Button();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.txtCPassword = new System.Windows.Forms.TextBox();
+            this.lblCPassword = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.txtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtUsername.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.txtUsername.Location = new System.Drawing.Point(114, 159);
+            this.txtUsername.Multiline = true;
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(206, 24);
+            this.txtUsername.TabIndex = 1;
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtPassword.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.txtPassword.Location = new System.Drawing.Point(114, 222);
+            this.txtPassword.Multiline = true;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(209, 24);
+            this.txtPassword.TabIndex = 2;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtEmail.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.txtEmail.Location = new System.Drawing.Point(77, 336);
+            this.txtEmail.Multiline = true;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(243, 24);
+            this.txtEmail.TabIndex = 3;
+            this.txtEmail.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // btnRegistar
+            // 
+            this.btnRegistar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.btnRegistar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistar.Font = new System.Drawing.Font("MV Boli", 15.75F);
+            this.btnRegistar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.btnRegistar.Location = new System.Drawing.Point(70, 427);
+            this.btnRegistar.Name = "btnRegistar";
+            this.btnRegistar.Size = new System.Drawing.Size(200, 39);
+            this.btnRegistar.TabIndex = 7;
+            this.btnRegistar.Text = "Registar";
+            this.btnRegistar.UseVisualStyleBackColor = true;
+            this.btnRegistar.Click += new System.EventHandler(this.btnRegistar_Click);
+            // 
+            // lblRegisto
+            // 
+            this.lblRegisto.AutoSize = true;
+            this.lblRegisto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.lblRegisto.Font = new System.Drawing.Font("MV Boli", 45F);
+            this.lblRegisto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.lblRegisto.Location = new System.Drawing.Point(80, 9);
+            this.lblRegisto.Name = "lblRegisto";
+            this.lblRegisto.Size = new System.Drawing.Size(238, 79);
+            this.lblRegisto.TabIndex = 9;
+            this.lblRegisto.Text = "Registo";
+            // 
+            // lblTugagenda
+            // 
+            this.lblTugagenda.AutoSize = true;
+            this.lblTugagenda.BackColor = System.Drawing.Color.Transparent;
+            this.lblTugagenda.Font = new System.Drawing.Font("MV Boli", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTugagenda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.lblTugagenda.Location = new System.Drawing.Point(107, 82);
+            this.lblTugagenda.Name = "lblTugagenda";
+            this.lblTugagenda.Size = new System.Drawing.Size(170, 41);
+            this.lblTugagenda.TabIndex = 10;
+            this.lblTugagenda.Text = "Tugagenda";
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsername.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.lblUsername.Location = new System.Drawing.Point(12, 159);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(102, 25);
+            this.lblUsername.TabIndex = 12;
+            this.lblUsername.Text = "Username:";
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lblPassword.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.lblPassword.Location = new System.Drawing.Point(12, 221);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(99, 25);
+            this.lblPassword.TabIndex = 13;
+            this.lblPassword.Text = "Password:";
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmail.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.lblEmail.Location = new System.Drawing.Point(12, 336);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(65, 25);
+            this.lblEmail.TabIndex = 14;
+            this.lblEmail.Text = "Email:";
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVoltar.Font = new System.Drawing.Font("MV Boli", 15.75F);
+            this.btnVoltar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.btnVoltar.Location = new System.Drawing.Point(70, 489);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(200, 39);
+            this.btnVoltar.TabIndex = 15;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click_1);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(70, 359);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(250, 1);
+            this.flowLayoutPanel1.TabIndex = 16;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(104, 244);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(216, 1);
+            this.flowLayoutPanel2.TabIndex = 17;
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(107, 182);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(213, 1);
+            this.flowLayoutPanel3.TabIndex = 18;
+            // 
+            // btnSair
+            // 
+            this.btnSair.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSair.Font = new System.Drawing.Font("MV Boli", 15.75F);
+            this.btnSair.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.btnSair.Location = new System.Drawing.Point(107, 553);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(129, 39);
+            this.btnSair.TabIndex = 19;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(107, 304);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(216, 1);
+            this.flowLayoutPanel4.TabIndex = 22;
+            // 
+            // txtCPassword
+            // 
+            this.txtCPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.txtCPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.txtCPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtCPassword.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.txtCPassword.Location = new System.Drawing.Point(183, 282);
+            this.txtCPassword.Multiline = true;
+            this.txtCPassword.Name = "txtCPassword";
+            this.txtCPassword.PasswordChar = '*';
+            this.txtCPassword.Size = new System.Drawing.Size(140, 24);
+            this.txtCPassword.TabIndex = 20;
+            // 
+            // lblCPassword
+            // 
+            this.lblCPassword.AutoSize = true;
+            this.lblCPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lblCPassword.Font = new System.Drawing.Font("MV Boli", 11.25F, System.Drawing.FontStyle.Underline);
+            this.lblCPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.lblCPassword.Location = new System.Drawing.Point(12, 286);
+            this.lblCPassword.Name = "lblCPassword";
+            this.lblCPassword.Size = new System.Drawing.Size(165, 20);
+            this.lblCPassword.TabIndex = 21;
+            this.lblCPassword.Text = "Confirmação Password:";
+            // 
+            // frmRegisto
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.ClientSize = new System.Drawing.Size(381, 629);
+            this.Controls.Add(this.flowLayoutPanel4);
+            this.Controls.Add(this.txtCPassword);
+            this.Controls.Add(this.lblCPassword);
+            this.Controls.Add(this.btnSair);
+            this.Controls.Add(this.flowLayoutPanel3);
+            this.Controls.Add(this.flowLayoutPanel2);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.btnVoltar);
+            this.Controls.Add(this.lblRegisto);
+            this.Controls.Add(this.btnRegistar);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.lblEmail);
+            this.Controls.Add(this.lblUsername);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.lblTugagenda);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Name = "frmRegisto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Registo";
+            this.Load += new System.EventHandler(this.Registro_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Button btnRegistar;
+        private System.Windows.Forms.Label lblRegisto;
+        private System.Windows.Forms.Label lblTugagenda;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
+        private System.Windows.Forms.TextBox txtCPassword;
+        private System.Windows.Forms.Label lblCPassword;
+    }
+}

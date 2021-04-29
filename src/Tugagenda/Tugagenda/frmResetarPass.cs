@@ -12,9 +12,9 @@ using System.Data.SqlClient;
 
 namespace Tugagenda
 {
-    public partial class ResetarPass : Form
+    public partial class frmResetarPass : Form
     {
-        public ResetarPass()
+        public frmResetarPass()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace Tugagenda
             Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnReset_Click(object sender, EventArgs e)
         {
             string connString = ConfigurationManager.ConnectionStrings["tugagenda"].ConnectionString;
             SqlConnection db = new SqlConnection(connString);
@@ -36,11 +36,11 @@ namespace Tugagenda
                 cmdUpdate.Connection = db;
 
                 cmdUpdate.CommandText = "update Registo set Password = @Password where Username = @Username";
-                cmdUpdate.Parameters.AddWithValue("@Username", textBox1.Text);
-                cmdUpdate.Parameters.AddWithValue("@Password", textBox2.Text);
+                cmdUpdate.Parameters.AddWithValue("@Username", txtUsername.Text);
+                cmdUpdate.Parameters.AddWithValue("@Password", txtPassword.Text);
 
     
-                if (textBox2.Text == textBox3.Text)
+                if (txtPassword.Text == txtCPassword.Text)
                 {
                     DialogResult verificar = MessageBox.Show("Pretende editar a password?", "Editar?", MessageBoxButtons.OKCancel);
 

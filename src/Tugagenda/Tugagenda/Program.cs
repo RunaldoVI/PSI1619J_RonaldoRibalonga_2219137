@@ -17,7 +17,7 @@ namespace Tugagenda
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new comeco());        
+            Application.Run(new frmcomeco());        
             
         }
             private static string _connectionString = "Server=devlabpm.westeurope.cloudapp.azure.com;Database=PSIM1619J_RonaldoRibalonga_2219137;Uid=PSIM1619J_RonaldoRibalonga_2219137;Password=4bBC7C8A;";

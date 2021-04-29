@@ -112,52 +112,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="comeco.cs">
+    <Compile Include="frmcomeco.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="comeco.Designer.cs">
-      <DependentUpon>comeco.cs</DependentUpon>
+    <Compile Include="frmcomeco.Designer.cs">
+      <DependentUpon>frmcomeco.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fas.cs">
+    <Compile Include="frmFas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fas.Designer.cs">
-      <DependentUpon>Fas.cs</DependentUpon>
+    <Compile Include="frmFas.Designer.cs">
+      <DependentUpon>frmFas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Registo.cs">
+    <Compile Include="frmRegisto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registo.Designer.cs">
-      <DependentUpon>Registo.cs</DependentUpon>
+    <Compile Include="frmRegisto.Designer.cs">
+      <DependentUpon>frmRegisto.cs</DependentUpon>
     </Compile>
-    <Compile Include="ResetarPass.cs">
+    <Compile Include="frmResetarPass.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ResetarPass.Designer.cs">
-      <DependentUpon>ResetarPass.cs</DependentUpon>
+    <Compile Include="frmResetarPass.Designer.cs">
+      <DependentUpon>frmResetarPass.cs</DependentUpon>
     </Compile>
-    <Compile Include="Series.cs">
+    <Compile Include="frmSeries.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Series.Designer.cs">
-      <DependentUpon>Series.cs</DependentUpon>
+    <Compile Include="frmSeries.Designer.cs">
+      <DependentUpon>frmSeries.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="comeco.resx">
-      <DependentUpon>comeco.cs</DependentUpon>
+    <EmbeddedResource Include="frmcomeco.resx">
+      <DependentUpon>frmcomeco.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fas.resx">
-      <DependentUpon>Fas.cs</DependentUpon>
+    <EmbeddedResource Include="frmFas.resx">
+      <DependentUpon>frmFas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -169,14 +169,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Registo.resx">
-      <DependentUpon>Registo.cs</DependentUpon>
+    <EmbeddedResource Include="frmRegisto.resx">
+      <DependentUpon>frmRegisto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ResetarPass.resx">
-      <DependentUpon>ResetarPass.cs</DependentUpon>
+    <EmbeddedResource Include="frmResetarPass.resx">
+      <DependentUpon>frmResetarPass.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Series.resx">
-      <DependentUpon>Series.cs</DependentUpon>
+    <EmbeddedResource Include="frmSeries.resx">
+      <DependentUpon>frmSeries.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />

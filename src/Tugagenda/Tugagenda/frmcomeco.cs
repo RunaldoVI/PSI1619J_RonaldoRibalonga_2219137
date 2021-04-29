@@ -10,24 +10,24 @@ using System.Windows.Forms;
 
 namespace Tugagenda
 {
-    public partial class comeco : Form
+    public partial class frmcomeco : Form
     {
-        public comeco()
+        public frmcomeco()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnRegisto_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Registo registro = new Registo();
+            frmRegisto registro = new frmRegisto();
             registro.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Login login = new Login();
+            frmLogin login = new frmLogin();
             login.Show();
         }
 
