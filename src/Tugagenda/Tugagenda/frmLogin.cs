@@ -113,7 +113,7 @@ namespace Tugagenda
 
         private void frmLogin_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+           
         }
     }
 }

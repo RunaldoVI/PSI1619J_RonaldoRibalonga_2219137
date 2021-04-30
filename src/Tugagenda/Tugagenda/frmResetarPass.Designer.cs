@@ -161,6 +161,7 @@ namespace Tugagenda
             this.lblReset.Size = new System.Drawing.Size(475, 79);
             this.lblReset.TabIndex = 15;
             this.lblReset.Text = "Reset Password";
+            this.lblReset.Click += new System.EventHandler(this.lblReset_Click);
             // 
             // flowLayoutPanel2
             // 

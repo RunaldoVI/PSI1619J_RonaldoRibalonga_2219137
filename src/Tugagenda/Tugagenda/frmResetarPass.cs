@@ -102,5 +102,10 @@ namespace Tugagenda
                 txtCPassword.PasswordChar = '\0';
             }
         }
+
+        private void lblReset_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
