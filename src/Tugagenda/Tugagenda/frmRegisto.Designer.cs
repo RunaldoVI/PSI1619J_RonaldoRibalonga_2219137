@@ -29,6 +29,7 @@ namespace Tugagenda
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegisto));
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -46,6 +47,10 @@ namespace Tugagenda
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.txtCPassword = new System.Windows.Forms.TextBox();
             this.lblCPassword = new System.Windows.Forms.Label();
+            this.btnPassword = new System.Windows.Forms.Button();
+            this.btnHidePassword = new System.Windows.Forms.Button();
+            this.btn1Password = new System.Windows.Forms.Button();
+            this.btn1HidePassword = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtUsername
@@ -58,7 +63,7 @@ namespace Tugagenda
             this.txtUsername.Location = new System.Drawing.Point(114, 159);
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(206, 24);
+            this.txtUsername.Size = new System.Drawing.Size(206, 20);
             this.txtUsername.TabIndex = 1;
             this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
@@ -66,14 +71,14 @@ namespace Tugagenda
             // 
             this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
             this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtPassword.ImeMode = System.Windows.Forms.ImeMode.On;
             this.txtPassword.Location = new System.Drawing.Point(114, 222);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(209, 24);
+            this.txtPassword.Size = new System.Drawing.Size(209, 20);
             this.txtPassword.TabIndex = 2;
             // 
             // txtEmail
@@ -86,7 +91,7 @@ namespace Tugagenda
             this.txtEmail.Location = new System.Drawing.Point(77, 336);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(243, 24);
+            this.txtEmail.Size = new System.Drawing.Size(243, 25);
             this.txtEmail.TabIndex = 3;
             this.txtEmail.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
@@ -228,14 +233,14 @@ namespace Tugagenda
             // 
             this.txtCPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.txtCPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.txtCPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
             this.txtCPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtCPassword.ImeMode = System.Windows.Forms.ImeMode.On;
             this.txtCPassword.Location = new System.Drawing.Point(183, 282);
             this.txtCPassword.Multiline = true;
             this.txtCPassword.Name = "txtCPassword";
             this.txtCPassword.PasswordChar = '*';
-            this.txtCPassword.Size = new System.Drawing.Size(140, 24);
+            this.txtCPassword.Size = new System.Drawing.Size(140, 23);
             this.txtCPassword.TabIndex = 20;
             // 
             // lblCPassword
@@ -249,6 +254,60 @@ namespace Tugagenda
             this.lblCPassword.Size = new System.Drawing.Size(165, 20);
             this.lblCPassword.TabIndex = 21;
             this.lblCPassword.Text = "Confirmação Password:";
+            // 
+            // btnPassword
+            // 
+            this.btnPassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPassword.BackgroundImage")));
+            this.btnPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPassword.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.btnPassword.FlatAppearance.BorderSize = 0;
+            this.btnPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPassword.Location = new System.Drawing.Point(323, 205);
+            this.btnPassword.Name = "btnPassword";
+            this.btnPassword.Size = new System.Drawing.Size(47, 42);
+            this.btnPassword.TabIndex = 23;
+            this.btnPassword.UseVisualStyleBackColor = true;
+            this.btnPassword.Click += new System.EventHandler(this.btnPassword_Click);
+            // 
+            // btnHidePassword
+            // 
+            this.btnHidePassword.BackgroundImage = global::Tugagenda.Properties.Resources.Rafb709f2b3b9140f3f8f33054b90c9a4__1_;
+            this.btnHidePassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnHidePassword.FlatAppearance.BorderSize = 0;
+            this.btnHidePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHidePassword.Location = new System.Drawing.Point(323, 205);
+            this.btnHidePassword.Name = "btnHidePassword";
+            this.btnHidePassword.Size = new System.Drawing.Size(47, 42);
+            this.btnHidePassword.TabIndex = 24;
+            this.btnHidePassword.UseVisualStyleBackColor = true;
+            this.btnHidePassword.Click += new System.EventHandler(this.btnHidePassword_Click);
+            // 
+            // btn1Password
+            // 
+            this.btn1Password.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn1Password.BackgroundImage")));
+            this.btn1Password.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn1Password.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.btn1Password.FlatAppearance.BorderSize = 0;
+            this.btn1Password.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn1Password.Location = new System.Drawing.Point(323, 264);
+            this.btn1Password.Name = "btn1Password";
+            this.btn1Password.Size = new System.Drawing.Size(47, 42);
+            this.btn1Password.TabIndex = 25;
+            this.btn1Password.UseVisualStyleBackColor = true;
+            this.btn1Password.Click += new System.EventHandler(this.btn1Password_Click);
+            // 
+            // btn1HidePassword
+            // 
+            this.btn1HidePassword.BackgroundImage = global::Tugagenda.Properties.Resources.Rafb709f2b3b9140f3f8f33054b90c9a4__1_;
+            this.btn1HidePassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn1HidePassword.FlatAppearance.BorderSize = 0;
+            this.btn1HidePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn1HidePassword.Location = new System.Drawing.Point(323, 264);
+            this.btn1HidePassword.Name = "btn1HidePassword";
+            this.btn1HidePassword.Size = new System.Drawing.Size(47, 42);
+            this.btn1HidePassword.TabIndex = 26;
+            this.btn1HidePassword.UseVisualStyleBackColor = true;
+            this.btn1HidePassword.Click += new System.EventHandler(this.btn1HidePassword_Click);
             // 
             // frmRegisto
             // 
@@ -273,10 +332,15 @@ namespace Tugagenda
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblTugagenda);
+            this.Controls.Add(this.btnPassword);
+            this.Controls.Add(this.btnHidePassword);
+            this.Controls.Add(this.btn1Password);
+            this.Controls.Add(this.btn1HidePassword);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "frmRegisto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registo";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmRegisto_FormClosed);
             this.Load += new System.EventHandler(this.Registro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -301,5 +365,9 @@ namespace Tugagenda
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private System.Windows.Forms.TextBox txtCPassword;
         private System.Windows.Forms.Label lblCPassword;
+        private System.Windows.Forms.Button btnPassword;
+        private System.Windows.Forms.Button btnHidePassword;
+        private System.Windows.Forms.Button btn1Password;
+        private System.Windows.Forms.Button btn1HidePassword;
     }
 }

@@ -35,5 +35,10 @@ namespace Tugagenda
             series.MdiParent = this;
             series.Show();
         }
+
+        private void frmFas_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

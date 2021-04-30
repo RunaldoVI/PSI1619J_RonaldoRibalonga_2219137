@@ -32,10 +32,10 @@ namespace Tugagenda
             this.btnRegisto = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblDescricao = new System.Windows.Forms.Label();
-            this.lblBemVindo = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblBemVindo = new System.Windows.Forms.Label();
+            this.lblDescricao = new System.Windows.Forms.Label();
             this.btnContorno = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -88,28 +88,14 @@ namespace Tugagenda
             this.panel1.Size = new System.Drawing.Size(673, 561);
             this.panel1.TabIndex = 11;
             // 
-            // lblDescricao
+            // button1
             // 
-            this.lblDescricao.AutoSize = true;
-            this.lblDescricao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblDescricao.Font = new System.Drawing.Font("Sitka Text", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescricao.Location = new System.Drawing.Point(3, 286);
-            this.lblDescricao.Name = "lblDescricao";
-            this.lblDescricao.Size = new System.Drawing.Size(690, 117);
-            this.lblDescricao.TabIndex = 12;
-            this.lblDescricao.Text = "O Tugagenda é uma agenda onde pode listar os          \r\nanimes series e filmes qu" +
-    "e ja viu , que esta a       \r\nver e que quer ver\r\n";
-            this.lblDescricao.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // lblBemVindo
-            // 
-            this.lblBemVindo.AutoSize = true;
-            this.lblBemVindo.Font = new System.Drawing.Font("MV Boli", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBemVindo.Location = new System.Drawing.Point(156, 36);
-            this.lblBemVindo.Name = "lblBemVindo";
-            this.lblBemVindo.Size = new System.Drawing.Size(264, 63);
-            this.lblBemVindo.TabIndex = 13;
-            this.lblBemVindo.Text = "Bem-Vindo";
+            this.button1.Location = new System.Drawing.Point(671, 205);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -121,14 +107,28 @@ namespace Tugagenda
             this.label1.TabIndex = 14;
             this.label1.Text = "Tugagenda";
             // 
-            // button1
+            // lblBemVindo
             // 
-            this.button1.Location = new System.Drawing.Point(671, 205);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.lblBemVindo.AutoSize = true;
+            this.lblBemVindo.Font = new System.Drawing.Font("MV Boli", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBemVindo.Location = new System.Drawing.Point(156, 36);
+            this.lblBemVindo.Name = "lblBemVindo";
+            this.lblBemVindo.Size = new System.Drawing.Size(264, 63);
+            this.lblBemVindo.TabIndex = 13;
+            this.lblBemVindo.Text = "Bem-Vindo";
+            // 
+            // lblDescricao
+            // 
+            this.lblDescricao.AutoSize = true;
+            this.lblDescricao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblDescricao.Font = new System.Drawing.Font("Sitka Text", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescricao.Location = new System.Drawing.Point(12, 301);
+            this.lblDescricao.Name = "lblDescricao";
+            this.lblDescricao.Size = new System.Drawing.Size(690, 117);
+            this.lblDescricao.TabIndex = 12;
+            this.lblDescricao.Text = "O Tugagenda é uma agenda onde pode listar os          \r\nanimes series e filmes qu" +
+    "e ja viu , que esta a       \r\nver e que quer ver\r\n";
+            this.lblDescricao.Click += new System.EventHandler(this.label4_Click);
             // 
             // btnContorno
             // 

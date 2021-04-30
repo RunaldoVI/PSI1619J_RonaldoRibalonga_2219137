@@ -92,5 +92,28 @@ namespace Tugagenda
         {
 
         }
+
+        private void btnPassword_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '*')
+            {
+                btnHidePassword.BringToFront();
+                txtPassword.PasswordChar = '\0';
+            }
+        }
+
+        private void btnHidePassword_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '\0')
+            {
+                btnPassword.BringToFront();
+                txtPassword.PasswordChar = '*';
+            }
+        }
+
+        private void frmLogin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

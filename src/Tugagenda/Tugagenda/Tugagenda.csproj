@@ -194,10 +194,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Tugagenda1.png" />
+    <None Include="Resources\show-hide-icon-png-7.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Tugagenda.png" />
+    <None Include="Resources\Rafb709f2b3b9140f3f8f33054b90c9a4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rafb709f2b3b9140f3f8f33054b90c9a4 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rafb709f2b3b9140f3f8f33054b90c9a42.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.2.1.1\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.2.1.1\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />

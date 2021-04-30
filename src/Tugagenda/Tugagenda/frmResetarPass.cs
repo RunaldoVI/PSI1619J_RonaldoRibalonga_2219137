@@ -66,5 +66,41 @@ namespace Tugagenda
         {
 
         }
+
+        private void btnHideNovaPassword_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '\0')
+            {
+                btnNovaPassword.BringToFront();
+                txtPassword.PasswordChar = '*';
+            }
+        }
+
+        private void btnNovaPassword_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '*')
+            {
+                btnHideNovaPassword.BringToFront();
+                txtPassword.PasswordChar = '\0';
+            }
+        }
+
+        private void btnNCHidePassword_Click(object sender, EventArgs e)
+        {
+            if (txtCPassword.PasswordChar == '\0')
+            {
+                btnNCPassword.BringToFront();
+                txtCPassword.PasswordChar = '*';
+            }
+        }
+
+        private void btnNCPassword_Click(object sender, EventArgs e)
+        {
+            if (txtCPassword.PasswordChar == '*')
+            {
+                btnNCHidePassword.BringToFront();
+                txtCPassword.PasswordChar = '\0';
+            }
+        }
     }
 }
