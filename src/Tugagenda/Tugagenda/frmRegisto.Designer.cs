@@ -30,7 +30,6 @@ namespace Tugagenda
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegisto));
-            this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.btnRegistar = new System.Windows.Forms.Button();
@@ -51,21 +50,8 @@ namespace Tugagenda
             this.btnHidePassword = new System.Windows.Forms.Button();
             this.btn1Password = new System.Windows.Forms.Button();
             this.btn1HidePassword = new System.Windows.Forms.Button();
+            this.txtUsername = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.txtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtUsername.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.txtUsername.Location = new System.Drawing.Point(114, 159);
-            this.txtUsername.Multiline = true;
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(206, 20);
-            this.txtUsername.TabIndex = 1;
-            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
             // txtPassword
             // 
@@ -92,7 +78,7 @@ namespace Tugagenda
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(243, 25);
-            this.txtEmail.TabIndex = 3;
+            this.txtEmail.TabIndex = 4;
             this.txtEmail.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // btnRegistar
@@ -104,7 +90,7 @@ namespace Tugagenda
             this.btnRegistar.Location = new System.Drawing.Point(70, 427);
             this.btnRegistar.Name = "btnRegistar";
             this.btnRegistar.Size = new System.Drawing.Size(200, 39);
-            this.btnRegistar.TabIndex = 7;
+            this.btnRegistar.TabIndex = 5;
             this.btnRegistar.Text = "Registar";
             this.btnRegistar.UseVisualStyleBackColor = true;
             this.btnRegistar.Click += new System.EventHandler(this.btnRegistar_Click);
@@ -178,7 +164,7 @@ namespace Tugagenda
             this.btnVoltar.Location = new System.Drawing.Point(70, 489);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(200, 39);
-            this.btnVoltar.TabIndex = 15;
+            this.btnVoltar.TabIndex = 6;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click_1);
@@ -216,7 +202,7 @@ namespace Tugagenda
             this.btnSair.Location = new System.Drawing.Point(107, 553);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(129, 39);
-            this.btnSair.TabIndex = 19;
+            this.btnSair.TabIndex = 7;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
@@ -241,7 +227,7 @@ namespace Tugagenda
             this.txtCPassword.Name = "txtCPassword";
             this.txtCPassword.PasswordChar = '*';
             this.txtCPassword.Size = new System.Drawing.Size(140, 23);
-            this.txtCPassword.TabIndex = 20;
+            this.txtCPassword.TabIndex = 3;
             // 
             // lblCPassword
             // 
@@ -309,6 +295,19 @@ namespace Tugagenda
             this.btn1HidePassword.UseVisualStyleBackColor = true;
             this.btn1HidePassword.Click += new System.EventHandler(this.btn1HidePassword_Click);
             // 
+            // txtUsername
+            // 
+            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.txtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtUsername.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.txtUsername.Location = new System.Drawing.Point(114, 163);
+            this.txtUsername.Multiline = true;
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(209, 20);
+            this.txtUsername.TabIndex = 1;
+            // 
             // frmRegisto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -326,7 +325,6 @@ namespace Tugagenda
             this.Controls.Add(this.lblRegisto);
             this.Controls.Add(this.btnRegistar);
             this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.lblPassword);
@@ -336,6 +334,7 @@ namespace Tugagenda
             this.Controls.Add(this.btnHidePassword);
             this.Controls.Add(this.btn1Password);
             this.Controls.Add(this.btn1HidePassword);
+            this.Controls.Add(this.txtUsername);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "frmRegisto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -348,7 +347,6 @@ namespace Tugagenda
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Button btnRegistar;
@@ -369,5 +367,6 @@ namespace Tugagenda
         private System.Windows.Forms.Button btnHidePassword;
         private System.Windows.Forms.Button btn1Password;
         private System.Windows.Forms.Button btn1HidePassword;
+        private System.Windows.Forms.TextBox txtUsername;
     }
 }

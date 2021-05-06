@@ -34,10 +34,9 @@ namespace Tugagenda
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            
-            
-            string connString = ConfigurationManager.ConnectionStrings["tugagenda"].ConnectionString;
-            SqlConnection db = new SqlConnection(connString);
+
+
+            SqlConnection db = new SqlConnection(Program.MyConnectionString);
             SqlDataReader reader;
 
             try
@@ -45,23 +44,25 @@ namespace Tugagenda
                 db.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = db;
-               
 
                 cmd.CommandText = "select * from Registo where Username=@Username and Password=@Password ";
                 cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
                 cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
 
                     reader = cmd.ExecuteReader();
-                    if (reader.HasRows)
-                    {        
-                        MessageBox.Show("Login Com Sucesso");
+                    if (reader.HasRows) 
+                    {
+                    reader.Read();
+                        MessageBox.Show($"Login Com Sucesso\nBem Vindo de Volta {reader["Username"].ToString()}");
+                        
                         Close();
                         frmFas fas = new frmFas();
                         fas.Show();
                     }
                     else
                     {
-                        MessageBox.Show("Erro: Não Foi encontrado Username Ou Password no login"); 
+                        MessageBox.Show("Não Foi encontrado Username Ou Password no login", "Error", MessageBoxButtons.OK ,MessageBoxIcon.Warning);
+                   
                     }
                 
             }

@@ -24,21 +24,14 @@ namespace Tugagenda
         }
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            
-        }
 
-        
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            frmSeries series = new frmSeries();
-            series.MdiParent = this;
-            series.Show();
         }
 
         private void frmFas_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
+
+      
     }
 }

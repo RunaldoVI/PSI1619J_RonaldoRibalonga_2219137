@@ -26,8 +26,8 @@ namespace Tugagenda
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            string connString = ConfigurationManager.ConnectionStrings["tugagenda"].ConnectionString;
-            SqlConnection db = new SqlConnection(connString);
+
+            SqlConnection db = new SqlConnection(Program.MyConnectionString);
 
             try
             {
@@ -38,22 +38,60 @@ namespace Tugagenda
                 cmdUpdate.CommandText = "update Registo set Password = @Password where Username = @Username";
                 cmdUpdate.Parameters.AddWithValue("@Username", txtUsername.Text);
                 cmdUpdate.Parameters.AddWithValue("@Password", txtPassword.Text);
+                string password = txtPassword.Text;
+                string cpassword = txtCPassword.Text;
 
-    
-                if (txtPassword.Text == txtCPassword.Text)
+                if (password.Length >= 8)
                 {
-                    DialogResult verificar = MessageBox.Show("Pretende editar a password?", "Editar?", MessageBoxButtons.OKCancel);
-
-                    if (verificar == DialogResult.OK)
+                    if (password.Where(char.IsUpper).Count() >= 1 && cpassword.Where(char.IsUpper).Count() >= 1)
                     {
-                        cmdUpdate.ExecuteNonQuery();
-                        MessageBox.Show("editado com sucesso");
-                        Application.Restart();
+                        if (password.Where(char.IsLower).Count() >= 1 && cpassword.Where(char.IsLower).Count() >= 1)
+                        {
+                            if (password.Where(char.IsDigit).Count() >= 1 && cpassword.Where(char.IsDigit).Count() >= 1)
+                            {
+                                if (password.Length <= 16 && cpassword.Length <= 16)
+                                {
+                                    if (txtPassword.Text == txtCPassword.Text)
+                                    {
+                                        DialogResult verificar = MessageBox.Show("Pretende editar a password?", "Editar?", MessageBoxButtons.OKCancel);
+
+                                        if (verificar == DialogResult.OK)
+                                        {
+                                            cmdUpdate.ExecuteNonQuery();
+                                            MessageBox.Show("editado com sucesso");
+                                            Application.Restart();
+                                        }
+                                    }
+
+                                    else
+                                    {
+                                        MessageBox.Show("Password não coincide!","Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                    }
+                                }
+                                else
+                                {
+                                    MessageBox.Show("A sua password tem mais que 16 caracteres","Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("A sua password tem de ter 1 numero pelo menos ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("A sua password deve conter pelo menos 1 caracter e letra pequena", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("A sua password tem de ter pelo menos 1 caracter em letra grande", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Erro Password nao coincide");
+                    MessageBox.Show("A sua password não tem os minimos 8 caraceteres ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             catch (Exception ex)
@@ -104,6 +142,11 @@ namespace Tugagenda
         }
 
         private void lblReset_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
         {
 
         }

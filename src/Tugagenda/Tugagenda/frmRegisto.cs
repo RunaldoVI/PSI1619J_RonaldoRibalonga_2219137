@@ -27,74 +27,81 @@ namespace Tugagenda
 
         private void btnRegistar_Click(object sender, EventArgs e)
         {
-              
-            string connString = ConfigurationManager.ConnectionStrings["tugagenda"].ConnectionString;
-            SqlConnection db = new SqlConnection(connString);
+
+            SqlConnection db = new SqlConnection(Program.MyConnectionString);
 
             try
             {
                 db.Open();
                 SqlCommand cmd = new SqlCommand();
+               
                 cmd.Connection = db;
                 string email = txtEmail.Text;
                 string password = txtPassword.Text;
                 string cpassword = txtCPassword.Text;
                 Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
                 Match match = regex.Match(email);
-              
+
                 if (match.Success)
                 {
-                    if (password.Where(char.IsUpper).Count() >= 1 && cpassword.Where(char.IsUpper).Count() >= 1)
-                    {
-                        if (password.Where(char.IsLower).Count() >= 1 && cpassword.Where(char.IsLower).Count() >= 1)
+                    if(password.Length >= 8)
+                      {
+                        if (password.Where(char.IsUpper).Count() >= 1 && cpassword.Where(char.IsUpper).Count() >= 1)
                         {
-                            if (password.Where(char.IsDigit).Count() >= 1 && cpassword.Where(char.IsDigit).Count() >= 1)
+                            if (password.Where(char.IsLower).Count() >= 1 && cpassword.Where(char.IsLower).Count() >= 1)
                             {
-                                if (password.Length <= 16 && cpassword.Length <= 16)
+                                if (password.Where(char.IsDigit).Count() >= 1 && cpassword.Where(char.IsDigit).Count() >= 1)
                                 {
-                                    if (txtPassword.Text == txtCPassword.Text)
+                                    if (password.Length <= 16 && cpassword.Length <= 16)
                                     {
-                                        cmd.CommandText = "insert into Registo (Username, Password, Email) values (@Username, @Password, @Email)";
-                                        cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
-                                        cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
-                                        cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
+                                        if (txtPassword.Text == txtCPassword.Text)
+                                        {
+                                            cmd.CommandText = "insert into Registo (Username, Password, Email) values (@Username, @Password, @Email)";
+                                            cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
+                                            cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
+                                            cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
 
-                                        cmd.ExecuteNonQuery();
-                                        MessageBox.Show("Registado com sucesso");
-                                        Close();
-                                        frmLogin login = new frmLogin();
-                                        login.Show();
+                                            cmd.ExecuteNonQuery();
+                                            MessageBox.Show("Registado com sucesso");
+                                            Close();
+                                            frmLogin login = new frmLogin();
+                                            login.Show();
+                                        }
+
+                                        else
+                                        {
+                                            MessageBox.Show("Password não coincide!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                        }
                                     }
-
                                     else
                                     {
-                                        MessageBox.Show("Erro Password não coincide!");
+                                        MessageBox.Show("A sua password tem mais que 16 caracteres", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                     }
                                 }
                                 else
                                 {
-                                    MessageBox.Show("A sua password tem mais que 16 caracteres");
+                                    MessageBox.Show("A sua password tem de ter 1 numero pelo menos ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                 }
                             }
                             else
                             {
-                                MessageBox.Show("A sua password tem de ter 1 numero pelo menos ");
+                                MessageBox.Show("A sua password deve conter pelo menos 1 caracter e letra pequena", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             }
+
                         }
                         else
                         {
-                            MessageBox.Show("A sua password deve conter pelo menos 1 caracter e letra pequena");
+                            MessageBox.Show("A sua password tem de ter pelo menos 1 caracter em letra grande", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
-
                     }
                     else
                     {
-                        MessageBox.Show("A sua password tem de ter pelo menos 1 caracter em letra grande");
+                        MessageBox.Show("Erro Email!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Erro Email!");
+                    MessageBox.Show("A sua password não tem os minimos 8 caraceteres ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 
             }
