@@ -339,7 +339,6 @@ namespace Tugagenda
             this.Name = "frmRegisto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registo";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmRegisto_FormClosed);
             this.Load += new System.EventHandler(this.Registro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -32,6 +32,10 @@ namespace Tugagenda
             Application.Exit();
         }
 
-      
+        private void tslSeries_Click(object sender, EventArgs e)
+        {
+            frmSeries series = new frmSeries();
+            series.Show();
+        }
     }
 }

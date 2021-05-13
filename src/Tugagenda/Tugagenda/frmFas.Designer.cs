@@ -37,6 +37,7 @@ namespace Tugagenda
             // 
             // toolStrip1
             // 
+            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1,
             this.tslSeries});
@@ -57,6 +58,7 @@ namespace Tugagenda
             this.tslSeries.Name = "tslSeries";
             this.tslSeries.Size = new System.Drawing.Size(37, 22);
             this.tslSeries.Text = "Series";
+            this.tslSeries.Click += new System.EventHandler(this.tslSeries_Click);
             // 
             // frmFas
             // 
