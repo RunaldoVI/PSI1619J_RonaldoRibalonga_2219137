@@ -1,7 +1,7 @@
 ﻿
 namespace Tugagenda
 {
-    partial class frmSeries
+    partial class frmEstado
     {
         /// <summary>
         /// Required designer variable.
@@ -30,26 +30,47 @@ namespace Tugagenda
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(59, 22);
+            this.button1.Location = new System.Drawing.Point(54, 78);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(196, 165);
+            this.button1.Size = new System.Drawing.Size(221, 27);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "Ja Vi ";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // frmSeries
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(54, 157);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(221, 27);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Estou a Ver";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(54, 233);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(221, 27);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Quero Ver";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // frmEstado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1414, 643);
+            this.ClientSize = new System.Drawing.Size(346, 400);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Name = "frmSeries";
-            this.Text = "Series";
+            this.Name = "frmEstado";
+            this.Text = "frmEstado";
             this.ResumeLayout(false);
 
         }
@@ -57,5 +78,7 @@ namespace Tugagenda
         #endregion
 
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

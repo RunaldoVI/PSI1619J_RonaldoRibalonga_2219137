@@ -35,7 +35,20 @@ namespace Tugagenda
         private void tslSeries_Click(object sender, EventArgs e)
         {
             frmSeries series = new frmSeries();
+            series.MdiParent = this;
             series.Show();
+        }
+
+        private void tslAnimes_Click(object sender, EventArgs e)
+        {
+            frmAnimes animes = new frmAnimes();
+            animes.MdiParent = this;
+            animes.Show();
+        }
+
+        private void tslFilmes_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

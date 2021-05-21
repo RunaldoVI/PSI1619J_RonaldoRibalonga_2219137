@@ -63,6 +63,16 @@ namespace Tugagenda.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap R4680cc7133186d5bcd408ebad64fe18a {
+            get {
+                object obj = ResourceManager.GetObject("R4680cc7133186d5bcd408ebad64fe18a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Rafb709f2b3b9140f3f8f33054b90c9a4 {
             get {
                 object obj = ResourceManager.GetObject("Rafb709f2b3b9140f3f8f33054b90c9a4", resourceCulture);

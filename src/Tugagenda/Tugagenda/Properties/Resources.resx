@@ -121,13 +121,16 @@
   <data name="Rafb709f2b3b9140f3f8f33054b90c9a4 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rafb709f2b3b9140f3f8f33054b90c9a4 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Rafb709f2b3b9140f3f8f33054b90c9a41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rafb709f2b3b9140f3f8f33054b90c9a42.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Rafb709f2b3b9140f3f8f33054b90c9a4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rafb709f2b3b9140f3f8f33054b90c9a4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="show-hide-icon-png-7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\show-hide-icon-png-7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Rafb709f2b3b9140f3f8f33054b90c9a41" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rafb709f2b3b9140f3f8f33054b90c9a42.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="R4680cc7133186d5bcd408ebad64fe18a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\R4680cc7133186d5bcd408ebad64fe18a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

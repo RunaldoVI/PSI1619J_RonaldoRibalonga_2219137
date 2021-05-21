@@ -112,11 +112,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAnimes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnimes.Designer.cs">
+      <DependentUpon>frmAnimes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmcomeco.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmcomeco.Designer.cs">
       <DependentUpon>frmcomeco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstado.Designer.cs">
+      <DependentUpon>frmEstado.cs</DependentUpon>
     </Compile>
     <Compile Include="frmFas.cs">
       <SubType>Form</SubType>
@@ -150,8 +162,14 @@
     <Compile Include="frmSeries.Designer.cs">
       <DependentUpon>frmSeries.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmAnimes.resx">
+      <DependentUpon>frmAnimes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmcomeco.resx">
       <DependentUpon>frmcomeco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstado.resx">
+      <DependentUpon>frmEstado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFas.resx">
       <DependentUpon>frmFas.cs</DependentUpon>
@@ -204,6 +222,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Rafb709f2b3b9140f3f8f33054b90c9a42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R4680cc7133186d5bcd408ebad64fe18a.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.2.1.1\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.2.1.1\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />

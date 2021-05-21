@@ -56,16 +56,6 @@ namespace Tugagenda
                                     {
                                         if (txtPassword.Text == txtCPassword.Text)
                                         {
-                                            if (txtUsername.Text != null)
-                                            {
-                                                cmd.CommandText = "select Username from Registro where Username = @Username";
-                                                cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
-                                                MessageBox.Show("Username já usado!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-                                            }
-                                            else
-                                            {
-
                                                 cmd.CommandText = "insert into Registo (Username, Password, Email) values (@Username, @Password, @Email)";
                                                 cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
                                                 cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
@@ -76,7 +66,6 @@ namespace Tugagenda
                                                 Close();
                                                 frmLogin login = new frmLogin();
                                                 login.Show();
-                                            }
                                         }
 
                                         else
