@@ -117,59 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="The-Walking-Dead-1128x386" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\The-Walking-Dead-1128x386.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="show-hide-icon-png-7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\show-hide-icon-png-7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rafb709f2b3b9140f3f8f33054b90c9a41" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rafb709f2b3b9140f3f8f33054b90c9a42.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="100264" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\100264.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="954f3a2a4480441dc27b4b1620d3f91b" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\954f3a2a4480441dc27b4b1620d3f91b.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="R4680cc7133186d5bcd408ebad64fe18a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\R4680cc7133186d5bcd408ebad64fe18a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MV5BYjFkMTlkYWUtZWFhNy00M2FmLThiOTYtYTRiYjVlZWYxNmJkXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MV5BYjFkMTlkYWUtZWFhNy00M2FmLThiOTYtYTRiYjVlZWYxNmJkXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rafb709f2b3b9140f3f8f33054b90c9a4 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rafb709f2b3b9140f3f8f33054b90c9a4 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="s1bl-cartaz1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\s1bl-cartaz1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="big-poster-serie-stranger-things-netflix-lo001-90x60-cm-geek" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\big-poster-serie-stranger-things-netflix-lo001-90x60-cm-geek.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="la-casa-de-papel_musicas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\la-casa-de-papel_musicas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2395172" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2395172.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bcaeb291eb6357872ffa7ae2d271e1e0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bcaeb291eb6357872ffa7ae2d271e1e0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="control_z_ver2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\control_z_ver2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="20303823" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\20303823.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rafb709f2b3b9140f3f8f33054b90c9a4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rafb709f2b3b9140f3f8f33054b90c9a4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="203038231" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\203038231.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lblResumo.Text" xml:space="preserve">
+    <value>Ragnarok é uma série de drama e 
+fantasia em língua norueguesa da 
+Netflix, inspirada na mitologia 
+nórdica, que estreou em 31 de 
+janeiro de 2020 é a segunda série 
+de televisão da Netflix em idioma 
+norueguês, depois de Home for 
+Christmas a série é produzida pela 
+produtora dinamarquesa SAM 
+Productions esta serie é 
+ambientada na pequena cidade 
+de Edda, na Noruega, quando 
+o lugar passa a sofrer com invernos
+ muito quentes e tempestades violentas, 
+um grupo de amigos do ensino médio 
+começa a achar que o Ragnarok, 
+sequência de eventos que levariam ao 
+apocalipse de acordo com a mitologia 
+nórdica, está mais próximo do que eles 
+imaginam, agora, só resta torcer para 
+que alguém consiga impedi-lo...
+</value>
   </data>
 </root>

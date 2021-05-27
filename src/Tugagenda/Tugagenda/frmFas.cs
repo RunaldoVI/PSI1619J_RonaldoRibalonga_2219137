@@ -34,16 +34,35 @@ namespace Tugagenda
 
         private void tslSeries_Click(object sender, EventArgs e)
         {
-            frmSeries series = new frmSeries();
-            series.MdiParent = this;
-            series.Show();
+            
+            if (Application.OpenForms.OfType<frmSeries>().Count() > 0 )
+            {
+                Application.OpenForms.OfType<frmSeries>().First().Focus();
+                MessageBox.Show("Já tem 1 janela series aberta!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+            else
+            {
+                frmSeries series = new frmSeries();
+                series.MdiParent = this;
+                series.Show();
+            }
         }
 
         private void tslAnimes_Click(object sender, EventArgs e)
         {
-            frmAnimes animes = new frmAnimes();
-            animes.MdiParent = this;
-            animes.Show();
+            if (Application.OpenForms.OfType<frmAnimes>().Count() > 0)
+            {
+                Application.OpenForms.OfType<frmAnimes>().First().Focus();
+                MessageBox.Show("Já tem 1 janela animes aberta!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+            else
+            {
+                frmAnimes animes = new frmAnimes();
+                animes.MdiParent = this;
+                animes.Show();
+            }
         }
 
         private void tslFilmes_Click(object sender, EventArgs e)

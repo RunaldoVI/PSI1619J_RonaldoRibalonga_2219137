@@ -209,6 +209,7 @@ namespace Tugagenda
             this.Controls.Add(this.btnKY);
             this.Name = "frmAnimes";
             this.Text = "frmAnimes";
+            this.Load += new System.EventHandler(this.frmAnimes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
