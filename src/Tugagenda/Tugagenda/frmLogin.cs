@@ -53,7 +53,7 @@ namespace Tugagenda
                     if (reader.HasRows) 
                     {
                     reader.Read();
-                        MessageBox.Show($"Login Com Sucesso\nBem Vindo de Volta {reader["Username"].ToString()}");
+                        MessageBox.Show($"Login Com Sucesso\nBem Vindo de Volta {reader["Password"].ToString()}");
                         
                         Close();
                         frmFas fas = new frmFas();

@@ -89,6 +89,7 @@ namespace Tugagenda
             this.btnEVer.TabIndex = 39;
             this.btnEVer.Text = "Estou a ver";
             this.btnEVer.UseVisualStyleBackColor = true;
+            this.btnEVer.Click += new System.EventHandler(this.btnEVer_Click);
             // 
             // lblEstado
             // 
