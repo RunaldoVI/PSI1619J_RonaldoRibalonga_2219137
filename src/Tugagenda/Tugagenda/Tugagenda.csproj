@@ -126,29 +126,11 @@
     <Compile Include="frmEVer.Designer.cs">
       <DependentUpon>frmEVer.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAnimes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAnimes.Designer.cs">
-      <DependentUpon>frmAnimes.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmcomeco.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmcomeco.Designer.cs">
       <DependentUpon>frmcomeco.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmCZE.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCZE.Designer.cs">
-      <DependentUpon>frmCZE.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmEstado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEstado.Designer.cs">
-      <DependentUpon>frmEstado.cs</DependentUpon>
     </Compile>
     <Compile Include="frmFas.cs">
       <SubType>Form</SubType>
@@ -162,65 +144,11 @@
     <Compile Include="frmFilmes.Designer.cs">
       <DependentUpon>frmFilmes.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGOT.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmGOT.Designer.cs">
-      <DependentUpon>frmGOT.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmLCP.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLCP.Designer.cs">
-      <DependentUpon>frmLCP.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmRagE.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmRagE.Designer.cs">
-      <DependentUpon>frmRagE.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmSimp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSimp.Designer.cs">
-      <DependentUpon>frmSimp.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmST.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmST.Designer.cs">
-      <DependentUpon>frmST.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmTBL.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmTBL.Designer.cs">
-      <DependentUpon>frmTBL.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmTWDE.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmTWDE.Designer.cs">
-      <DependentUpon>frmTWDE.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmVikings.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmVikings.Designer.cs">
-      <DependentUpon>frmVikings.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmVisE.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmVisE.Designer.cs">
-      <DependentUpon>frmVisE.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -242,26 +170,11 @@
     <Compile Include="frmSeries.Designer.cs">
       <DependentUpon>frmSeries.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmQVer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmQVer.Designer.cs">
-      <DependentUpon>frmQVer.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="frmEVer.resx">
       <DependentUpon>frmEVer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAnimes.resx">
-      <DependentUpon>frmAnimes.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmcomeco.resx">
       <DependentUpon>frmcomeco.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCZE.resx">
-      <DependentUpon>frmCZE.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEstado.resx">
-      <DependentUpon>frmEstado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFas.resx">
       <DependentUpon>frmFas.cs</DependentUpon>
@@ -269,35 +182,8 @@
     <EmbeddedResource Include="frmFilmes.resx">
       <DependentUpon>frmFilmes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGOT.resx">
-      <DependentUpon>frmGOT.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLCP.resx">
-      <DependentUpon>frmLCP.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmRagE.resx">
-      <DependentUpon>frmRagE.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSimp.resx">
-      <DependentUpon>frmSimp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmST.resx">
-      <DependentUpon>frmST.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTBL.resx">
-      <DependentUpon>frmTBL.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTWDE.resx">
-      <DependentUpon>frmTWDE.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmVikings.resx">
-      <DependentUpon>frmVikings.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmVisE.resx">
-      <DependentUpon>frmVisE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
