@@ -125,6 +125,7 @@ namespace Tugagenda
             this.Controls.Add(this.PicRag);
             this.Name = "frmGOT";
             this.Text = "frmGOT";
+            this.Load += new System.EventHandler(this.frmGOT_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PicRag)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Tugagenda
 {
-    public partial class EVer : Form
+    public partial class frmEVer : Form
     {
-        public EVer()
+        public frmEVer()
         {
             InitializeComponent();
         }

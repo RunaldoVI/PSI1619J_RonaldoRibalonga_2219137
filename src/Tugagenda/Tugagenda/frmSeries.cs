@@ -112,7 +112,6 @@ namespace Tugagenda
             {
                 Application.OpenForms.OfType<frmGOT>().First().Focus();
                 MessageBox.Show("Já tem 1 janela series aberta!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
             }
             else
             {

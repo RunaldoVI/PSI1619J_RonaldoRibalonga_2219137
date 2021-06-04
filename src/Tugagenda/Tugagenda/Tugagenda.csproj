@@ -120,11 +120,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EVer.cs">
+    <Compile Include="frmEVer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EVer.Designer.cs">
-      <DependentUpon>EVer.cs</DependentUpon>
+    <Compile Include="frmEVer.Designer.cs">
+      <DependentUpon>frmEVer.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAnimes.cs">
       <SubType>Form</SubType>
@@ -155,6 +155,12 @@
     </Compile>
     <Compile Include="frmFas.Designer.cs">
       <DependentUpon>frmFas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFilmes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFilmes.Designer.cs">
+      <DependentUpon>frmFilmes.cs</DependentUpon>
     </Compile>
     <Compile Include="frmGOT.cs">
       <SubType>Form</SubType>
@@ -236,8 +242,14 @@
     <Compile Include="frmSeries.Designer.cs">
       <DependentUpon>frmSeries.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="EVer.resx">
-      <DependentUpon>EVer.cs</DependentUpon>
+    <Compile Include="frmQVer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQVer.Designer.cs">
+      <DependentUpon>frmQVer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmEVer.resx">
+      <DependentUpon>frmEVer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAnimes.resx">
       <DependentUpon>frmAnimes.cs</DependentUpon>
@@ -253,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmFas.resx">
       <DependentUpon>frmFas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFilmes.resx">
+      <DependentUpon>frmFilmes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGOT.resx">
       <DependentUpon>frmGOT.cs</DependentUpon>

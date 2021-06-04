@@ -1,7 +1,7 @@
 ﻿
 namespace Tugagenda
 {
-    partial class EVer
+    partial class frmEVer
     {
         /// <summary>
         /// Required designer variable.

@@ -44,7 +44,7 @@ namespace Tugagenda
             // 
             this.lblResumo.AutoSize = true;
             this.lblResumo.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResumo.Location = new System.Drawing.Point(257, 82);
+            this.lblResumo.Location = new System.Drawing.Point(257, 73);
             this.lblResumo.Name = "lblResumo";
             this.lblResumo.Size = new System.Drawing.Size(426, 588);
             this.lblResumo.TabIndex = 16;
