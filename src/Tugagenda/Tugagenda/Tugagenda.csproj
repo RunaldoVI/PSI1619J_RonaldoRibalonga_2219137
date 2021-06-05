@@ -138,6 +138,12 @@
     <Compile Include="frmFilmes.Designer.cs">
       <DependentUpon>frmFilmes.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFilmesadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFilmesadd.Designer.cs">
+      <DependentUpon>frmFilmesadd.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
