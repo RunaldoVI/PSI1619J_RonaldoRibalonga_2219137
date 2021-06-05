@@ -22,7 +22,7 @@ namespace Tugagenda
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmcomeco());        
+            Application.Run(new frmFas());        
             
         }
            
