@@ -34,7 +34,7 @@ namespace Tugagenda
             {
                 db.Open();
                 SqlCommand cmd = new SqlCommand();
-               
+                SqlDataAdapter da;
                 cmd.Connection = db;
                 string email = txtEmail.Text;
                 string password = txtPassword.Text;
@@ -56,16 +56,26 @@ namespace Tugagenda
                                     {
                                         if (txtPassword.Text == txtCPassword.Text)
                                         {
+                                            
+                                            da = new SqlDataAdapter("select Username from registo where Username = '"+txtUsername.Text+"' ", db);                                                                      
+                                            DataTable dt = new DataTable();
+                                            da.Fill(dt);
+                                            if (dt.Rows.Count >= 1)
+                                            {
+                                                MessageBox.Show("O nome ja está ser usado!");
+                                            }
+                                            else
+                                            {
                                                 cmd.CommandText = "insert into Registo (Username, Password, Email) values (@Username, @Password, @Email)";
                                                 cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
                                                 cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
                                                 cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
-
                                                 cmd.ExecuteNonQuery();
                                                 MessageBox.Show("Registado com sucesso");
                                                 Close();
                                                 frmLogin login = new frmLogin();
                                                 login.Show();
+                                            }
                                         }
 
                                         else
@@ -176,6 +186,36 @@ namespace Tugagenda
             }
         }
 
-       
+        private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (char)13)
+            {
+                btnRegistar.PerformClick();
+            }
+        }
+
+        private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                btnRegistar.PerformClick();
+            }
+        }
+
+        private void txtCPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                btnRegistar.PerformClick();
+            }
+        }
+
+        private void txtEmail_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                btnRegistar.PerformClick();
+            }
+        }
     }
 }

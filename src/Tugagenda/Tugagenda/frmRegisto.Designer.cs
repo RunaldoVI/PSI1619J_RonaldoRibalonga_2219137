@@ -66,6 +66,7 @@ namespace Tugagenda
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(209, 20);
             this.txtPassword.TabIndex = 2;
+            this.txtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPassword_KeyPress);
             // 
             // txtEmail
             // 
@@ -80,6 +81,7 @@ namespace Tugagenda
             this.txtEmail.Size = new System.Drawing.Size(243, 25);
             this.txtEmail.TabIndex = 4;
             this.txtEmail.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEmail_KeyPress);
             // 
             // btnRegistar
             // 
@@ -228,6 +230,7 @@ namespace Tugagenda
             this.txtCPassword.PasswordChar = '*';
             this.txtCPassword.Size = new System.Drawing.Size(140, 23);
             this.txtCPassword.TabIndex = 3;
+            this.txtCPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPassword_KeyPress);
             // 
             // lblCPassword
             // 
@@ -307,6 +310,7 @@ namespace Tugagenda
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(209, 20);
             this.txtUsername.TabIndex = 1;
+            this.txtUsername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsername_KeyPress);
             // 
             // frmRegisto
             // 

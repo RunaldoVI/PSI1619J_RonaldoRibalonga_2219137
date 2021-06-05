@@ -116,5 +116,21 @@ namespace Tugagenda
         {
            
         }
+
+        private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (char)13)
+            {
+                btnLogin.PerformClick();
+            }
+        }
+
+        private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (char)13)
+            {
+                btnLogin.PerformClick();
+            }
+        }
     }
 }
