@@ -138,11 +138,11 @@
     <Compile Include="frmFilmes.Designer.cs">
       <DependentUpon>frmFilmes.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmFilmesadd.cs">
+    <Compile Include="frmFilmescrum.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmFilmesadd.Designer.cs">
-      <DependentUpon>frmFilmesadd.cs</DependentUpon>
+    <Compile Include="frmFilmescrum.Designer.cs">
+      <DependentUpon>frmFilmescrum.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -181,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmFilmes.resx">
       <DependentUpon>frmFilmes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFilmescrum.resx">
+      <DependentUpon>frmFilmescrum.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

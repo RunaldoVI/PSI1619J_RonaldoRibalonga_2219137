@@ -52,7 +52,7 @@ namespace Tugagenda
             this.tslFilmes});
             this.tsl.Location = new System.Drawing.Point(0, 0);
             this.tsl.Name = "tsl";
-            this.tsl.Size = new System.Drawing.Size(1460, 25);
+            this.tsl.Size = new System.Drawing.Size(1416, 25);
             this.tsl.TabIndex = 1;
             this.tsl.Text = "toolStrip1";
             // 
@@ -104,7 +104,7 @@ namespace Tugagenda
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.ClientSize = new System.Drawing.Size(1460, 723);
+            this.ClientSize = new System.Drawing.Size(1416, 644);
             this.Controls.Add(this.tsl);
             this.ForeColor = System.Drawing.Color.Bisque;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

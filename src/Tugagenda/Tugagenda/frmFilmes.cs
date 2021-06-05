@@ -22,24 +22,29 @@ namespace Tugagenda
             InitializeComponent();
           
                 
-        }
-
-        DataTable dt = new DataTable("Filmes");
+        }     
         private void frmFilmes_Load(object sender, EventArgs e)
         {
             try
             {
                 SqlConnection db = new SqlConnection(Program.MyConnectionString);
                 db.Open();
-                SqlDataAdapter da = new SqlDataAdapter("select * from filmes", db);
-                da.Fill(dt);
-                dgvFilmes.DataSource = dt;
 
+                var cmd = new SqlCommand("Select * from Filmes", db);
+                var rdr = cmd.ExecuteReader();
+
+                var datatable = new DataTable("Filmes");
+                var dataset = new DataSet();
+                dataset.Tables.Add(datatable);
+                dataset.Load(rdr, LoadOption.PreserveChanges, dataset.Tables["Filmes"]);
+
+                dgvFilmes.DataSource = dataset.Tables["Filmes"];
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("Erro:" + ex.Message, "Não existe dados registados com este nome.");
+                MessageBox.Show("");
             }
+            db.Close();
         }
 
         private void txtFilmes_TextChanged(object sender, EventArgs e)
@@ -47,26 +52,49 @@ namespace Tugagenda
 
         }
 
-        
-        
-       
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
+            if (Application.OpenForms.OfType<frmFilmescrum>().Count() > 0)
+            {
+                Application.OpenForms.OfType<frmFilmescrum>().First().Focus();
+                MessageBox.Show("Já tem 1 janela filmes aberta!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+            else
+            {
+                var filmeadd = new frmFilmescrum();
+                filmeadd.MdiParent = this.ParentForm;
+                filmeadd.Show();
+            }
             
         }
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            DataView dv = dt.DefaultView;
-            dv.RowFilter = string.Format("nome like '%{0}%'", txtFilmes.Text);           
-            dgvFilmes.DataSource = dv.ToTable();
-            SqlDataAdapter da;
-            da = new SqlDataAdapter("select nome from Filmes where nome = '" + txtFilmes.Text + "' ", db);
-            da.Fill(dt);
-            if (dt.Rows.Count == 0)
+            try
             {
-                MessageBox.Show("Não existe nenhum filme com essa correspondencia");
+                SqlConnection db = new SqlConnection(Program.MyConnectionString);
+                db.Open();
+
+                
+                var cmd = new SqlCommand($"Select * from Filmes where nome like '%{txtFilmes.Text}%'", db);
+                
+
+                var rdr = cmd.ExecuteReader();
+
+                var datatable = new DataTable("Filmes");
+                var dataset = new DataSet();
+                dataset.Tables.Add(datatable);
+                dataset.Load(rdr, LoadOption.PreserveChanges, dataset.Tables["Filmes"]);
+
+                dgvFilmes.DataSource = dataset.Tables["Filmes"];
+
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro:" + ex.Message, "Não existe dados registados com este nome.");
+            }
+            db.Close();
         }
 
         private void dgvFilmes_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -78,8 +106,26 @@ namespace Tugagenda
         {
             if (e.KeyChar == (char)13)
             {
-                btnPesquisar.PerformClick();
+                e.Handled = true;
+                btnPesquisar_Click(this,EventArgs.Empty);
             }    
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<frmFilmescrum>().Count() > 0)
+            {
+                Application.OpenForms.OfType<frmFilmescrum>().First().Focus();
+                MessageBox.Show("Já tem 1 janela filmes aberta!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+            else
+            {
+                var filmeadd = new frmFilmescrum();
+                filmeadd.MdiParent = this.ParentForm;
+                filmeadd.Show();
+               
+            }
         }
     }
 }
