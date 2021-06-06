@@ -39,7 +39,10 @@ namespace Tugagenda
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnApagar = new System.Windows.Forms.Button();
             this.lblNomeAntigo = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNomeAntigo = new System.Windows.Forms.TextBox();
+            this.rdbAdicionar = new System.Windows.Forms.RadioButton();
+            this.rbEditar = new System.Windows.Forms.RadioButton();
+            this.rdbApagar = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // txtNome
@@ -66,6 +69,7 @@ namespace Tugagenda
             // lblNome
             // 
             this.lblNome.AutoSize = true;
+            this.lblNome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblNome.Location = new System.Drawing.Point(44, 101);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(35, 13);
@@ -75,6 +79,8 @@ namespace Tugagenda
             // lblDescricao
             // 
             this.lblDescricao.AutoSize = true;
+            this.lblDescricao.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.lblDescricao.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblDescricao.Location = new System.Drawing.Point(24, 130);
             this.lblDescricao.Name = "lblDescricao";
             this.lblDescricao.Size = new System.Drawing.Size(55, 13);
@@ -84,6 +90,8 @@ namespace Tugagenda
             // lblGenero
             // 
             this.lblGenero.AutoSize = true;
+            this.lblGenero.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.lblGenero.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblGenero.Location = new System.Drawing.Point(37, 154);
             this.lblGenero.Name = "lblGenero";
             this.lblGenero.Size = new System.Drawing.Size(42, 13);
@@ -92,9 +100,10 @@ namespace Tugagenda
             // 
             // btnAdicionar
             // 
+            this.btnAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnAdicionar.Location = new System.Drawing.Point(64, 214);
             this.btnAdicionar.Name = "btnAdicionar";
-            this.btnAdicionar.Size = new System.Drawing.Size(75, 23);
+            this.btnAdicionar.Size = new System.Drawing.Size(242, 23);
             this.btnAdicionar.TabIndex = 6;
             this.btnAdicionar.Text = "Adicionar";
             this.btnAdicionar.UseVisualStyleBackColor = true;
@@ -102,9 +111,10 @@ namespace Tugagenda
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(145, 214);
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnEditar.Location = new System.Drawing.Point(64, 214);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(75, 23);
+            this.btnEditar.Size = new System.Drawing.Size(242, 23);
             this.btnEditar.TabIndex = 7;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
@@ -112,47 +122,94 @@ namespace Tugagenda
             // 
             // btnApagar
             // 
-            this.btnApagar.Location = new System.Drawing.Point(226, 214);
+            this.btnApagar.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnApagar.Location = new System.Drawing.Point(64, 214);
             this.btnApagar.Name = "btnApagar";
-            this.btnApagar.Size = new System.Drawing.Size(75, 23);
+            this.btnApagar.Size = new System.Drawing.Size(242, 23);
             this.btnApagar.TabIndex = 8;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = true;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // lblNomeAntigo
             // 
             this.lblNomeAntigo.AutoSize = true;
+            this.lblNomeAntigo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.lblNomeAntigo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblNomeAntigo.Location = new System.Drawing.Point(12, 78);
             this.lblNomeAntigo.Name = "lblNomeAntigo";
             this.lblNomeAntigo.Size = new System.Drawing.Size(68, 13);
             this.lblNomeAntigo.TabIndex = 9;
             this.lblNomeAntigo.Text = "Nome Antigo";
+            this.lblNomeAntigo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblNomeAntigo.Visible = false;
             // 
-            // textBox1
+            // txtNomeAntigo
             // 
-            this.textBox1.Location = new System.Drawing.Point(85, 75);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 20);
-            this.textBox1.TabIndex = 10;
-            this.textBox1.Visible = false;
+            this.txtNomeAntigo.Location = new System.Drawing.Point(85, 75);
+            this.txtNomeAntigo.Name = "txtNomeAntigo";
+            this.txtNomeAntigo.Size = new System.Drawing.Size(205, 20);
+            this.txtNomeAntigo.TabIndex = 10;
+            this.txtNomeAntigo.Visible = false;
+            // 
+            // rdbAdicionar
+            // 
+            this.rdbAdicionar.AutoSize = true;
+            this.rdbAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.rdbAdicionar.Location = new System.Drawing.Point(64, 243);
+            this.rdbAdicionar.Name = "rdbAdicionar";
+            this.rdbAdicionar.Size = new System.Drawing.Size(75, 18);
+            this.rdbAdicionar.TabIndex = 11;
+            this.rdbAdicionar.TabStop = true;
+            this.rdbAdicionar.Text = "Adicionar";
+            this.rdbAdicionar.UseVisualStyleBackColor = true;
+            this.rdbAdicionar.CheckedChanged += new System.EventHandler(this.rdbAdicionar_CheckedChanged);
+            // 
+            // rbEditar
+            // 
+            this.rbEditar.AutoSize = true;
+            this.rbEditar.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.rbEditar.Location = new System.Drawing.Point(154, 243);
+            this.rbEditar.Name = "rbEditar";
+            this.rbEditar.Size = new System.Drawing.Size(58, 18);
+            this.rbEditar.TabIndex = 12;
+            this.rbEditar.TabStop = true;
+            this.rbEditar.Text = "Editar";
+            this.rbEditar.UseVisualStyleBackColor = true;
+            this.rbEditar.CheckedChanged += new System.EventHandler(this.rbEditar_CheckedChanged);
+            // 
+            // rdbApagar
+            // 
+            this.rdbApagar.AutoSize = true;
+            this.rdbApagar.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.rdbApagar.Location = new System.Drawing.Point(231, 243);
+            this.rdbApagar.Name = "rdbApagar";
+            this.rdbApagar.Size = new System.Drawing.Size(65, 18);
+            this.rdbApagar.TabIndex = 13;
+            this.rdbApagar.TabStop = true;
+            this.rdbApagar.Text = "Apagar";
+            this.rdbApagar.UseVisualStyleBackColor = true;
+            this.rdbApagar.CheckedChanged += new System.EventHandler(this.rdbApagar_CheckedChanged);
             // 
             // frmFilmescrum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(377, 316);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.rdbApagar);
+            this.Controls.Add(this.rbEditar);
+            this.Controls.Add(this.rdbAdicionar);
+            this.Controls.Add(this.txtNomeAntigo);
             this.Controls.Add(this.lblNomeAntigo);
-            this.Controls.Add(this.btnApagar);
-            this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.btnAdicionar);
             this.Controls.Add(this.lblGenero);
             this.Controls.Add(this.lblDescricao);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.TxtDescricao);
             this.Controls.Add(this.txtGenero);
             this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.btnApagar);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnAdicionar);
             this.Name = "frmFilmescrum";
             this.Text = "frmFilmescrum";
             this.Load += new System.EventHandler(this.frmFilmescrum_Load);
@@ -173,6 +230,9 @@ namespace Tugagenda
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnApagar;
         private System.Windows.Forms.Label lblNomeAntigo;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNomeAntigo;
+        private System.Windows.Forms.RadioButton rdbAdicionar;
+        private System.Windows.Forms.RadioButton rbEditar;
+        private System.Windows.Forms.RadioButton rdbApagar;
     }
 }

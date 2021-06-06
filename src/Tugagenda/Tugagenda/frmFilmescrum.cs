@@ -88,12 +88,40 @@ namespace Tugagenda
                 cmd.CommandText = "update Filmes set Nome = @Nome, Descricao=@Descricao, Genero=@Genero where Nome=@Nome";
                 cmd.Parameters.AddWithValue("@Nome", txtNome.Text);
                 cmd.Parameters.AddWithValue("@Descricao", TxtDescricao.Text);
-                cmd.Parameters.AddWithValue("@Genero", txtGenero.Text);             
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Alterado com sucesso");
-                db.Close();
-                
+                cmd.Parameters.AddWithValue("@Genero", txtGenero.Text);
+                if(txtNomeAntigo.Text.Length ==0)
+                {
+                    MessageBox.Show("Nada foi alterado", "Erro:", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                if (txtNome.Text.Length == 0)
+                {
+                    MessageBox.Show("Nada foi alterado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    if (TxtDescricao.Text.Length == 0)
+                    {
+                        MessageBox.Show("Nada foi alterado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        if (TxtDescricao.Text.Length == 0)
+                        {
+                            MessageBox.Show("Nada foi alterado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                        else
+                        {
+                            cmd.ExecuteNonQuery();
+                            MessageBox.Show("Alterado com sucesso");
+                            db.Close();
+                        }
+                    }
+                }
 
+
+                }
             }
             catch (Exception ex)
             {
@@ -104,6 +132,80 @@ namespace Tugagenda
         private void frmFilmescrum_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void rdbAdicionar_CheckedChanged(object sender, EventArgs e)
+        {
+            btnAdicionar.Visible = true;
+            btnEditar.Visible = false;
+            btnApagar.Visible = false;
+            lblNomeAntigo.Visible = false;
+            txtNomeAntigo.Visible = false;
+            lblDescricao.Visible = true;
+            lblGenero.Visible = true;
+            lblNome.Visible = true;
+            txtGenero.Visible = true;
+            TxtDescricao.Visible = true;
+        }
+
+        private void rbEditar_CheckedChanged(object sender, EventArgs e)
+        {
+            btnEditar.Visible = true;
+            btnAdicionar.Visible = false;
+            btnApagar.Visible = false;
+            lblNomeAntigo.Visible = true;
+            txtNomeAntigo.Visible = true;
+            lblDescricao.Visible = true;
+            lblGenero.Visible = true;
+            lblNome.Visible = true;
+            txtGenero.Visible = true;
+            TxtDescricao.Visible = true;
+        }
+
+        private void rdbApagar_CheckedChanged(object sender, EventArgs e)
+        {
+            btnApagar.Visible = true;
+            btnEditar.Visible = false;
+            btnAdicionar.Visible = false;
+            lblNomeAntigo.Visible = false;
+            txtNomeAntigo.Visible = false;
+            TxtDescricao.Visible = false;
+            txtGenero.Visible = false;
+            lblDescricao.Visible = false;
+            lblGenero.Visible = false;
+        }
+
+        private void btnApagar_Click(object sender, EventArgs e)
+        {
+            SqlConnection db = new SqlConnection(Program.MyConnectionString);
+
+            try
+            {
+                db.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = db;
+                cmd.CommandText = "delete from Filmes where Nome = @Nome";
+                cmd.Parameters.AddWithValue("@Nome", txtNome.Text);               
+                if (txtNome.Text.Length == 0)
+                {
+                    MessageBox.Show("Nada foi alterado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Eliminado com sucesso");
+                    db.Close();
+                }
+
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro:" + ex.Message, "Não foi possível registar ");
+            }
         }
     }
 }
