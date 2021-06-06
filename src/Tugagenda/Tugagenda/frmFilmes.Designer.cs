@@ -36,10 +36,8 @@ namespace Tugagenda
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtFilmes = new System.Windows.Forms.TextBox();
             this.btnAdicionar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
             this.dgvFilmes = new System.Windows.Forms.DataGridView();
             this.btnPesquisar = new System.Windows.Forms.Button();
-            this.btnApagar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFilmes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,25 +55,13 @@ namespace Tugagenda
             // 
             this.btnAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnAdicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.btnAdicionar.Location = new System.Drawing.Point(342, 134);
+            this.btnAdicionar.Location = new System.Drawing.Point(138, 134);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(109, 37);
             this.btnAdicionar.TabIndex = 2;
             this.btnAdicionar.Text = "Adicionar";
             this.btnAdicionar.UseVisualStyleBackColor = true;
             this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.btnEditar.Location = new System.Drawing.Point(227, 134);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(109, 37);
-            this.btnEditar.TabIndex = 3;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // dgvFilmes
             // 
@@ -130,7 +116,7 @@ namespace Tugagenda
             // 
             this.btnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.btnPesquisar.Location = new System.Drawing.Point(457, 134);
+            this.btnPesquisar.Location = new System.Drawing.Point(432, 134);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(109, 37);
             this.btnPesquisar.TabIndex = 5;
@@ -138,26 +124,13 @@ namespace Tugagenda
             this.btnPesquisar.UseVisualStyleBackColor = true;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
-            // btnApagar
-            // 
-            this.btnApagar.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.btnApagar.Location = new System.Drawing.Point(112, 134);
-            this.btnApagar.Name = "btnApagar";
-            this.btnApagar.Size = new System.Drawing.Size(109, 37);
-            this.btnApagar.TabIndex = 6;
-            this.btnApagar.Text = "Apagar";
-            this.btnApagar.UseVisualStyleBackColor = true;
-            // 
             // frmFilmes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(676, 576);
-            this.Controls.Add(this.btnApagar);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.dgvFilmes);
-            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnAdicionar);
             this.Controls.Add(this.txtFilmes);
             this.Name = "frmFilmes";
@@ -173,9 +146,7 @@ namespace Tugagenda
 
         private System.Windows.Forms.TextBox txtFilmes;
         private System.Windows.Forms.Button btnAdicionar;
-        private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.DataGridView dgvFilmes;
         private System.Windows.Forms.Button btnPesquisar;
-        private System.Windows.Forms.Button btnApagar;
     }
 }

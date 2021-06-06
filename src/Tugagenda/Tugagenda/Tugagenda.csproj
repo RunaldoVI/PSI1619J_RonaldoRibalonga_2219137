@@ -170,6 +170,12 @@
     <Compile Include="frmSeries.Designer.cs">
       <DependentUpon>frmSeries.cs</DependentUpon>
     </Compile>
+    <Compile Include="SeriesScrum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeriesScrum.Designer.cs">
+      <DependentUpon>SeriesScrum.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmEVer.resx">
       <DependentUpon>frmEVer.cs</DependentUpon>
     </EmbeddedResource>

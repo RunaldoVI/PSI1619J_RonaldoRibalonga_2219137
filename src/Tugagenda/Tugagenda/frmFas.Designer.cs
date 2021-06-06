@@ -32,8 +32,6 @@ namespace Tugagenda
             this.tsl = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.tslSeries = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.tslAnimes = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tslFilmes = new System.Windows.Forms.ToolStripLabel();
             this.tsl.SuspendLayout();
@@ -46,8 +44,6 @@ namespace Tugagenda
             this.tsl.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1,
             this.tslSeries,
-            this.toolStripSeparator1,
-            this.tslAnimes,
             this.toolStripSeparator2,
             this.tslFilmes});
             this.tsl.Location = new System.Drawing.Point(0, 0);
@@ -69,21 +65,6 @@ namespace Tugagenda
             this.tslSeries.Size = new System.Drawing.Size(63, 22);
             this.tslSeries.Text = "Series";
             this.tslSeries.Click += new System.EventHandler(this.tslSeries_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // tslAnimes
-            // 
-            this.tslAnimes.ActiveLinkColor = System.Drawing.Color.Red;
-            this.tslAnimes.Font = new System.Drawing.Font("MS Reference Sans Serif", 12.75F);
-            this.tslAnimes.ForeColor = System.Drawing.Color.Black;
-            this.tslAnimes.Name = "tslAnimes";
-            this.tslAnimes.Size = new System.Drawing.Size(74, 22);
-            this.tslAnimes.Text = "Animes";
-            this.tslAnimes.Click += new System.EventHandler(this.tslAnimes_Click);
             // 
             // toolStripSeparator2
             // 
@@ -127,8 +108,6 @@ namespace Tugagenda
         private System.Windows.Forms.ToolStrip tsl;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripLabel tslSeries;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripLabel tslAnimes;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripLabel tslFilmes;
     }

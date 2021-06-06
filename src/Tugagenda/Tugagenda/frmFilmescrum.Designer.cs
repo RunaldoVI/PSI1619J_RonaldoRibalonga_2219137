@@ -207,9 +207,9 @@ namespace Tugagenda
             this.Controls.Add(this.TxtDescricao);
             this.Controls.Add(this.txtGenero);
             this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.btnAdicionar);
             this.Controls.Add(this.btnApagar);
             this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.btnAdicionar);
             this.Name = "frmFilmescrum";
             this.Text = "frmFilmescrum";
             this.Load += new System.EventHandler(this.frmFilmescrum_Load);

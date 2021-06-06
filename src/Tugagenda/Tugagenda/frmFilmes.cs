@@ -89,12 +89,12 @@ namespace Tugagenda
 
                 dgvFilmes.DataSource = dataset.Tables["Filmes"];
 
+                db.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro:" + ex.Message, "Não existe dados registados com este nome.");
             }
-            db.Close();
         }
 
         private void dgvFilmes_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -109,23 +109,6 @@ namespace Tugagenda
                 e.Handled = true;
                 btnPesquisar_Click(this,EventArgs.Empty);
             }    
-        }
-
-        private void btnEditar_Click(object sender, EventArgs e)
-        {
-            if (Application.OpenForms.OfType<frmFilmescrum>().Count() > 0)
-            {
-                Application.OpenForms.OfType<frmFilmescrum>().First().Focus();
-                MessageBox.Show("Já tem 1 janela filmes aberta!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-            }
-            else
-            {
-                var filmeadd = new frmFilmescrum();
-                filmeadd.MdiParent = this.ParentForm;
-                filmeadd.Show();
-               
-            }
-        }
+        }     
     }
 }

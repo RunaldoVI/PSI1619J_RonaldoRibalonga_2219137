@@ -27,10 +27,10 @@ namespace Tugagenda
                 db.Open();
                 SqlCommand cmd = new SqlCommand();
                 SqlDataAdapter da;
-                cmd.Connection = db;
+                cmd.Connection = db;               
                 if (txtNome.Text.Length == 0)
                 {
-                    MessageBox.Show("O filme precisa de Nome", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show($"O filme precisa de Nome", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -131,7 +131,7 @@ namespace Tugagenda
 
         private void frmFilmescrum_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void rdbAdicionar_CheckedChanged(object sender, EventArgs e)
