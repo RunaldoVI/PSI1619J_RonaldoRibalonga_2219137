@@ -52,8 +52,18 @@ namespace Tugagenda
                     reader = cmd.ExecuteReader();
                     if (reader.HasRows) 
                     {
-                    reader.Read();
-                        MessageBox.Show($"Login Com Sucesso\nBem Vindo de Volta {reader["Username"].ToString()}");
+                        reader.Read();
+                        MessageBox.Show($"Login Com Sucesso\nBem Vindo de Volta {reader["Username"]}");
+
+                        var user = new User()
+                        {
+                            IDRegisto = int.Parse(reader["IDRegisto"].ToString()),
+                            Email = reader["Email"].ToString(),
+                            Password = reader["Password"].ToString(),
+                            Username = reader["Username"].ToString()
+                        };
+
+                        Program.logUser = user;
                         
                         Close();
                         frmFas fas = new frmFas();
@@ -70,6 +80,7 @@ namespace Tugagenda
             {
                 MessageBox.Show("Erro:" + ex.Message, "Não foi possível fazer o login");
             }
+            db.Close();
            
             
         }

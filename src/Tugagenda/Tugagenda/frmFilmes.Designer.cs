@@ -35,7 +35,7 @@ namespace Tugagenda
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtFilmes = new System.Windows.Forms.TextBox();
-            this.btnAdicionar = new System.Windows.Forms.Button();
+            this.btnScrum = new System.Windows.Forms.Button();
             this.dgvFilmes = new System.Windows.Forms.DataGridView();
             this.btnPesquisar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFilmes)).BeginInit();
@@ -51,17 +51,17 @@ namespace Tugagenda
             this.txtFilmes.TextChanged += new System.EventHandler(this.txtFilmes_TextChanged);
             this.txtFilmes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFilmes_KeyPress);
             // 
-            // btnAdicionar
+            // btnScrum
             // 
-            this.btnAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnAdicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.btnAdicionar.Location = new System.Drawing.Point(138, 134);
-            this.btnAdicionar.Name = "btnAdicionar";
-            this.btnAdicionar.Size = new System.Drawing.Size(109, 37);
-            this.btnAdicionar.TabIndex = 2;
-            this.btnAdicionar.Text = "Adicionar";
-            this.btnAdicionar.UseVisualStyleBackColor = true;
-            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
+            this.btnScrum.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnScrum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.btnScrum.Location = new System.Drawing.Point(138, 134);
+            this.btnScrum.Name = "btnScrum";
+            this.btnScrum.Size = new System.Drawing.Size(109, 37);
+            this.btnScrum.TabIndex = 2;
+            this.btnScrum.Text = "Scrum";
+            this.btnScrum.UseVisualStyleBackColor = true;
+            this.btnScrum.Click += new System.EventHandler(this.btnScrum_Click);
             // 
             // dgvFilmes
             // 
@@ -110,7 +110,7 @@ namespace Tugagenda
             this.dgvFilmes.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvFilmes.Size = new System.Drawing.Size(676, 340);
             this.dgvFilmes.TabIndex = 4;
-            this.dgvFilmes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFilmes_CellContentClick);
+            this.dgvFilmes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFilmes_CellClick);
             // 
             // btnPesquisar
             // 
@@ -131,7 +131,7 @@ namespace Tugagenda
             this.ClientSize = new System.Drawing.Size(676, 576);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.dgvFilmes);
-            this.Controls.Add(this.btnAdicionar);
+            this.Controls.Add(this.btnScrum);
             this.Controls.Add(this.txtFilmes);
             this.Name = "frmFilmes";
             this.Text = "frmFilmes";
@@ -145,7 +145,7 @@ namespace Tugagenda
         #endregion
 
         private System.Windows.Forms.TextBox txtFilmes;
-        private System.Windows.Forms.Button btnAdicionar;
+        private System.Windows.Forms.Button btnScrum;
         private System.Windows.Forms.DataGridView dgvFilmes;
         private System.Windows.Forms.Button btnPesquisar;
     }

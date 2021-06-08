@@ -63,10 +63,10 @@ namespace Tugagenda
                                         }
                                     }
 
-                                    else
-                                    {
+                                        else
+                                        {
                                         MessageBox.Show("Password não coincide!","Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                    }
+                                        }
                                 }
                                 else
                                 {

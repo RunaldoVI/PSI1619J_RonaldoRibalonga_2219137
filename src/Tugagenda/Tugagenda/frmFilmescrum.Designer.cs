@@ -195,7 +195,7 @@ namespace Tugagenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(377, 316);
+            this.ClientSize = new System.Drawing.Size(374, 319);
             this.Controls.Add(this.rdbApagar);
             this.Controls.Add(this.rbEditar);
             this.Controls.Add(this.rdbAdicionar);

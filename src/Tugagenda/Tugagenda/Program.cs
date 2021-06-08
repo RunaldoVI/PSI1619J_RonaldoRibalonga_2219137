@@ -26,7 +26,7 @@ namespace Tugagenda
             
         }
            
-           
+        public static User logUser { get; set; }
        
     }
 }
