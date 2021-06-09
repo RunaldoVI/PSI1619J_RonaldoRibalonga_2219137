@@ -123,5 +123,10 @@ namespace Tugagenda
             }
 
         }
+
+        private void dgvFilmes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

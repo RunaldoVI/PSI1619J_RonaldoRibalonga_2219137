@@ -24,20 +24,23 @@ namespace Tugagenda
         }
         private void btnJaVi_Click(object sender, EventArgs e)
         {
-            SqlConnection db = new SqlConnection(Program.MyConnectionString);
-            SqlDataReader reader;
+            SqlConnection db = new SqlConnection(Program.MyConnectionString);           
             DialogResult verificar = MessageBox.Show("Pretende editar a password?", "Editar?", MessageBoxButtons.OKCancel);
 
             if (verificar == DialogResult.OK)
             {
                 try
                 {
+
                     db.Open();
                     SqlCommand cmd = new SqlCommand();
                     cmd.Connection = db;
+                    cmd.CommandText = "insert into HistoricoF (FilmeID,IDRegisto,Visto,QuerVer,AVer) values (@id,@idUser,1,0,0)"; 
+                    cmd.Parameters.AddWithValue("@id",id);
+                    cmd.Parameters.AddWithValue("@idUser",idUser);
 
-                    cmd.CommandText = "Insert into HistoricoF values();";
-                   
+
+
                 }
                 catch (Exception ex)
                 {

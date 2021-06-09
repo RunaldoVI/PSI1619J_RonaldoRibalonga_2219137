@@ -111,6 +111,7 @@ namespace Tugagenda
             this.dgvFilmes.Size = new System.Drawing.Size(676, 340);
             this.dgvFilmes.TabIndex = 4;
             this.dgvFilmes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFilmes_CellClick);
+            this.dgvFilmes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFilmes_CellContentClick);
             // 
             // btnPesquisar
             // 
