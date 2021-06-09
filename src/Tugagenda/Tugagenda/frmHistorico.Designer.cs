@@ -55,6 +55,7 @@ namespace Tugagenda
             this.btnEstouAVer.TabIndex = 1;
             this.btnEstouAVer.Text = "Estou a ver";
             this.btnEstouAVer.UseVisualStyleBackColor = true;
+            this.btnEstouAVer.Click += new System.EventHandler(this.btnEstouAVer_Click);
             // 
             // btnQueroVer
             // 
@@ -65,6 +66,7 @@ namespace Tugagenda
             this.btnQueroVer.TabIndex = 2;
             this.btnQueroVer.Text = "Quero Ver";
             this.btnQueroVer.UseVisualStyleBackColor = true;
+            this.btnQueroVer.Click += new System.EventHandler(this.btnQueroVer_Click);
             // 
             // label1
             // 
@@ -73,7 +75,7 @@ namespace Tugagenda
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(328, 44);
+            this.label1.Location = new System.Drawing.Point(292, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 25);
             this.label1.TabIndex = 3;
@@ -83,7 +85,7 @@ namespace Tugagenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(665, 345);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnQueroVer);
             this.Controls.Add(this.btnEstouAVer);

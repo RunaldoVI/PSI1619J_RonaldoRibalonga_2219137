@@ -43,6 +43,8 @@ namespace Tugagenda
             this.rdbAdicionar = new System.Windows.Forms.RadioButton();
             this.rbEditar = new System.Windows.Forms.RadioButton();
             this.rdbApagar = new System.Windows.Forms.RadioButton();
+            this.lblID = new System.Windows.Forms.Label();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtNome
@@ -191,6 +193,25 @@ namespace Tugagenda
             this.rdbApagar.UseVisualStyleBackColor = true;
             this.rdbApagar.CheckedChanged += new System.EventHandler(this.rdbApagar_CheckedChanged);
             // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblID.Location = new System.Drawing.Point(44, 75);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(21, 13);
+            this.lblID.TabIndex = 15;
+            this.lblID.Text = "ID:";
+            this.lblID.Visible = false;
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(85, 75);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(205, 20);
+            this.txtID.TabIndex = 14;
+            this.txtID.Visible = false;
+            // 
             // frmFilmescrum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -210,6 +231,8 @@ namespace Tugagenda
             this.Controls.Add(this.btnAdicionar);
             this.Controls.Add(this.btnApagar);
             this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.lblID);
+            this.Controls.Add(this.txtID);
             this.Name = "frmFilmescrum";
             this.Text = "frmFilmescrum";
             this.Load += new System.EventHandler(this.frmFilmescrum_Load);
@@ -234,5 +257,7 @@ namespace Tugagenda
         private System.Windows.Forms.RadioButton rdbAdicionar;
         private System.Windows.Forms.RadioButton rbEditar;
         private System.Windows.Forms.RadioButton rdbApagar;
+        private System.Windows.Forms.Label lblID;
+        private System.Windows.Forms.TextBox txtID;
     }
 }

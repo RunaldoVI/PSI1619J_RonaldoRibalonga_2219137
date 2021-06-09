@@ -146,6 +146,8 @@ namespace Tugagenda
             lblNome.Visible = true;
             txtGenero.Visible = true;
             TxtDescricao.Visible = true;
+            txtID.Visible = false;
+            lblID.Visible = false;
         }
 
         private void rbEditar_CheckedChanged(object sender, EventArgs e)
@@ -160,6 +162,8 @@ namespace Tugagenda
             lblNome.Visible = true;
             txtGenero.Visible = true;
             TxtDescricao.Visible = true;
+            txtID.Visible = false;
+            lblID.Visible = false;
         }
 
         private void rdbApagar_CheckedChanged(object sender, EventArgs e)
@@ -173,6 +177,8 @@ namespace Tugagenda
             txtGenero.Visible = false;
             lblDescricao.Visible = false;
             lblGenero.Visible = false;
+            txtID.Visible = true;
+            lblID.Visible = true;
         }
 
         private void btnApagar_Click(object sender, EventArgs e)
@@ -184,14 +190,26 @@ namespace Tugagenda
                 db.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = db;
-                cmd.CommandText = "delete from Filmes where Nome = @Nome";
-                cmd.Parameters.AddWithValue("@Nome", txtNome.Text);               
                 if (txtNome.Text.Length == 0)
                 {
                     MessageBox.Show("Nada foi alterado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
+                    cmd.CommandText = "delete from Filmes where Nome = @Nome";
+                    cmd.Parameters.AddWithValue("@Nome", txtNome.Text);
+                    cmd.ExecuteNonQuery();
+                    
+                    
+                }
+                if (txtID.Text.Length == 0)
+                {
+                    MessageBox.Show("Nada foi alterado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    cmd.CommandText = "delete from HistoricoF where FilmeID = @ID";
+                    cmd.Parameters.AddWithValue("@ID", txtID.Text);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Eliminado com sucesso");
                     db.Close();
@@ -201,6 +219,7 @@ namespace Tugagenda
 
 
 
+                
             }
             catch (Exception ex)
             {

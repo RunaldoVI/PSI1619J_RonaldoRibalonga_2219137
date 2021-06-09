@@ -73,7 +73,7 @@ namespace Tugagenda
                 db.Open();
 
 
-                var cmd = new SqlCommand($"Select Nome,genero from Filmes where Nome like '%{txtFilmes.Text}%'", db);
+                var cmd = new SqlCommand($"Select * from Filmes where Nome like '%{txtFilmes.Text}%'", db);
 
 
                 var rdr = cmd.ExecuteReader();
@@ -82,7 +82,6 @@ namespace Tugagenda
                 var dataset = new DataSet();
                 dataset.Tables.Add(datatable);
                 dataset.Load(rdr, LoadOption.PreserveChanges, dataset.Tables["Filmes"]);
-
                 dgvFilmes.DataSource = dataset.Tables["Filmes"];
 
                 db.Close();
