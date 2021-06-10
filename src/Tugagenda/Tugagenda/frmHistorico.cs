@@ -39,6 +39,7 @@ namespace Tugagenda
                     cmd.Parameters.AddWithValue("@id",id);
                     cmd.Parameters.AddWithValue("@idUser",idUser);
                     cmd.ExecuteNonQuery();
+                    db.Close();
 
 
                 }
@@ -74,6 +75,7 @@ namespace Tugagenda
                     cmd.Parameters.AddWithValue("@id", id);
                     cmd.Parameters.AddWithValue("@idUser", idUser);
                     cmd.ExecuteNonQuery();
+                    db.Close();
 
 
                 }
@@ -102,6 +104,7 @@ namespace Tugagenda
                     cmd.Parameters.AddWithValue("@id", id);
                     cmd.Parameters.AddWithValue("@idUser", idUser);
                     cmd.ExecuteNonQuery();
+                    db.Close();
 
 
                 }

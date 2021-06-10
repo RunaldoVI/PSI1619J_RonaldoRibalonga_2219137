@@ -76,7 +76,20 @@ namespace Tugagenda
 
         private void dgvSeries_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (Application.OpenForms.OfType<frmHistoricoSeries>().Count() > 0)
+            {
+                Application.OpenForms.OfType<frmHistoricoSeries>().First().Focus();
+                MessageBox.Show("Já tem 1 janela filmes aberta!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
+            }
+            else
+            {
+                int id = int.Parse(dgvSeries.Rows[dgvSeries.SelectedCells[0].RowIndex].Cells[0].Value.ToString());
+                string nome = dgvSeries.Rows[dgvSeries.SelectedCells[0].RowIndex].Cells[1].Value.ToString();
+                var historico = new frmHistoricoSeries(id, nome);
+                historico.MdiParent = this.ParentForm;
+                historico.Show();
+            }
         }
 
         private void txtSeries_KeyPress(object sender, KeyPressEventArgs e)
