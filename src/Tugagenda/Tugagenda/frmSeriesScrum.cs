@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Tugagenda
 {
-    public partial class SeriesScrum : Form
+    public partial class frmSeriesScrum : Form
     {
-        public SeriesScrum()
+        public frmSeriesScrum()
         {
             InitializeComponent();
         }

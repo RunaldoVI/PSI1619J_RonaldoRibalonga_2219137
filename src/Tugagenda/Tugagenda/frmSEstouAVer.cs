@@ -20,15 +20,21 @@ namespace Tugagenda
             InitializeComponent();
         }
 
-        private void btnAdicionar_Click(object sender, EventArgs e)
+        public void btnAdicionar_Click(object sender, EventArgs e)
         {
+            DialogResult = DialogResult.OK;
             Ep = int.Parse(txtEp.Text.ToString());
-            Close();
+            
         }
 
         private void frmSEstouAVer_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

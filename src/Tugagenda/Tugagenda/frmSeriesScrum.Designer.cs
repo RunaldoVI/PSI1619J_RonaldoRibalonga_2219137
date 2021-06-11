@@ -1,7 +1,7 @@
 ﻿
 namespace Tugagenda
 {
-    partial class SeriesScrum
+    partial class frmSeriesScrum
     {
         /// <summary>
         /// Required designer variable.

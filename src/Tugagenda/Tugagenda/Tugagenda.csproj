@@ -188,11 +188,11 @@
     <Compile Include="frmSeries.Designer.cs">
       <DependentUpon>frmSeries.cs</DependentUpon>
     </Compile>
-    <Compile Include="SeriesScrum.cs">
+    <Compile Include="frmSeriesScrum.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SeriesScrum.Designer.cs">
-      <DependentUpon>SeriesScrum.cs</DependentUpon>
+    <Compile Include="frmSeriesScrum.Designer.cs">
+      <DependentUpon>frmSeriesScrum.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
     <EmbeddedResource Include="frmEVer.resx">
