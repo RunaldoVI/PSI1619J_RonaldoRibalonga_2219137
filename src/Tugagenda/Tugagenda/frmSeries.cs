@@ -40,6 +40,7 @@ namespace Tugagenda
                 dataset.Load(rdr, LoadOption.PreserveChanges, dataset.Tables["Series"]);
                 dgvSeries.DataSource = dataset.Tables["Series"];
                 javi();
+                QueroVer();
                 db.Close();
             }
             catch (Exception)
@@ -57,6 +58,15 @@ namespace Tugagenda
             btn.UseColumnTextForButtonValue = true;
             dgvSeries.Columns.Add(btn);
 
+        }
+        public void QueroVer()
+        {
+            DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
+            btn.HeaderText = "Quero Ver";
+            btn.Name = "QueroVer";
+            btn.Text = "Quero Ver";
+            btn.UseColumnTextForButtonValue = true;
+            dgvSeries.Columns.Add(btn);
         }
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
@@ -106,8 +116,8 @@ namespace Tugagenda
             {
                 idUser = Program.logUser.IDRegisto;
                 idNome = Program.logUser.Username;
-                int id = int.Parse(dgvSeries.Rows[dgvSeries.SelectedCells[0].RowIndex].Cells[1].Value.ToString());
-                string nome = dgvSeries.Rows[dgvSeries.SelectedCells[0].RowIndex].Cells[2].Value.ToString();
+                int id = int.Parse(dgvSeries.Rows[dgvSeries.SelectedCells[0].RowIndex].Cells[2].Value.ToString());
+                string nome = dgvSeries.Rows[dgvSeries.SelectedCells[0].RowIndex].Cells[3].Value.ToString();
                 if (e.ColumnIndex == 0)
                 {
                     DialogResult verificar = MessageBox.Show("Pretende adicionar a lista ja visto?", "Adicionar?", MessageBoxButtons.OKCancel);
@@ -128,6 +138,29 @@ namespace Tugagenda
                         cmd.Parameters.AddWithValue("@Nome", nome);
                         cmd.ExecuteNonQuery();
                     }
+                    
+                }
+                else if(e.ColumnIndex == 1)
+                {
+                    DialogResult verificar = MessageBox.Show("Pretende adicionar a lista ja visto?", "Adicionar?", MessageBoxButtons.OKCancel);
+
+                    if (verificar == DialogResult.OK)
+                    {
+                        DataGridViewRow row = this.dgvSeries.Rows[e.RowIndex];
+                        idT = int.Parse(row.Cells["Temporada"].Value.ToString());
+                        db.Open();
+                        SqlCommand cmd = new SqlCommand();
+                        cmd.Connection = db;
+                        cmd.CommandText = "insert into HistoricoS (SerieID,IDRegisto,QuerVer,Temporada,Username,SerieNome) values (@id,@idUser,1,@Temporada,@Username,@Nome)";
+                        cmd.Parameters.AddWithValue("@id", id);
+                        cmd.Parameters.AddWithValue("@idUser", idUser);
+                        cmd.Parameters.AddWithValue("@Temporada", idT);
+                        cmd.Parameters.AddWithValue("@Username", idNome);
+                        cmd.Parameters.AddWithValue("@Nome", nome);
+                        cmd.ExecuteNonQuery();
+                        db.Close();
+                    }
+                   
                 }
                 else
                 {
