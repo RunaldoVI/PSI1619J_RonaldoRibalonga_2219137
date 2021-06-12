@@ -16,6 +16,8 @@ namespace Tugagenda
         public int id { get; set; }
         public string nome { get; set; }
         public int idUser { get; set; }
+
+        public string idNome  { get; set; }
         public frmHistorico(int _id,string _nome)
         {
             id = _id;
@@ -35,9 +37,11 @@ namespace Tugagenda
                     db.Open();
                     SqlCommand cmd = new SqlCommand();
                     cmd.Connection = db;
-                    cmd.CommandText = "insert into HistoricoF (FilmeID,IDRegisto,Visto) values (@id,@idUser,1)"; 
+                    cmd.CommandText = "insert into HistoricoF (FilmeID,IDRegisto,Visto,FilmeNome,Username) values (@id,@idUser,1,@Nome,@Username)"; 
                     cmd.Parameters.AddWithValue("@id",id);
                     cmd.Parameters.AddWithValue("@idUser",idUser);
+                    cmd.Parameters.AddWithValue("@Username", idNome);
+                    cmd.Parameters.AddWithValue("@Nome", nome);
                     cmd.ExecuteNonQuery();
                     db.Close();
 
@@ -56,6 +60,7 @@ namespace Tugagenda
         {
             label1.Text = nome;
             idUser = Program.logUser.IDRegisto;
+            idNome = Program.logUser.Username;
         }
 
         private void btnEstouAVer_Click(object sender, EventArgs e)
@@ -71,9 +76,11 @@ namespace Tugagenda
                     db.Open();
                     SqlCommand cmd = new SqlCommand();
                     cmd.Connection = db;
-                    cmd.CommandText = "insert into HistoricoF (FilmeID,IDRegisto,AVer) values (@id,@idUser,1)";
+                    cmd.CommandText = "insert into HistoricoF (FilmeID,IDRegisto,AVer,Username,FilmeNome) values (@id,@idUser,1,@Username,@Nome)";
                     cmd.Parameters.AddWithValue("@id", id);
                     cmd.Parameters.AddWithValue("@idUser", idUser);
+                    cmd.Parameters.AddWithValue("@Username", idNome);
+                    cmd.Parameters.AddWithValue("@Nome", nome);
                     cmd.ExecuteNonQuery();
                     db.Close();
 
@@ -100,9 +107,11 @@ namespace Tugagenda
                     db.Open();
                     SqlCommand cmd = new SqlCommand();
                     cmd.Connection = db;
-                    cmd.CommandText = "insert into HistoricoF (FilmeID,IDRegisto,QuerVer) values (@id,@idUser,1)";
+                    cmd.CommandText = "insert into HistoricoF (FilmeID,IDRegisto,QuerVer,Username,FilmeNome) values (@id,@idUser,1,@Username,@Nome)";
                     cmd.Parameters.AddWithValue("@id", id);
                     cmd.Parameters.AddWithValue("@idUser", idUser);
+                    cmd.Parameters.AddWithValue("@Username", idNome);
+                    cmd.Parameters.AddWithValue("@Nome", nome);
                     cmd.ExecuteNonQuery();
                     db.Close();
 

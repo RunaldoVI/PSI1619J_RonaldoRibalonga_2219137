@@ -213,13 +213,7 @@ namespace Tugagenda
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Eliminado com sucesso");
                     db.Close();
-                }
-
-
-
-
-
-                
+                }             
             }
             catch (Exception ex)
             {

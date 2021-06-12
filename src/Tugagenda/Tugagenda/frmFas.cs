@@ -69,5 +69,12 @@ namespace Tugagenda
                 filmes.Show();
             }
         }
+
+        private void tslPerfil_Click(object sender, EventArgs e)
+        {
+            var perfil = new frmPerfil();
+            perfil.MdiParent = this;
+            perfil.Show();
+        }
     }
 }

@@ -162,6 +162,12 @@
     <Compile Include="frmHistoricoSeries.Designer.cs">
       <DependentUpon>frmHistoricoSeries.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPerfil.Designer.cs">
+      <DependentUpon>frmPerfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSEstouAVer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -218,6 +224,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmHistoricoSeries.resx">
       <DependentUpon>frmHistoricoSeries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPerfil.resx">
+      <DependentUpon>frmPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeriesScrum.resx">
+      <DependentUpon>frmSeriesScrum.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSEstouAVer.resx">
       <DependentUpon>frmSEstouAVer.cs</DependentUpon>

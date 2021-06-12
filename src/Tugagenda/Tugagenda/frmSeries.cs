@@ -98,7 +98,18 @@ namespace Tugagenda
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
+            if (Application.OpenForms.OfType<frmHistoricoSeries>().Count() > 0)
+            {
+                Application.OpenForms.OfType<frmHistoricoSeries>().First().Focus();
+                MessageBox.Show("Já tem 1 janela filmes aberta!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
+            }
+            else
+            {
+                var series = new frmSeriesScrum();
+                series.MdiParent = this.ParentForm;
+                series.Show();
+            }
         }
 
 
@@ -118,47 +129,68 @@ namespace Tugagenda
                 idNome = Program.logUser.Username;
                 int id = int.Parse(dgvSeries.Rows[dgvSeries.SelectedCells[0].RowIndex].Cells[2].Value.ToString());
                 string nome = dgvSeries.Rows[dgvSeries.SelectedCells[0].RowIndex].Cells[3].Value.ToString();
+                SqlCommand cmd = new SqlCommand();
+                db.Open();
                 if (e.ColumnIndex == 0)
                 {
                     DialogResult verificar = MessageBox.Show("Pretende adicionar a lista ja visto?", "Adicionar?", MessageBoxButtons.OKCancel);
 
                     if (verificar == DialogResult.OK)
                     {
-
-                        DataGridViewRow row = this.dgvSeries.Rows[e.RowIndex];
-                        db.Open();
-                        SqlCommand cmd = new SqlCommand();
-                        cmd.Connection = db;
-                        idT = int.Parse(row.Cells["Temporada"].Value.ToString());
-                        cmd.CommandText = "insert into HistoricoS (SerieID,IDRegisto,Visto,Temporada,Username,SerieNome) values (@id,@idUser,1,@Temporada,@Username,@Nome)";
-                        cmd.Parameters.AddWithValue("@id", id);
+                        SqlDataAdapter da;
+                        da = new SqlDataAdapter("select IDSerie from HistoricoS where IDRegisto=@idUser ", db);
                         cmd.Parameters.AddWithValue("@idUser", idUser);
-                        cmd.Parameters.AddWithValue("@Temporada", idT);
-                        cmd.Parameters.AddWithValue("@Username", idNome);
-                        cmd.Parameters.AddWithValue("@Nome", nome);
-                        cmd.ExecuteNonQuery();
+                        cmd.ExecuteReader();
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+                        if (dt.Rows.Count >= 1)
+                        {
+                            MessageBox.Show("A serie ja esta a ser ocupada!");
+                        }
+                        else
+                        {
+                            DataGridViewRow row = this.dgvSeries.Rows[e.RowIndex];                         
+                            cmd.Connection = db;
+                            idT = int.Parse(row.Cells["Temporada"].Value.ToString());
+                            cmd.CommandText = "insert into HistoricoS (SerieID,IDRegisto,Visto,Temporada,Username,SerieNome) values (@id,@idUser,1,@Temporada,@Username,@Nome)";
+                            cmd.Parameters.AddWithValue("@id", id);
+                            cmd.Parameters.AddWithValue("@idUser", idUser);
+                            cmd.Parameters.AddWithValue("@Temporada", idT);
+                            cmd.Parameters.AddWithValue("@Username", idNome);
+                            cmd.Parameters.AddWithValue("@Nome", nome);
+                            cmd.ExecuteNonQuery();
+                        }
                     }
                     
                 }
                 else if(e.ColumnIndex == 1)
                 {
-                    DialogResult verificar = MessageBox.Show("Pretende adicionar a lista ja visto?", "Adicionar?", MessageBoxButtons.OKCancel);
+                    DialogResult verificar = MessageBox.Show("Pretende adicionar a lista quer ver?", "Adicionar?", MessageBoxButtons.OKCancel);
 
                     if (verificar == DialogResult.OK)
                     {
-                        DataGridViewRow row = this.dgvSeries.Rows[e.RowIndex];
-                        idT = int.Parse(row.Cells["Temporada"].Value.ToString());
-                        db.Open();
-                        SqlCommand cmd = new SqlCommand();
-                        cmd.Connection = db;
-                        cmd.CommandText = "insert into HistoricoS (SerieID,IDRegisto,QuerVer,Temporada,Username,SerieNome) values (@id,@idUser,1,@Temporada,@Username,@Nome)";
-                        cmd.Parameters.AddWithValue("@id", id);
+
+                        SqlDataAdapter da;
+                        da = new SqlDataAdapter("select IDSerie from HistoricoS where IDRegisto = @idUser ", db);
                         cmd.Parameters.AddWithValue("@idUser", idUser);
-                        cmd.Parameters.AddWithValue("@Temporada", idT);
-                        cmd.Parameters.AddWithValue("@Username", idNome);
-                        cmd.Parameters.AddWithValue("@Nome", nome);
-                        cmd.ExecuteNonQuery();
-                        db.Close();
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+                        if (dt.Rows.Count >= 1)
+                        {
+                            MessageBox.Show("A serie ja esta a ser ocupada!");
+                        }
+                        else
+                        {
+                            DataGridViewRow row = this.dgvSeries.Rows[e.RowIndex];
+                            cmd.Connection = db;
+                            cmd.CommandText = "insert into HistoricoS (SerieID,IDRegisto,QuerVer,Username,SerieNome) values (@id,@idUser,1,@Username,@Nome)";
+                            cmd.Parameters.AddWithValue("@id", id);
+                            cmd.Parameters.AddWithValue("@idUser", idUser);
+                            cmd.Parameters.AddWithValue("@Username", idNome);
+                            cmd.Parameters.AddWithValue("@Nome", nome);
+                            cmd.ExecuteNonQuery();
+                            db.Close();
+                        }
                     }
                    
                 }

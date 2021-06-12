@@ -49,21 +49,21 @@ namespace Tugagenda
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(85, 101);
+            this.txtNome.Location = new System.Drawing.Point(91, 107);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(205, 20);
             this.txtNome.TabIndex = 0;
             // 
             // txtGenero
             // 
-            this.txtGenero.Location = new System.Drawing.Point(85, 153);
+            this.txtGenero.Location = new System.Drawing.Point(91, 159);
             this.txtGenero.Name = "txtGenero";
             this.txtGenero.Size = new System.Drawing.Size(205, 20);
             this.txtGenero.TabIndex = 1;
             // 
             // TxtDescricao
             // 
-            this.TxtDescricao.Location = new System.Drawing.Point(85, 127);
+            this.TxtDescricao.Location = new System.Drawing.Point(91, 133);
             this.TxtDescricao.Name = "TxtDescricao";
             this.TxtDescricao.Size = new System.Drawing.Size(205, 20);
             this.TxtDescricao.TabIndex = 2;
@@ -72,7 +72,7 @@ namespace Tugagenda
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblNome.Location = new System.Drawing.Point(44, 101);
+            this.lblNome.Location = new System.Drawing.Point(50, 107);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(35, 13);
             this.lblNome.TabIndex = 3;
@@ -83,7 +83,7 @@ namespace Tugagenda
             this.lblDescricao.AutoSize = true;
             this.lblDescricao.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblDescricao.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblDescricao.Location = new System.Drawing.Point(24, 130);
+            this.lblDescricao.Location = new System.Drawing.Point(30, 136);
             this.lblDescricao.Name = "lblDescricao";
             this.lblDescricao.Size = new System.Drawing.Size(55, 13);
             this.lblDescricao.TabIndex = 4;
@@ -94,7 +94,7 @@ namespace Tugagenda
             this.lblGenero.AutoSize = true;
             this.lblGenero.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblGenero.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblGenero.Location = new System.Drawing.Point(37, 154);
+            this.lblGenero.Location = new System.Drawing.Point(43, 160);
             this.lblGenero.Name = "lblGenero";
             this.lblGenero.Size = new System.Drawing.Size(42, 13);
             this.lblGenero.TabIndex = 5;
@@ -138,7 +138,7 @@ namespace Tugagenda
             this.lblNomeAntigo.AutoSize = true;
             this.lblNomeAntigo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lblNomeAntigo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblNomeAntigo.Location = new System.Drawing.Point(12, 78);
+            this.lblNomeAntigo.Location = new System.Drawing.Point(18, 84);
             this.lblNomeAntigo.Name = "lblNomeAntigo";
             this.lblNomeAntigo.Size = new System.Drawing.Size(68, 13);
             this.lblNomeAntigo.TabIndex = 9;
@@ -148,7 +148,7 @@ namespace Tugagenda
             // 
             // txtNomeAntigo
             // 
-            this.txtNomeAntigo.Location = new System.Drawing.Point(85, 75);
+            this.txtNomeAntigo.Location = new System.Drawing.Point(91, 81);
             this.txtNomeAntigo.Name = "txtNomeAntigo";
             this.txtNomeAntigo.Size = new System.Drawing.Size(205, 20);
             this.txtNomeAntigo.TabIndex = 10;
@@ -197,7 +197,7 @@ namespace Tugagenda
             // 
             this.lblID.AutoSize = true;
             this.lblID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblID.Location = new System.Drawing.Point(44, 75);
+            this.lblID.Location = new System.Drawing.Point(50, 81);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(21, 13);
             this.lblID.TabIndex = 15;
@@ -206,7 +206,7 @@ namespace Tugagenda
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(85, 75);
+            this.txtID.Location = new System.Drawing.Point(91, 81);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(205, 20);
             this.txtID.TabIndex = 14;
