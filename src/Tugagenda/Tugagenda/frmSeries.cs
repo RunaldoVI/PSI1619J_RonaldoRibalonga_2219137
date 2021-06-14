@@ -138,9 +138,8 @@ namespace Tugagenda
                     if (verificar == DialogResult.OK)
                     {
                         SqlDataAdapter da;
-                        da = new SqlDataAdapter("select IDSerie from HistoricoS where IDRegisto=@idUser ", db);
+                        da = new SqlDataAdapter("select Username,@idUser,SerieID,COUNT(*) from HistoricoS group by Username,SerieID,Temporada; ", db);
                         cmd.Parameters.AddWithValue("@idUser", idUser);
-                        cmd.ExecuteReader();
                         DataTable dt = new DataTable();
                         da.Fill(dt);
                         if (dt.Rows.Count >= 1)
