@@ -89,7 +89,7 @@ namespace Tugagenda
                 if (m == DialogResult.OK)
                 {
                     SqlDataAdapter da;
-                    da = new SqlDataAdapter("select Username,@idUser,SerieID,COUNT(*) from HistoricoS group by Username,SerieID,Temporada", db);
+                    da = new SqlDataAdapter("select Username,IDRegisto,SerieID,COUNT(*) from HistoricoS group by Username,SerieID,Temporada where IDRegisto = @idUser", db);
                     cmd.Parameters.AddWithValue("@idUser", idUser);
                     DataTable dt = new DataTable();
                     da.Fill(dt);
