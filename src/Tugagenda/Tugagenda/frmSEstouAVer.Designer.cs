@@ -38,10 +38,11 @@ namespace Tugagenda
             // lblEp
             // 
             this.lblEp.AutoSize = true;
-            this.lblEp.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.lblEp.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.lblEp.ForeColor = System.Drawing.Color.White;
             this.lblEp.Location = new System.Drawing.Point(30, 18);
             this.lblEp.Name = "lblEp";
-            this.lblEp.Size = new System.Drawing.Size(167, 18);
+            this.lblEp.Size = new System.Drawing.Size(212, 24);
             this.lblEp.TabIndex = 0;
             this.lblEp.Text = "Em que episodio estás?";
             // 
@@ -54,9 +55,12 @@ namespace Tugagenda
             // 
             // btnAdicionar
             // 
-            this.btnAdicionar.Location = new System.Drawing.Point(113, 130);
+            this.btnAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
+            this.btnAdicionar.ForeColor = System.Drawing.Color.White;
+            this.btnAdicionar.Location = new System.Drawing.Point(73, 118);
             this.btnAdicionar.Name = "btnAdicionar";
-            this.btnAdicionar.Size = new System.Drawing.Size(75, 23);
+            this.btnAdicionar.Size = new System.Drawing.Size(125, 35);
             this.btnAdicionar.TabIndex = 2;
             this.btnAdicionar.Text = "Adicionar";
             this.btnAdicionar.UseVisualStyleBackColor = true;
@@ -64,9 +68,12 @@ namespace Tugagenda
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(244, 130);
+            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.btnSair.ForeColor = System.Drawing.Color.White;
+            this.btnSair.Location = new System.Drawing.Point(234, 138);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(75, 23);
+            this.btnSair.Size = new System.Drawing.Size(95, 33);
             this.btnSair.TabIndex = 3;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
@@ -76,6 +83,7 @@ namespace Tugagenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(331, 174);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnAdicionar);

@@ -114,17 +114,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmEVer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEVer.Designer.cs">
-      <DependentUpon>frmEVer.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmcomeco.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmcomeco.Designer.cs">
       <DependentUpon>frmcomeco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFApagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFApagar.Designer.cs">
+      <DependentUpon>frmFApagar.cs</DependentUpon>
     </Compile>
     <Compile Include="frmFas.cs">
       <SubType>Form</SubType>
@@ -132,29 +132,29 @@
     <Compile Include="frmFas.Designer.cs">
       <DependentUpon>frmFas.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFEditar.Designer.cs">
+      <DependentUpon>frmFEditar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFilmes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmFilmes.Designer.cs">
       <DependentUpon>frmFilmes.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmFilmescrum.cs">
+    <Compile Include="frmFAdicionar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmFilmescrum.Designer.cs">
-      <DependentUpon>frmFilmescrum.cs</DependentUpon>
+    <Compile Include="frmFAdicionar.Designer.cs">
+      <DependentUpon>frmFAdicionar.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmHistorico.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmHistorico.Designer.cs">
-      <DependentUpon>frmHistorico.cs</DependentUpon>
     </Compile>
     <Compile Include="frmHistoricoSeries.cs">
       <SubType>Form</SubType>
@@ -167,6 +167,18 @@
     </Compile>
     <Compile Include="frmPerfil.Designer.cs">
       <DependentUpon>frmPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSApagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSApagar.Designer.cs">
+      <DependentUpon>frmSApagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSEditar.Designer.cs">
+      <DependentUpon>frmSEditar.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSEstouAVer.cs">
       <SubType>Form</SubType>
@@ -194,33 +206,33 @@
     <Compile Include="frmSeries.Designer.cs">
       <DependentUpon>frmSeries.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSeriesScrum.cs">
+    <Compile Include="frmSAdicionar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSeriesScrum.Designer.cs">
-      <DependentUpon>frmSeriesScrum.cs</DependentUpon>
+    <Compile Include="frmSAdicionar.Designer.cs">
+      <DependentUpon>frmSAdicionar.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
-    <EmbeddedResource Include="frmEVer.resx">
-      <DependentUpon>frmEVer.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmcomeco.resx">
       <DependentUpon>frmcomeco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFApagar.resx">
+      <DependentUpon>frmFApagar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFas.resx">
       <DependentUpon>frmFas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmFEditar.resx">
+      <DependentUpon>frmFEditar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmFilmes.resx">
       <DependentUpon>frmFilmes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmFilmescrum.resx">
-      <DependentUpon>frmFilmescrum.cs</DependentUpon>
+    <EmbeddedResource Include="frmFAdicionar.resx">
+      <DependentUpon>frmFAdicionar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmHistorico.resx">
-      <DependentUpon>frmHistorico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHistoricoSeries.resx">
       <DependentUpon>frmHistoricoSeries.cs</DependentUpon>
@@ -228,8 +240,14 @@
     <EmbeddedResource Include="frmPerfil.resx">
       <DependentUpon>frmPerfil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSeriesScrum.resx">
-      <DependentUpon>frmSeriesScrum.cs</DependentUpon>
+    <EmbeddedResource Include="frmSApagar.resx">
+      <DependentUpon>frmSApagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSEditar.resx">
+      <DependentUpon>frmSEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSAdicionar.resx">
+      <DependentUpon>frmSAdicionar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSEstouAVer.resx">
       <DependentUpon>frmSEstouAVer.cs</DependentUpon>
@@ -326,6 +344,21 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background %284%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background_1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.2.1.1\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.2.1.1\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />

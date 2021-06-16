@@ -98,17 +98,17 @@ namespace Tugagenda
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-            if (Application.OpenForms.OfType<frmHistoricoSeries>().Count() > 0)
+            if (Application.OpenForms.OfType<frmFAdicionar>().Count() > 0)
             {
-                Application.OpenForms.OfType<frmHistoricoSeries>().First().Focus();
+                Application.OpenForms.OfType<frmFAdicionar>().First().Focus();
                 MessageBox.Show("Já tem 1 janela filmes aberta!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }
             else
             {
-                var series = new frmSeriesScrum();
-                series.MdiParent = this.ParentForm;
-                series.Show();
+                var adicionar = new frmFAdicionar();
+
+                adicionar.ShowDialog();
             }
         }
 
@@ -129,7 +129,8 @@ namespace Tugagenda
                 idNome = Program.logUser.Username;
                 int id = int.Parse(dgvSeries.Rows[dgvSeries.SelectedCells[0].RowIndex].Cells[2].Value.ToString());
                 string nome = dgvSeries.Rows[dgvSeries.SelectedCells[0].RowIndex].Cells[3].Value.ToString();
-                SqlCommand cmd = new SqlCommand();
+                string descricao = dgvSeries.Rows[dgvSeries.SelectedCells[0].RowIndex].Cells[5].Value.ToString();
+
                 db.Open();
                 if (e.ColumnIndex == 0)
                 {
@@ -137,17 +138,34 @@ namespace Tugagenda
 
                     if (verificar == DialogResult.OK)
                     {
-                        SqlDataAdapter da;
-                        da = new SqlDataAdapter("select Username,IDRegisto,SerieID,COUNT(*) from HistoricoS group by Username,SerieID,Temporada where IDRegisto = @idUser ", db);
-                        cmd.Parameters.AddWithValue("@idUser", idUser);
+                        SqlCommand cmdV = new SqlCommand();
+                        cmdV.CommandText = "select Visto,AVer,QuerVer from HistoricoS where IDRegisto = @idUser and SerieID = @IDSerie";
+                        cmdV.Parameters.AddWithValue("@idUser", idUser);
+                        cmdV.Parameters.AddWithValue("@IDSerie", id);
+                        cmdV.Connection = db;
                         DataTable dt = new DataTable();
-                        da.Fill(dt);
+                        dt.Load(cmdV.ExecuteReader());
                         if (dt.Rows.Count >= 1)
                         {
-                            MessageBox.Show("A serie ja esta a ser ocupada!");
+                            DialogResult check = MessageBox.Show("A serie ja se encontra ocupada deseja atualizar para ja visto?", "Atualizar?", MessageBoxButtons.OKCancel);
+                            if(check == DialogResult.OK)
+                            {
+                                SqlCommand cmdC = new SqlCommand();
+                                cmdC.Connection = db;                             
+                                cmdC.CommandText = "update HistoricoS set Visto = 1 , QuerVer = 0, AVer = 0, Temporada = @Temporada where IDRegisto = @idUser and SerieID = @IDSerie";
+                                cmdC.Parameters.AddWithValue("@idUser", idUser);
+                                cmdC.Parameters.AddWithValue("@Temporada", idT);
+                                cmdC.Parameters.AddWithValue("@IDSerie", id);
+                                cmdC.ExecuteNonQuery();
+                            }
+                            else
+                            {
+                                Close();
+                            }
                         }
                         else
                         {
+                            SqlCommand cmd = new SqlCommand();
                             DataGridViewRow row = this.dgvSeries.Rows[e.RowIndex];                         
                             cmd.Connection = db;
                             idT = int.Parse(row.Cells["Temporada"].Value.ToString());
@@ -168,18 +186,29 @@ namespace Tugagenda
 
                     if (verificar == DialogResult.OK)
                     {
-
-                        SqlDataAdapter da;
-                        da = new SqlDataAdapter("select IDSerie from HistoricoS where IDRegisto = @idUser ", db);
-                        cmd.Parameters.AddWithValue("@idUser", idUser);
+                        SqlCommand cmdV = new SqlCommand();
+                        cmdV.CommandText = "select Visto,AVer,QuerVer from HistoricoS where IDRegisto = @idUser and SerieID = @IDSerie";
+                        cmdV.Parameters.AddWithValue("@idUser", idUser);
+                        cmdV.Parameters.AddWithValue("@IDSerie", id);
+                        cmdV.Connection = db;
                         DataTable dt = new DataTable();
-                        da.Fill(dt);
+                        dt.Load(cmdV.ExecuteReader());
                         if (dt.Rows.Count >= 1)
                         {
-                            MessageBox.Show("A serie ja esta a ser ocupada!");
+                            DialogResult check = MessageBox.Show("A serie ja se encontra ocupada deseja atualizar para ja visto?", "Atualizar?", MessageBoxButtons.OKCancel);
+                            if (check == DialogResult.OK)
+                            {
+                                SqlCommand cmdC = new SqlCommand();
+                                cmdC.Connection = db;
+                                cmdC.CommandText = "update HistoricoS set Visto = 0 , QuerVer = 1, AVer = 0, Temporada = NULL, Episodio = NULL where IDRegisto = @idUser and SerieID = @IDSerie";
+                                cmdC.Parameters.AddWithValue("@idUser", idUser);
+                                cmdC.Parameters.AddWithValue("@IDSerie", id);
+                                cmdC.ExecuteNonQuery();
+                            }
                         }
                         else
                         {
+                            SqlCommand cmd = new SqlCommand();
                             DataGridViewRow row = this.dgvSeries.Rows[e.RowIndex];
                             cmd.Connection = db;
                             cmd.CommandText = "insert into HistoricoS (SerieID,IDRegisto,QuerVer,Username,SerieNome) values (@id,@idUser,1,@Username,@Nome)";
@@ -195,7 +224,7 @@ namespace Tugagenda
                 }
                 else
                 {
-                    var historico = new frmHistoricoSeries(id, nome);
+                    var historico = new frmHistoricoSeries(id, nome,descricao);
                     historico.MdiParent = this.ParentForm;
                     historico.Show();
                 }
@@ -211,6 +240,38 @@ namespace Tugagenda
             {
                 e.Handled = true;
                 btnPesquisar_Click(this, EventArgs.Empty);
+            }
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<frmSEditar>().Count() > 0)
+            {
+                Application.OpenForms.OfType<frmSEditar>().First().Focus();
+                MessageBox.Show("Já tem 1 janela filmes aberta!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+            else
+            {
+                var editar = new frmSEditar();
+
+                editar.ShowDialog();
+            }
+        }
+
+        private void btnApagar_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<frmSApagar>().Count() > 0)
+            {
+                Application.OpenForms.OfType<frmSApagar>().First().Focus();
+                MessageBox.Show("Já tem 1 janela filmes aberta!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+            else
+            {
+                var apagar = new frmSApagar();
+
+                apagar.ShowDialog();
             }
         }
     }

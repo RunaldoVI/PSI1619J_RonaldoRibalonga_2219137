@@ -29,7 +29,6 @@ namespace Tugagenda
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -42,8 +41,8 @@ namespace Tugagenda
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.lblLogin = new System.Windows.Forms.Label();
-            this.btnPassword = new System.Windows.Forms.Button();
             this.btnHidePassword = new System.Windows.Forms.Button();
+            this.btnPassword = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblPassword
@@ -51,7 +50,7 @@ namespace Tugagenda
             this.lblPassword.AutoSize = true;
             this.lblPassword.BackColor = System.Drawing.Color.Transparent;
             this.lblPassword.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.lblPassword.ForeColor = System.Drawing.Color.White;
             this.lblPassword.Location = new System.Drawing.Point(27, 251);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(99, 25);
@@ -60,7 +59,7 @@ namespace Tugagenda
             // 
             // txtUsername
             // 
-            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.txtUsername.BackColor = System.Drawing.Color.DarkSlateGray;
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -74,7 +73,7 @@ namespace Tugagenda
             // 
             // txtPassword
             // 
-            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.txtPassword.BackColor = System.Drawing.Color.DarkSlateGray;
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
             this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -89,13 +88,13 @@ namespace Tugagenda
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
-            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnLogin.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateGray;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("MV Boli", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.Location = new System.Drawing.Point(109, 384);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(184, 55);
@@ -106,13 +105,13 @@ namespace Tugagenda
             // 
             // btnReset
             // 
-            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnReset.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
-            this.btnReset.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btnReset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnReset.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnReset.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnReset.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnReset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateGray;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Font = new System.Drawing.Font("MV Boli", 15.75F);
-            this.btnReset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.btnReset.ForeColor = System.Drawing.Color.White;
             this.btnReset.Location = new System.Drawing.Point(89, 322);
             this.btnReset.Margin = new System.Windows.Forms.Padding(2);
             this.btnReset.Name = "btnReset";
@@ -127,7 +126,7 @@ namespace Tugagenda
             this.lblTugagenda.AutoSize = true;
             this.lblTugagenda.BackColor = System.Drawing.Color.Transparent;
             this.lblTugagenda.Font = new System.Drawing.Font("MV Boli", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTugagenda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.lblTugagenda.ForeColor = System.Drawing.Color.White;
             this.lblTugagenda.Location = new System.Drawing.Point(112, 88);
             this.lblTugagenda.Name = "lblTugagenda";
             this.lblTugagenda.Size = new System.Drawing.Size(170, 41);
@@ -136,14 +135,14 @@ namespace Tugagenda
             // 
             // btnVoltar
             // 
-            this.btnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnVoltar.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnVoltar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
-            this.btnVoltar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btnVoltar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnVoltar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnVoltar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnVoltar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateGray;
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVoltar.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.btnVoltar.ForeColor = System.Drawing.Color.White;
             this.btnVoltar.Location = new System.Drawing.Point(64, 458);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(123, 47);
@@ -154,13 +153,13 @@ namespace Tugagenda
             // 
             // btnSair
             // 
-            this.btnSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnSair.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
-            this.btnSair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnSair.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnSair.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnSair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateGray;
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSair.Font = new System.Drawing.Font("MV Boli", 15.75F);
-            this.btnSair.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.btnSair.ForeColor = System.Drawing.Color.White;
             this.btnSair.Location = new System.Drawing.Point(209, 458);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(123, 47);
@@ -174,7 +173,7 @@ namespace Tugagenda
             this.lblUsername.AutoSize = true;
             this.lblUsername.BackColor = System.Drawing.Color.Transparent;
             this.lblUsername.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.lblUsername.ForeColor = System.Drawing.Color.White;
             this.lblUsername.Location = new System.Drawing.Point(24, 186);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(102, 25);
@@ -183,7 +182,8 @@ namespace Tugagenda
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.White;
+            this.flowLayoutPanel2.ForeColor = System.Drawing.Color.White;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(119, 209);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(213, 1);
@@ -191,7 +191,8 @@ namespace Tugagenda
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
+            this.flowLayoutPanel1.ForeColor = System.Drawing.Color.White;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(119, 274);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(213, 1);
@@ -200,18 +201,32 @@ namespace Tugagenda
             // lblLogin
             // 
             this.lblLogin.AutoSize = true;
-            this.lblLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.lblLogin.BackColor = System.Drawing.Color.DarkSlateGray;
             this.lblLogin.Font = new System.Drawing.Font("MV Boli", 45F);
-            this.lblLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
+            this.lblLogin.ForeColor = System.Drawing.Color.White;
             this.lblLogin.Location = new System.Drawing.Point(115, 9);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(178, 79);
             this.lblLogin.TabIndex = 0;
             this.lblLogin.Text = "Login";
             // 
+            // btnHidePassword
+            // 
+            this.btnHidePassword.BackgroundImage = global::Tugagenda.Properties.Resources.Background_1;
+            this.btnHidePassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnHidePassword.FlatAppearance.BorderSize = 0;
+            this.btnHidePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHidePassword.ForeColor = System.Drawing.Color.White;
+            this.btnHidePassword.Location = new System.Drawing.Point(338, 234);
+            this.btnHidePassword.Name = "btnHidePassword";
+            this.btnHidePassword.Size = new System.Drawing.Size(47, 42);
+            this.btnHidePassword.TabIndex = 28;
+            this.btnHidePassword.UseVisualStyleBackColor = true;
+            this.btnHidePassword.Click += new System.EventHandler(this.btnHidePassword_Click);
+            // 
             // btnPassword
             // 
-            this.btnPassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPassword.BackgroundImage")));
+            this.btnPassword.BackgroundImage = global::Tugagenda.Properties.Resources.Background__1_;
             this.btnPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPassword.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(41)))), ((int)(((byte)(91)))));
             this.btnPassword.FlatAppearance.BorderSize = 0;
@@ -223,24 +238,11 @@ namespace Tugagenda
             this.btnPassword.UseVisualStyleBackColor = true;
             this.btnPassword.Click += new System.EventHandler(this.btnPassword_Click);
             // 
-            // btnHidePassword
-            // 
-            this.btnHidePassword.BackgroundImage = global::Tugagenda.Properties.Resources.Rafb709f2b3b9140f3f8f33054b90c9a4__1_;
-            this.btnHidePassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnHidePassword.FlatAppearance.BorderSize = 0;
-            this.btnHidePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHidePassword.Location = new System.Drawing.Point(338, 234);
-            this.btnHidePassword.Name = "btnHidePassword";
-            this.btnHidePassword.Size = new System.Drawing.Size(47, 42);
-            this.btnHidePassword.TabIndex = 28;
-            this.btnHidePassword.UseVisualStyleBackColor = true;
-            this.btnHidePassword.Click += new System.EventHandler(this.btnHidePassword_Click);
-            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(413, 588);
             this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.lblTugagenda);
@@ -256,7 +258,7 @@ namespace Tugagenda
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.btnPassword);
             this.Controls.Add(this.btnHidePassword);
-            this.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.ImeMode = System.Windows.Forms.ImeMode.On;
             this.Name = "frmLogin";

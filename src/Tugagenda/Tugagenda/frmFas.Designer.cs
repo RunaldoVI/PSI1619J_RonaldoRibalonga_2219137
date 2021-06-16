@@ -41,7 +41,7 @@ namespace Tugagenda
             // 
             // tsl
             // 
-            this.tsl.BackColor = System.Drawing.Color.Silver;
+            this.tsl.BackColor = System.Drawing.Color.DarkSlateGray;
             this.tsl.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.tsl.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1,
@@ -63,8 +63,9 @@ namespace Tugagenda
             // 
             // tslSeries
             // 
+            this.tslSeries.BackColor = System.Drawing.Color.White;
             this.tslSeries.Font = new System.Drawing.Font("MS Reference Sans Serif", 12.75F);
-            this.tslSeries.ForeColor = System.Drawing.Color.Black;
+            this.tslSeries.ForeColor = System.Drawing.Color.White;
             this.tslSeries.Name = "tslSeries";
             this.tslSeries.Size = new System.Drawing.Size(63, 22);
             this.tslSeries.Text = "Series";
@@ -78,7 +79,7 @@ namespace Tugagenda
             // tslFilmes
             // 
             this.tslFilmes.Font = new System.Drawing.Font("MS Reference Sans Serif", 12.75F);
-            this.tslFilmes.ForeColor = System.Drawing.Color.Black;
+            this.tslFilmes.ForeColor = System.Drawing.Color.White;
             this.tslFilmes.Name = "tslFilmes";
             this.tslFilmes.Size = new System.Drawing.Size(66, 22);
             this.tslFilmes.Text = "Filmes";
@@ -93,7 +94,7 @@ namespace Tugagenda
             // 
             this.tslPerfil.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.tslPerfil.Font = new System.Drawing.Font("MS Reference Sans Serif", 12.75F);
-            this.tslPerfil.ForeColor = System.Drawing.Color.Black;
+            this.tslPerfil.ForeColor = System.Drawing.Color.White;
             this.tslPerfil.Name = "tslPerfil";
             this.tslPerfil.Size = new System.Drawing.Size(53, 22);
             this.tslPerfil.Text = "Perfil";
