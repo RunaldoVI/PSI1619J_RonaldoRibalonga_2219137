@@ -90,7 +90,7 @@ namespace Tugagenda
             this.Controls.Add(this.txtEp);
             this.Controls.Add(this.lblEp);
             this.Name = "frmSEstouAVer";
-            this.Text = "frmSEstouAVer";
+            this.Text = "Episodio";
             this.Load += new System.EventHandler(this.frmSEstouAVer_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

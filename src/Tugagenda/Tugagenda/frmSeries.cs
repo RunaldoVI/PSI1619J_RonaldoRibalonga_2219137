@@ -130,7 +130,8 @@ namespace Tugagenda
                 int id = int.Parse(dgvSeries.Rows[dgvSeries.SelectedCells[0].RowIndex].Cells[2].Value.ToString());
                 string nome = dgvSeries.Rows[dgvSeries.SelectedCells[0].RowIndex].Cells[3].Value.ToString();
                 string descricao = dgvSeries.Rows[dgvSeries.SelectedCells[0].RowIndex].Cells[5].Value.ToString();
-
+                string imagem = dgvSeries.Rows[dgvSeries.SelectedCells[0].RowIndex].Cells[7].Value.ToString();
+   
                 db.Open();
                 if (e.ColumnIndex == 0)
                 {
@@ -224,7 +225,7 @@ namespace Tugagenda
                 }
                 else
                 {
-                    var historico = new frmHistoricoSeries(id, nome,descricao);
+                    var historico = new frmHistoricoSeries(id, nome,descricao, imagem);
                     historico.MdiParent = this.ParentForm;
                     historico.Show();
                 }

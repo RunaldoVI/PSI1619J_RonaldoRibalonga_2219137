@@ -131,7 +131,7 @@ namespace Tugagenda
         private void btnVoltar_Click_1(object sender, EventArgs e)
         {
             Close();
-            frmcomeco bemvindo = new frmcomeco();
+            frmComeco bemvindo = new frmComeco();
             bemvindo.Show();
         }
 

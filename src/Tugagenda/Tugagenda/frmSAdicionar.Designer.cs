@@ -42,6 +42,9 @@ namespace Tugagenda
             this.TxtDescricao = new System.Windows.Forms.TextBox();
             this.txtGenero = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
+            this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblImagem = new System.Windows.Forms.Label();
+            this.txtImagem = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnAdicionar
@@ -49,7 +52,7 @@ namespace Tugagenda
             this.btnAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.btnAdicionar.ForeColor = System.Drawing.Color.White;
-            this.btnAdicionar.Location = new System.Drawing.Point(130, 237);
+            this.btnAdicionar.Location = new System.Drawing.Point(130, 286);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(242, 56);
             this.btnAdicionar.TabIndex = 22;
@@ -187,12 +190,48 @@ namespace Tugagenda
             this.txtNome.Size = new System.Drawing.Size(349, 20);
             this.txtNome.TabIndex = 1;
             // 
+            // flowLayoutPanel6
+            // 
+            this.flowLayoutPanel6.BackColor = System.Drawing.Color.White;
+            this.flowLayoutPanel6.ForeColor = System.Drawing.Color.White;
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(31, 245);
+            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
+            this.flowLayoutPanel6.Size = new System.Drawing.Size(416, 1);
+            this.flowLayoutPanel6.TabIndex = 70;
+            // 
+            // lblImagem
+            // 
+            this.lblImagem.AutoSize = true;
+            this.lblImagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.lblImagem.ForeColor = System.Drawing.Color.White;
+            this.lblImagem.Location = new System.Drawing.Point(27, 218);
+            this.lblImagem.Name = "lblImagem";
+            this.lblImagem.Size = new System.Drawing.Size(83, 24);
+            this.lblImagem.TabIndex = 69;
+            this.lblImagem.Text = "Imagem:";
+            // 
+            // txtImagem
+            // 
+            this.txtImagem.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.txtImagem.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtImagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.txtImagem.ForeColor = System.Drawing.Color.White;
+            this.txtImagem.Location = new System.Drawing.Point(150, 218);
+            this.txtImagem.Multiline = true;
+            this.txtImagem.Name = "txtImagem";
+            this.txtImagem.Size = new System.Drawing.Size(297, 24);
+            this.txtImagem.TabIndex = 68;
+            this.txtImagem.TextChanged += new System.EventHandler(this.txtImagem_TextChanged);
+            // 
             // frmSAdicionar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(539, 325);
+            this.ClientSize = new System.Drawing.Size(539, 379);
+            this.Controls.Add(this.flowLayoutPanel6);
+            this.Controls.Add(this.lblImagem);
+            this.Controls.Add(this.txtImagem);
             this.Controls.Add(this.flowLayoutPanel4);
             this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -207,7 +246,7 @@ namespace Tugagenda
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.btnAdicionar);
             this.Name = "frmSAdicionar";
-            this.Text = "SeriesScrum";
+            this.Text = "Adicionar";
             this.Load += new System.EventHandler(this.frmSAdicionar_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmSAdicionar_KeyPress);
             this.ResumeLayout(false);
@@ -229,5 +268,8 @@ namespace Tugagenda
         private System.Windows.Forms.TextBox TxtDescricao;
         private System.Windows.Forms.TextBox txtGenero;
         private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
+        private System.Windows.Forms.Label lblImagem;
+        private System.Windows.Forms.TextBox txtImagem;
     }
 }

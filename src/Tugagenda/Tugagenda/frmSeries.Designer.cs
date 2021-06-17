@@ -58,6 +58,8 @@ namespace Tugagenda
             // 
             // dgvSeries
             // 
+            this.dgvSeries.AllowUserToAddRows = false;
+            this.dgvSeries.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ButtonFace;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Desktop;

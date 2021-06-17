@@ -169,7 +169,7 @@ namespace Tugagenda
             this.Controls.Add(this.btnAdicionar);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "frmFAdicionar";
-            this.Text = "frmFilmescrum";
+            this.Text = "Adicionar";
             this.Load += new System.EventHandler(this.frmFilmescrum_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmFAdicionar_KeyPress);
             this.ResumeLayout(false);

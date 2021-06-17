@@ -269,7 +269,7 @@ namespace Tugagenda
             this.ImeMode = System.Windows.Forms.ImeMode.On;
             this.Name = "frmResetarPass";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "ResetarPass";
+            this.Text = "Resetar Password";
             this.Load += new System.EventHandler(this.ResetarPass_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace Tugagenda
 {
-    public partial class frmFas : Form
+    public partial class frmMenu : Form
     {
-        public frmFas()
+        public frmMenu()
         {
             InitializeComponent();     
         }

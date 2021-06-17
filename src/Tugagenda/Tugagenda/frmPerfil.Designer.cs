@@ -137,7 +137,8 @@ namespace Tugagenda
             // 
             // dgvSeries
             // 
-            this.dgvSeries.AllowUserToOrderColumns = true;
+            this.dgvSeries.AllowUserToAddRows = false;
+            this.dgvSeries.AllowUserToDeleteRows = false;
             dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.ButtonFace;
             dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.Desktop;
             dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -162,7 +163,7 @@ namespace Tugagenda
             dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.ButtonFace;
             dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvSeries.DefaultCellStyle = dataGridViewCellStyle13;
-            this.dgvSeries.Location = new System.Drawing.Point(1, 256);
+            this.dgvSeries.Location = new System.Drawing.Point(0, 320);
             this.dgvSeries.Name = "dgvSeries";
             this.dgvSeries.ReadOnly = true;
             dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -178,13 +179,14 @@ namespace Tugagenda
             dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvSeries.RowsDefaultCellStyle = dataGridViewCellStyle15;
-            this.dgvSeries.Size = new System.Drawing.Size(1087, 381);
+            this.dgvSeries.Size = new System.Drawing.Size(1044, 101);
             this.dgvSeries.TabIndex = 7;
             this.dgvSeries.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSeries_CellContentClick);
             // 
             // dgvFilmes
             // 
-            this.dgvFilmes.AllowUserToOrderColumns = true;
+            this.dgvFilmes.AllowUserToAddRows = false;
+            this.dgvFilmes.AllowUserToDeleteRows = false;
             dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.ButtonFace;
             dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.Desktop;
             dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -209,7 +211,7 @@ namespace Tugagenda
             dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.ButtonFace;
             dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvFilmes.DefaultCellStyle = dataGridViewCellStyle18;
-            this.dgvFilmes.Location = new System.Drawing.Point(1094, 256);
+            this.dgvFilmes.Location = new System.Drawing.Point(0, 427);
             this.dgvFilmes.Name = "dgvFilmes";
             this.dgvFilmes.ReadOnly = true;
             dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -225,7 +227,7 @@ namespace Tugagenda
             dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvFilmes.RowsDefaultCellStyle = dataGridViewCellStyle20;
-            this.dgvFilmes.Size = new System.Drawing.Size(777, 381);
+            this.dgvFilmes.Size = new System.Drawing.Size(765, 134);
             this.dgvFilmes.TabIndex = 8;
             this.dgvFilmes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFilmes_CellContentClick);
             // 
@@ -290,7 +292,7 @@ namespace Tugagenda
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(1874, 636);
+            this.ClientSize = new System.Drawing.Size(1150, 636);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.flowLayoutPanel4);
@@ -306,6 +308,7 @@ namespace Tugagenda
             this.Controls.Add(this.btnHidden);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "frmPerfil";
+            this.Text = "Perfil";
             this.Load += new System.EventHandler(this.frmPerfil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSeries)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFilmes)).EndInit();

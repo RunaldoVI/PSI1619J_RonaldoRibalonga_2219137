@@ -209,7 +209,7 @@ namespace Tugagenda
             this.Controls.Add(this.txtNomeAntigo);
             this.Controls.Add(this.btnEditar);
             this.Name = "frmFEditar";
-            this.Text = "frmFEditar";
+            this.Text = "Editar";
             this.Load += new System.EventHandler(this.frmFEditar_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmFEditar_KeyPress);
             this.ResumeLayout(false);

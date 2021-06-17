@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Tugagenda
 {
-    public partial class frmcomeco : Form
+    public partial class frmComeco : Form
     {
-        public frmcomeco()
+        public frmComeco()
         {
             InitializeComponent();
         }

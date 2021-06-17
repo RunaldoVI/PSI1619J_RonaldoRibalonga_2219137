@@ -61,11 +61,12 @@ namespace Tugagenda
                                 }
                                 else
                                 {
-                                    cmd.CommandText = "insert into Series (Nome, Descricao, Genero, Temporada) values (@Nome, @Descricao, @Genero,@Temporada)";
+                                    cmd.CommandText = "insert into Series (Nome, Descricao, Genero, Temporada, Imagem) values (@Nome, @Descricao, @Genero,@Temporada,@Imagem)";
                                     cmd.Parameters.AddWithValue("@Nome", txtNome.Text);
                                     cmd.Parameters.AddWithValue("@Descricao", TxtDescricao.Text);
                                     cmd.Parameters.AddWithValue("@Genero", txtGenero.Text);
                                     cmd.Parameters.AddWithValue("@Temporada", txtTemp.Text);
+                                    cmd.Parameters.AddWithValue("@Imagem", txtImagem.Text);
                                     cmd.ExecuteNonQuery();
                                     MessageBox.Show("Adicionado com sucesso");
                                     db.Close();
@@ -93,6 +94,11 @@ namespace Tugagenda
         }
 
         private void frmSAdicionar_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtImagem_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -114,11 +114,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmcomeco.cs">
+    <Compile Include="frmComeco.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmcomeco.Designer.cs">
-      <DependentUpon>frmcomeco.cs</DependentUpon>
+    <Compile Include="frmComeco.Designer.cs">
+      <DependentUpon>frmComeco.cs</DependentUpon>
     </Compile>
     <Compile Include="frmFApagar.cs">
       <SubType>Form</SubType>
@@ -126,11 +126,11 @@
     <Compile Include="frmFApagar.Designer.cs">
       <DependentUpon>frmFApagar.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmFas.cs">
+    <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmFas.Designer.cs">
-      <DependentUpon>frmFas.cs</DependentUpon>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="frmFEditar.cs">
       <SubType>Form</SubType>
@@ -213,14 +213,14 @@
       <DependentUpon>frmSAdicionar.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
-    <EmbeddedResource Include="frmcomeco.resx">
-      <DependentUpon>frmcomeco.cs</DependentUpon>
+    <EmbeddedResource Include="frmComeco.resx">
+      <DependentUpon>frmComeco.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFApagar.resx">
       <DependentUpon>frmFApagar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmFas.resx">
-      <DependentUpon>frmFas.cs</DependentUpon>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFEditar.resx">
       <DependentUpon>frmFEditar.cs</DependentUpon>

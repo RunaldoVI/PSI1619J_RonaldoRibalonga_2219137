@@ -28,7 +28,7 @@ namespace Tugagenda
         private void btnVoltar_Click(object sender, EventArgs e)
         {
             Close();
-            frmcomeco bemvindo = new frmcomeco();
+            frmComeco bemvindo = new frmComeco();
             bemvindo.Show();
         }
 
@@ -66,15 +66,13 @@ namespace Tugagenda
                         Program.logUser = user;
                         
                         Close();
-                        frmFas fas = new frmFas();
+                        frmMenu fas = new frmMenu();
                         fas.Show();
                     }
                     else
                     {
                         MessageBox.Show("Não Foi encontrado Username Ou Password no login", "Error", MessageBoxButtons.OK ,MessageBoxIcon.Warning);
-                        Application.Restart();
-                        frmLogin login = new frmLogin();
-                        login.Show();
+                        
 
                 }
                 

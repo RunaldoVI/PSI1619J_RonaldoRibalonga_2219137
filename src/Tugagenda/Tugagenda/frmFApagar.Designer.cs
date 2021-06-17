@@ -129,7 +129,7 @@ namespace Tugagenda
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.btnApagar);
             this.Name = "frmFApagar";
-            this.Text = "frmFApagar";
+            this.Text = "Apagar";
             this.Load += new System.EventHandler(this.frmFApagar_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmFApagar_KeyPress);
             this.ResumeLayout(false);

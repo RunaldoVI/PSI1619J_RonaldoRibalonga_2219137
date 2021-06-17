@@ -1,7 +1,7 @@
 ﻿
 namespace Tugagenda
 {
-    partial class frmFas
+    partial class frmMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -112,7 +112,7 @@ namespace Tugagenda
             this.IsMdiContainer = true;
             this.Name = "frmFas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Menu";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmFas_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);

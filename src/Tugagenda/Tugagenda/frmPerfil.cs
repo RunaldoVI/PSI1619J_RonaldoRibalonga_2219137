@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Tugagenda
@@ -32,6 +26,7 @@ namespace Tugagenda
 
         private void frmPerfil_Load(object sender, EventArgs e)
         {
+            
             idUser = Program.logUser.IDRegisto;
             idNome = Program.logUser.Username;
             idPassword = Program.logUser.Password;
@@ -133,6 +128,12 @@ namespace Tugagenda
                     cmd.Parameters.AddWithValue("@IDFilme", idF);
                     cmd.Connection = db;
                     cmd.ExecuteNonQuery();
+                    var frm = new frmPerfil();
+                    frm.StartPosition = FormStartPosition.Manual;
+                    frm.Location = this.Location;
+                    frm.MdiParent = this.ParentForm;
+                    frm.Show();
+                    this.Close();
                 }
                 else
                 {

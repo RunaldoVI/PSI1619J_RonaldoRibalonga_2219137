@@ -27,11 +27,12 @@ namespace Tugagenda
                 db.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = db;
-                cmd.CommandText = "update Filmes set Nome = @Nome, Descricao=@Descricao, Genero=@Genero, Temporada=@Temporada where Nome=@Nome";
+                cmd.CommandText = "update Filmes set Nome = @Nome, Descricao=@Descricao, Genero=@Genero, Temporada=@Temporada,Imagem=@Imagem where Nome=@Nome";
                 cmd.Parameters.AddWithValue("@Nome", txtNome.Text);
                 cmd.Parameters.AddWithValue("@Descricao", TxtDescricao.Text);
                 cmd.Parameters.AddWithValue("@Genero", txtGenero.Text);
                 cmd.Parameters.AddWithValue("@Temporada", txtTemp.Text);
+                cmd.Parameters.AddWithValue("@Imagem", txtImagem.Text);
                 if (txtNomeAntigo.Text.Length == 0)
                 {
                     MessageBox.Show("Nada foi alterado", "Erro:", MessageBoxButtons.OK, MessageBoxIcon.Warning);

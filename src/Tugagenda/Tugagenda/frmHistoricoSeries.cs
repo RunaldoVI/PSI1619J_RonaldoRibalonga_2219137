@@ -4,7 +4,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,14 +23,32 @@ namespace Tugagenda
 
         public string descricao { get; set; }
 
+
+        public string imagem { get; set; }
+
         int idT;
 
-        
-        public frmHistoricoSeries(int _id, string _nome, string _descricao)
+
+        private Image GetFromURL(string url)
+        {
+            WebRequest req = WebRequest.Create(url);
+
+            WebResponse res = req.GetResponse();
+
+            Stream imgStream = res.GetResponseStream();
+
+            Image img1 = Image.FromStream(imgStream);
+
+            imgStream.Close();
+            return img1;
+        }
+
+        public frmHistoricoSeries(int _id, string _nome, string _descricao, string _imagem)
         {
             id = _id;
             nome = _nome;
             descricao = _descricao;
+            imagem = _imagem;
             InitializeComponent();
             
         }
@@ -37,8 +57,11 @@ namespace Tugagenda
 
         private void frmHistoricoSeries_Load(object sender, EventArgs e)
         {
+
+            pboxImagem.Image = GetFromURL(imagem);
+
             lblNome.Text = nome;
-            lbldescricao.Text = descricao;
+            txtdescricao.Text = descricao;
             idUser = Program.logUser.IDRegisto;
             idNome = Program.logUser.Username;
             try

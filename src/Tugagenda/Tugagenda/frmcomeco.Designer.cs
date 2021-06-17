@@ -1,7 +1,7 @@
 ﻿
 namespace Tugagenda
 {
-    partial class frmcomeco
+    partial class frmComeco
     {
         /// <summary>
         /// Required designer variable.
@@ -80,7 +80,7 @@ namespace Tugagenda
             this.label1.TabIndex = 8;
             this.label1.Text = "Tugagenda";
             // 
-            // frmcomeco
+            // frmComeco
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -90,9 +90,9 @@ namespace Tugagenda
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnRegisto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Name = "frmcomeco";
+            this.Name = "frmComeco";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " ";
+            this.Text = "Inicio";
             this.Load += new System.EventHandler(this.comeco_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
