@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,10 +19,12 @@ namespace Tugagenda
             InitializeComponent();
         }
 
+      
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            SqlConnection db = new SqlConnection(Program.MyConnectionString);
-
+            SqlConnection db = new SqlConnection(Program.MyConnectionString);               
+            
+            
             try
             {
                 db.Open();
@@ -33,6 +36,7 @@ namespace Tugagenda
                 cmd.Parameters.AddWithValue("@Genero", txtGenero.Text);
                 cmd.Parameters.AddWithValue("@Temporada", txtTemp.Text);
                 cmd.Parameters.AddWithValue("@Imagem", txtImagem.Text);
+
                 if (txtNomeAntigo.Text.Length == 0)
                 {
                     MessageBox.Show("Nada foi alterado", "Erro:", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -92,6 +96,11 @@ namespace Tugagenda
             {
                 btnEditar.PerformClick();
             }
+        }
+
+        private void txtImagem_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

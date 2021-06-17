@@ -120,6 +120,12 @@
     <Compile Include="frmComeco.Designer.cs">
       <DependentUpon>frmComeco.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEpTemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEpTemp.Designer.cs">
+      <DependentUpon>frmEpTemp.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFApagar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +192,12 @@
     <Compile Include="frmSEstouAVer.Designer.cs">
       <DependentUpon>frmSEstouAVer.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVerFilme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerFilme.Designer.cs">
+      <DependentUpon>frmVerFilme.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="frmRegisto.cs">
@@ -215,6 +227,9 @@
     <Compile Include="User.cs" />
     <EmbeddedResource Include="frmComeco.resx">
       <DependentUpon>frmComeco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEpTemp.resx">
+      <DependentUpon>frmEpTemp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFApagar.resx">
       <DependentUpon>frmFApagar.cs</DependentUpon>
@@ -251,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSEstouAVer.resx">
       <DependentUpon>frmSEstouAVer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerFilme.resx">
+      <DependentUpon>frmVerFilme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

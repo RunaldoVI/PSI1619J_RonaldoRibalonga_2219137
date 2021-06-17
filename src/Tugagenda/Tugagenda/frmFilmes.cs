@@ -267,7 +267,7 @@ namespace Tugagenda
                     MessageBox.Show("Erro:" + ex.Message, "Não foi possível adicionar!");
                 }
             }
-            else if(e.ColumnIndex == 2)
+            else if (e.ColumnIndex == 2)
             {
                 SqlConnection db = new SqlConnection(Program.MyConnectionString);
                 DialogResult verificar = MessageBox.Show("Pretende adicionar a lista de ja visto?", "Adicionar?", MessageBoxButtons.OKCancel);
@@ -323,6 +323,15 @@ namespace Tugagenda
                 {
                     MessageBox.Show("Erro:" + ex.Message, "Não foi possível adicionar!");
                 }
+            }
+            if (e.ColumnIndex == 4)
+            {
+                string nome = dgvFilmes.Rows[dgvFilmes.SelectedCells[0].RowIndex].Cells[4].Value.ToString();
+                string descricao = dgvFilmes.Rows[dgvFilmes.SelectedCells[0].RowIndex].Cells[5].Value.ToString();
+                string imagem = dgvFilmes.Rows[dgvFilmes.SelectedCells[0].RowIndex].Cells[7].Value.ToString();
+                var ver = new frmVerFilme(nome,descricao ,imagem);
+                ver.MdiParent = this.ParentForm;
+                ver.Show();
             }
         }
 

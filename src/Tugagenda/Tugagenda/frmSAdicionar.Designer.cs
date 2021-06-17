@@ -216,10 +216,10 @@ namespace Tugagenda
             this.txtImagem.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtImagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.txtImagem.ForeColor = System.Drawing.Color.White;
-            this.txtImagem.Location = new System.Drawing.Point(150, 218);
+            this.txtImagem.Location = new System.Drawing.Point(116, 218);
             this.txtImagem.Multiline = true;
             this.txtImagem.Name = "txtImagem";
-            this.txtImagem.Size = new System.Drawing.Size(297, 24);
+            this.txtImagem.Size = new System.Drawing.Size(331, 24);
             this.txtImagem.TabIndex = 68;
             this.txtImagem.TextChanged += new System.EventHandler(this.txtImagem_TextChanged);
             // 

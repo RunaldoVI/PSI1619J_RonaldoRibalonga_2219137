@@ -6,6 +6,7 @@ CREATE TABLE Filmes (
 	Nome varchar(50),
 	Descricao varchar(max),
 	Genero varchar(50),
+	Imagem varchar(max)
 	Constraint PK Primary Key(IDFilme)
 );
 
@@ -31,7 +32,8 @@ CREATE TABLE Series (
 	Nome varchar(50),
 	Temporada int,
 	Descricao varchar(max),	
-	Genero varchar(50)
+	Genero varchar(50),
+	Imagem varchar(max)
 	Constraint PK Primary Key(IDSerie)	
 );
 
@@ -44,7 +46,7 @@ CREATE TABLE Temporada (
 	SerieID int
 	Constraint PK Primary Key(IDTemporada)	
 );
-ALTER TABLE HistoricoF ADD CONSTRAINT [Fk_Temporada_Series] FOREIGN KEY ( SerieID ) REFERENCES Series( IDSerie ) ON DELETE NO ACTION ON UPDATE NO ACTION
+ALTER TABLE Temporada ADD CONSTRAINT [Fk_Temporada_Series] FOREIGN KEY ( SerieID ) REFERENCES Series( IDSerie ) ON DELETE NO ACTION ON UPDATE NO ACTION
 
 --Tabela Historico Series
 

@@ -73,8 +73,7 @@ namespace Tugagenda
                     {
                         MessageBox.Show("Não Foi encontrado Username Ou Password no login", "Error", MessageBoxButtons.OK ,MessageBoxIcon.Warning);
                         
-
-                }
+                    }
                 
             }
             catch (Exception ex)

@@ -98,15 +98,15 @@ namespace Tugagenda
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-            if (Application.OpenForms.OfType<frmFAdicionar>().Count() > 0)
+            if (Application.OpenForms.OfType<frmSAdicionar>().Count() > 0)
             {
-                Application.OpenForms.OfType<frmFAdicionar>().First().Focus();
+                Application.OpenForms.OfType<frmSAdicionar>().First().Focus();
                 MessageBox.Show("Já tem 1 janela filmes aberta!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }
             else
             {
-                var adicionar = new frmFAdicionar();
+                var adicionar = new frmSAdicionar();
 
                 adicionar.ShowDialog();
             }
@@ -158,6 +158,7 @@ namespace Tugagenda
                                 cmdC.Parameters.AddWithValue("@Temporada", idT);
                                 cmdC.Parameters.AddWithValue("@IDSerie", id);
                                 cmdC.ExecuteNonQuery();
+                                db.Close();
                             }
                             else
                             {
@@ -177,6 +178,7 @@ namespace Tugagenda
                             cmd.Parameters.AddWithValue("@Username", idNome);
                             cmd.Parameters.AddWithValue("@Nome", nome);
                             cmd.ExecuteNonQuery();
+                            db.Close();
                         }
                     }
                     
@@ -205,6 +207,7 @@ namespace Tugagenda
                                 cmdC.Parameters.AddWithValue("@idUser", idUser);
                                 cmdC.Parameters.AddWithValue("@IDSerie", id);
                                 cmdC.ExecuteNonQuery();
+                                db.Close();
                             }
                         }
                         else
@@ -218,7 +221,7 @@ namespace Tugagenda
                             cmd.Parameters.AddWithValue("@Username", idNome);
                             cmd.Parameters.AddWithValue("@Nome", nome);
                             cmd.ExecuteNonQuery();
-                            db.Close();
+                            db.Close();                            
                         }
                     }
                    
@@ -270,7 +273,7 @@ namespace Tugagenda
             }
             else
             {
-                var apagar = new frmSApagar();
+               var apagar = new frmSApagar();
 
                 apagar.ShowDialog();
             }

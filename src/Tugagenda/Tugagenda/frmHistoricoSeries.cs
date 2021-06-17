@@ -162,5 +162,10 @@ namespace Tugagenda
             }
            
         }
+
+        private void txtdescricao_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

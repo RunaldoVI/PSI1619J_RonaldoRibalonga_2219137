@@ -13,6 +13,8 @@ namespace Tugagenda
 {
     public partial class frmSAdicionar : Form
     {
+        int temp;
+        string tempo;
         public frmSAdicionar()
         {
             InitializeComponent();
@@ -68,6 +70,18 @@ namespace Tugagenda
                                     cmd.Parameters.AddWithValue("@Temporada", txtTemp.Text);
                                     cmd.Parameters.AddWithValue("@Imagem", txtImagem.Text);
                                     cmd.ExecuteNonQuery();
+                                    temp = int.Parse(txtTemp.Text);                                  
+                                    if (temp >= 1)
+                                    {
+                                        for (int i = 1; i<=temp; i++)
+                                        {
+                                            tempo = i.ToString();
+                                            int temporada = i;
+                                            var ep = new frmEpTemp(tempo,temporada);
+                                            ep.ShowDialog();
+
+                                        }
+                                    }
                                     MessageBox.Show("Adicionado com sucesso");
                                     db.Close();
                                     Close();

@@ -33,25 +33,26 @@ namespace Tugagenda
                 }
                 else
                 {
-                    cmd.CommandText = "delete from Series where Nome = @Nome";
-                    cmd.Parameters.AddWithValue("@Nome", txtNome.Text);
-                    cmd.ExecuteNonQuery();
+                    if (txtID.Text.Length == 0)
+                    {
+                        MessageBox.Show("Nada foi alterado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        cmd.CommandText = "delete from Temporada where SerieID = @IDE";
+                        cmd.Parameters.AddWithValue("@IDE", txtID.Text);
+                        cmd.ExecuteNonQuery();
+                        cmd.CommandText = "delete from HistoricoS where SerieID = @ID";
+                        cmd.Parameters.AddWithValue("@ID", txtID.Text);
+                        cmd.CommandText = "delete from Series where Nome = @Nome";
+                        cmd.Parameters.AddWithValue("@Nome", txtNome.Text);
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("Eliminado com sucesso");
+                    }
 
 
                 }
-                if (txtID.Text.Length == 0)
-                {
-                    MessageBox.Show("Nada foi alterado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-                else
-                {
-                    cmd.CommandText = "delete from HistoricoS where SerieID = @ID";
-                    cmd.Parameters.AddWithValue("@ID", txtID.Text);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Eliminado com sucesso");
-                    db.Close();
-                    Close();
-                }
+                
             }
             catch (Exception ex)
             {

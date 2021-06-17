@@ -116,6 +116,7 @@ namespace Tugagenda
             this.txtdescricao.Name = "txtdescricao";
             this.txtdescricao.Size = new System.Drawing.Size(610, 304);
             this.txtdescricao.TabIndex = 10;
+            this.txtdescricao.TextChanged += new System.EventHandler(this.txtdescricao_TextChanged);
             // 
             // pboxImagem
             // 

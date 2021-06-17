@@ -67,7 +67,7 @@ namespace Tugagenda
             this.txtTemp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.txtTemp.ForeColor = System.Drawing.Color.White;
-            this.txtTemp.Location = new System.Drawing.Point(132, 232);
+            this.txtTemp.Location = new System.Drawing.Point(135, 230);
             this.txtTemp.Multiline = true;
             this.txtTemp.Name = "txtTemp";
             this.txtTemp.Size = new System.Drawing.Size(297, 24);
@@ -138,10 +138,10 @@ namespace Tugagenda
             this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.txtNome.ForeColor = System.Drawing.Color.White;
-            this.txtNome.Location = new System.Drawing.Point(80, 104);
+            this.txtNome.Location = new System.Drawing.Point(83, 104);
             this.txtNome.Multiline = true;
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(349, 20);
+            this.txtNome.Size = new System.Drawing.Size(346, 20);
             this.txtNome.TabIndex = 2;
             // 
             // lblNomeAntigo
@@ -163,10 +163,10 @@ namespace Tugagenda
             this.txtNomeAntigo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNomeAntigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.txtNomeAntigo.ForeColor = System.Drawing.Color.White;
-            this.txtNomeAntigo.Location = new System.Drawing.Point(139, 63);
+            this.txtNomeAntigo.Location = new System.Drawing.Point(143, 64);
             this.txtNomeAntigo.Multiline = true;
             this.txtNomeAntigo.Name = "txtNomeAntigo";
-            this.txtNomeAntigo.Size = new System.Drawing.Size(290, 20);
+            this.txtNomeAntigo.Size = new System.Drawing.Size(289, 20);
             this.txtNomeAntigo.TabIndex = 1;
             // 
             // btnEditar
@@ -253,11 +253,12 @@ namespace Tugagenda
             this.txtImagem.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtImagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.txtImagem.ForeColor = System.Drawing.Color.White;
-            this.txtImagem.Location = new System.Drawing.Point(98, 278);
+            this.txtImagem.Location = new System.Drawing.Point(100, 277);
             this.txtImagem.Multiline = true;
             this.txtImagem.Name = "txtImagem";
             this.txtImagem.Size = new System.Drawing.Size(331, 24);
-            this.txtImagem.TabIndex = 57;
+            this.txtImagem.TabIndex = 6;
+            this.txtImagem.TextChanged += new System.EventHandler(this.txtImagem_TextChanged);
             // 
             // frmSEditar
             // 

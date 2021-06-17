@@ -74,10 +74,10 @@ namespace Tugagenda
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.txtEmail.ForeColor = System.Drawing.Color.White;
             this.txtEmail.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.txtEmail.Location = new System.Drawing.Point(75, 335);
+            this.txtEmail.Location = new System.Drawing.Point(79, 335);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(243, 25);
+            this.txtEmail.Size = new System.Drawing.Size(241, 25);
             this.txtEmail.TabIndex = 4;
             this.txtEmail.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             this.txtEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEmail_KeyPress);
@@ -91,7 +91,7 @@ namespace Tugagenda
             this.btnRegistar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistar.Font = new System.Drawing.Font("MV Boli", 15.75F);
             this.btnRegistar.ForeColor = System.Drawing.Color.White;
-            this.btnRegistar.Location = new System.Drawing.Point(70, 427);
+            this.btnRegistar.Location = new System.Drawing.Point(70, 416);
             this.btnRegistar.Name = "btnRegistar";
             this.btnRegistar.Size = new System.Drawing.Size(200, 39);
             this.btnRegistar.TabIndex = 5;
@@ -168,7 +168,7 @@ namespace Tugagenda
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVoltar.Font = new System.Drawing.Font("MV Boli", 15.75F);
             this.btnVoltar.ForeColor = System.Drawing.Color.White;
-            this.btnVoltar.Location = new System.Drawing.Point(70, 489);
+            this.btnVoltar.Location = new System.Drawing.Point(70, 478);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(200, 39);
             this.btnVoltar.TabIndex = 6;
@@ -211,7 +211,7 @@ namespace Tugagenda
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSair.Font = new System.Drawing.Font("MV Boli", 15.75F);
             this.btnSair.ForeColor = System.Drawing.Color.White;
-            this.btnSair.Location = new System.Drawing.Point(107, 553);
+            this.btnSair.Location = new System.Drawing.Point(107, 542);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(129, 39);
             this.btnSair.TabIndex = 7;
@@ -329,7 +329,7 @@ namespace Tugagenda
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(381, 629);
+            this.ClientSize = new System.Drawing.Size(381, 621);
             this.Controls.Add(this.flowLayoutPanel4);
             this.Controls.Add(this.txtCPassword);
             this.Controls.Add(this.lblCPassword);

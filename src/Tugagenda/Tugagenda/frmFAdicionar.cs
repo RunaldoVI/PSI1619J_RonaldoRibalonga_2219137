@@ -55,10 +55,11 @@ namespace Tugagenda
                             }
                             else
                             {
-                                cmd.CommandText = "insert into Filmes (Nome, Descricao, Genero) values (@Nome, @Descricao, @Genero)";
+                                cmd.CommandText = "insert into Filmes (Nome, Descricao, Genero, Imagem) values (@Nome, @Descricao, @Genero, @Imagem)";
                                 cmd.Parameters.AddWithValue("@Nome", txtNome.Text);
                                 cmd.Parameters.AddWithValue("@Descricao", TxtDescricao.Text);
                                 cmd.Parameters.AddWithValue("@Genero", txtGenero.Text);
+                                cmd.Parameters.AddWithValue("@Imagem", txtImagem.Text);
                                 cmd.ExecuteNonQuery();
                                 MessageBox.Show("Adicionado com sucesso");
                                 db.Close();

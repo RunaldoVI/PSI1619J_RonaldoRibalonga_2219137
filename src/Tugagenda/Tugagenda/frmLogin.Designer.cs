@@ -62,7 +62,7 @@ namespace Tugagenda
             this.txtUsername.BackColor = System.Drawing.Color.DarkSlateGray;
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtUsername.ForeColor = System.Drawing.Color.White;
             this.txtUsername.Location = new System.Drawing.Point(126, 186);
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
@@ -76,7 +76,7 @@ namespace Tugagenda
             this.txtPassword.BackColor = System.Drawing.Color.DarkSlateGray;
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtPassword.ForeColor = System.Drawing.Color.White;
             this.txtPassword.Location = new System.Drawing.Point(126, 252);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
