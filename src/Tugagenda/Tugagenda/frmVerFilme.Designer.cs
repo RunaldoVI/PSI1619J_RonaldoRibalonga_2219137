@@ -64,7 +64,7 @@ namespace Tugagenda
             this.txtdescricao.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtdescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.txtdescricao.ForeColor = System.Drawing.Color.White;
-            this.txtdescricao.Location = new System.Drawing.Point(0, 56);
+            this.txtdescricao.Location = new System.Drawing.Point(-1, 74);
             this.txtdescricao.Multiline = true;
             this.txtdescricao.Name = "txtdescricao";
             this.txtdescricao.Size = new System.Drawing.Size(610, 304);
