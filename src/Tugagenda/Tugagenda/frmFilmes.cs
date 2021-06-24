@@ -230,7 +230,7 @@ namespace Tugagenda
                         dt.Load(cmdV.ExecuteReader());
                         if (dt.Rows.Count >= 1)
                         {
-                            DialogResult check = MessageBox.Show("A serie ja se encontra ocupada deseja atualizar para ja visto?", "Atualizar?", MessageBoxButtons.OKCancel);
+                            DialogResult check = MessageBox.Show("A serie ja se encontra ocupada deseja atualizar para a ver?", "Atualizar?", MessageBoxButtons.OKCancel);
                             if (check == DialogResult.OK)
                             {
                                 SqlCommand cmdC = new SqlCommand();
@@ -270,7 +270,7 @@ namespace Tugagenda
             else if (e.ColumnIndex == 2)
             {
                 SqlConnection db = new SqlConnection(Program.MyConnectionString);
-                DialogResult verificar = MessageBox.Show("Pretende adicionar a lista de ja visto?", "Adicionar?", MessageBoxButtons.OKCancel);
+                DialogResult verificar = MessageBox.Show("Pretende adicionar a lista quer ver?", "Adicionar?", MessageBoxButtons.OKCancel);
                 db.Open();
                 try
                 {
@@ -287,13 +287,13 @@ namespace Tugagenda
                         dt.Load(cmdV.ExecuteReader());
                         if (dt.Rows.Count >= 1)
                         {
-                            DialogResult check = MessageBox.Show("A serie ja se encontra ocupada deseja atualizar para ja visto?", "Atualizar?", MessageBoxButtons.OKCancel);
+                            DialogResult check = MessageBox.Show("A serie ja se encontra ocupada deseja atualizar para quer ver?", "Atualizar?", MessageBoxButtons.OKCancel);
                             if (check == DialogResult.OK)
                             {
                                 SqlCommand cmdC = new SqlCommand();
                                 DataGridViewRow row = this.dgvFilmes.Rows[e.RowIndex];
                                 cmdC.Connection = db;
-                                cmdC.CommandText = "update HistoricoS set Visto = 1 , QuerVer = 1, AVer = 0, where IDRegisto = @idUser and FilmeID = @id";
+                                cmdC.CommandText = "update HistoricoS set Visto = 0 , QuerVer = 1, AVer = 0, where IDRegisto = @idUser and FilmeID = @id";
                                 cmdC.Parameters.AddWithValue("@idUser", idUser);
                                 cmdC.Parameters.AddWithValue("@IDSerie", id);
                                 cmdC.ExecuteNonQuery();

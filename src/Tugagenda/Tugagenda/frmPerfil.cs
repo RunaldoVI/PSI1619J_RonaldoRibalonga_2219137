@@ -116,7 +116,7 @@ namespace Tugagenda
             db.Open();
             if (e.ColumnIndex == 0)
             {
-                DialogResult verificar = MessageBox.Show("Pretende adicionar a lista ja visto?", "Adicionar?", MessageBoxButtons.OKCancel);
+                DialogResult verificar = MessageBox.Show("Pretende eliminar da lista?", "Eliminar?", MessageBoxButtons.OKCancel);
 
                 if (verificar == DialogResult.OK)
                 {
@@ -137,7 +137,7 @@ namespace Tugagenda
                 }
                 else
                 {
-                    MessageBox.Show("Erro!");
+                    MessageBox.Show("Nada foi alterado!");
                 }
 
             }
@@ -173,7 +173,7 @@ namespace Tugagenda
                 }
                 else
                 {
-                    MessageBox.Show("Erro!");
+                    MessageBox.Show("Nada foi alterado!");
                 }
 
             }
