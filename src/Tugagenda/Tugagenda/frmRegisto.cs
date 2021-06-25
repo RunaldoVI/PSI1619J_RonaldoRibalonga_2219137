@@ -56,25 +56,34 @@ namespace Tugagenda
                                     {
                                         if (txtPassword.Text == txtCPassword.Text)
                                         {
-                                            
-                                            da = new SqlDataAdapter("select Username from registo where Username = '"+txtUsername.Text+"' ", db);                                                                      
-                                            DataTable dt = new DataTable();
-                                            da.Fill(dt);
-                                            if (dt.Rows.Count >= 1)
+                                            if (txtUsername.Text.Length == 0)
                                             {
-                                                MessageBox.Show("O nome ja está ser usado!");
+                                                MessageBox.Show("O nome tem de ser preenchindo !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                             }
                                             else
                                             {
-                                                cmd.CommandText = "insert into Registo (Username, Password, Email) values (@Username, @Password, @Email)";
-                                                cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
-                                                cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
-                                                cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
-                                                cmd.ExecuteNonQuery();
-                                                MessageBox.Show("Registado com sucesso");
-                                                Close();
-                                                frmLogin login = new frmLogin();
-                                                login.Show();
+
+                                                da = new SqlDataAdapter("select Username from registo where Username = '" + txtUsername.Text + "' ", db);
+                                                DataTable dt = new DataTable();
+                                                da.Fill(dt);
+                                                if (dt.Rows.Count >= 1)
+                                                {
+                                                    MessageBox.Show("O nome ja está ser usado!");
+                                                }
+                                                else
+                                                {
+                                                    cmd.CommandText = "insert into Registo (Username, Password, Email) values (@Username, @Password, @Email)";
+                                                    cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
+                                                    cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
+                                                    cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
+                                                    cmd.ExecuteNonQuery();
+                                                    MessageBox.Show("Registado com sucesso");
+                                                    Close();
+                                                    db.Close();
+                                                    frmLogin login = new frmLogin();
+                                                    login.Show();
+                                                    
+                                                }
                                             }
                                         }
 
@@ -106,12 +115,12 @@ namespace Tugagenda
                     }
                     else
                     {
-                        MessageBox.Show("Erro Email!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("A sua password não tem os minimos 8 caraceteres ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("A sua password não tem os minimos 8 caraceteres ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Erro Email!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 
             }
