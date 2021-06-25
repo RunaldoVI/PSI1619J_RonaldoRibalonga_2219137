@@ -171,7 +171,7 @@ namespace Tugagenda
                         dt.Load(cmdV.ExecuteReader());
                         if (dt.Rows.Count >= 1)
                         {
-                            DialogResult check = MessageBox.Show("A serie ja se encontra ocupada deseja atualizar para ja visto?", "Atualizar?", MessageBoxButtons.OKCancel);
+                            DialogResult check = MessageBox.Show("O Filme ja se encontra ocupada deseja atualizar para ja visto?", "Atualizar?", MessageBoxButtons.OKCancel);
                             if (check == DialogResult.OK)
                             {
                                 SqlCommand cmdC = new SqlCommand();
